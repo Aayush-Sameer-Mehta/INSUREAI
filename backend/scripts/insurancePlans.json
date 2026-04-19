@@ -1,0 +1,5847 @@
+[
+  {
+    "name": "LIC Smart Term Plan",
+    "company": "LIC",
+    "price": 9443,
+    "coverage": 10000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "term_basic",
+    "description": "Pure term life insurance from LIC offering high life cover at affordable premiums with simplified underwriting.",
+    "benefits": [
+      "High sum assured up to ₹1 Cr",
+      "Simple online purchase",
+      "Tax benefits under Section 80C"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹1 Crore lump sum"
+      },
+      {
+        "label": "Terminal Illness",
+        "value": "Accelerated benefit"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹8,000/year approx",
+      "gst": "18% applicable",
+      "discounts": "Non-smoker, online",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-65 years",
+      "Policy term: 10-40 years"
+    ],
+    "termsAndConditions": [
+      "Suicide exclusion: 12 months",
+      "Free-look: 30 days"
+    ],
+    "claimProcess": [
+      "Contact customer care",
+      "Submit death certificate and forms",
+      "Settled in 30 days"
+    ],
+    "policyId": "plan-gen-1",
+    "score": 90,
+    "reviewsCount": 152,
+    "ratingAverage": 4.5
+  },
+  {
+    "name": "LIC Term with ROP",
+    "company": "LIC",
+    "price": 18582,
+    "coverage": 5000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "return_of_premium",
+    "description": "Get all your premiums back upon survival to maturity along with robust life cover during the term from LIC.",
+    "benefits": [
+      "100% Return of Premium on maturity",
+      "Comprehensive life cover",
+      "Tax benefits"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹50 Lakh"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "100% premiums returned"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹18,000/year approx",
+      "gst": "18%",
+      "discounts": "Annual mode",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-50 years",
+      "Term: 15-30 years"
+    ],
+    "termsAndConditions": [
+      "Survival till end of term required for ROP",
+      "Subject to all premiums paid"
+    ],
+    "claimProcess": [
+      "Maturity claim process",
+      "Submit original policy document"
+    ],
+    "policyId": "plan-gen-2",
+    "score": 85,
+    "reviewsCount": 184,
+    "ratingAverage": 4.5
+  },
+  {
+    "name": "LIC Guaranteed Savings Plan",
+    "company": "LIC",
+    "price": 36332,
+    "coverage": 1500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "endowment",
+    "description": "Traditional endowment plan combining life cover with guaranteed maturity benefit and loyalty additions by LIC.",
+    "benefits": [
+      "Guaranteed returns",
+      "Life cover included",
+      "Loan facility available"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Sum assured + bonuses"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Guaranteed sum + bonuses"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹35,000/year approx",
+      "gst": "4.5% first year",
+      "discounts": "High SA",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Entry age: 0-55 years",
+      "Term: 10-25 years"
+    ],
+    "termsAndConditions": [
+      "Lock-in period applies",
+      "Surrender penalities early on"
+    ],
+    "claimProcess": [
+      "Submit claim form",
+      "Provide NEFT details"
+    ],
+    "policyId": "plan-gen-3",
+    "score": 93,
+    "reviewsCount": 191,
+    "ratingAverage": 3.6
+  },
+  {
+    "name": "LIC Wealth Plus ULIP",
+    "company": "LIC",
+    "price": 64471,
+    "coverage": 500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "ulip",
+    "description": "Market-linked investment plan with life cover, offering multiple fund options and tax-free maturity by LIC.",
+    "benefits": [
+      "Choice of equity/debt funds",
+      "Life cover 10x premium",
+      "Tax-free maturity u/s 10(10D)"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Higher of Fund Value or SA"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Fund Value"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹1,00,000/year",
+      "gst": "18% on charges",
+      "discounts": "Online purchase",
+      "paymentOptions": "Annual, SIP"
+    },
+    "eligibility": [
+      "Entry age: 1 month to 60 years",
+      "Lock-in: 5 years"
+    ],
+    "termsAndConditions": [
+      "Market risk borne by policyholder",
+      "5-year lock-in mandatory"
+    ],
+    "claimProcess": [
+      "Submit surrender/maturity form",
+      "KYC docs required"
+    ],
+    "policyId": "plan-gen-4",
+    "score": 91,
+    "reviewsCount": 44,
+    "ratingAverage": 3.7
+  },
+  {
+    "name": "HDFC Life Smart Term Plan",
+    "company": "HDFC Life",
+    "price": 7687,
+    "coverage": 10000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "term_basic",
+    "description": "Pure term life insurance from HDFC Life offering high life cover at affordable premiums with simplified underwriting.",
+    "benefits": [
+      "High sum assured up to ₹1 Cr",
+      "Simple online purchase",
+      "Tax benefits under Section 80C"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹1 Crore lump sum"
+      },
+      {
+        "label": "Terminal Illness",
+        "value": "Accelerated benefit"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹8,000/year approx",
+      "gst": "18% applicable",
+      "discounts": "Non-smoker, online",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-65 years",
+      "Policy term: 10-40 years"
+    ],
+    "termsAndConditions": [
+      "Suicide exclusion: 12 months",
+      "Free-look: 30 days"
+    ],
+    "claimProcess": [
+      "Contact customer care",
+      "Submit death certificate and forms",
+      "Settled in 30 days"
+    ],
+    "policyId": "plan-gen-5",
+    "score": 78,
+    "reviewsCount": 149,
+    "ratingAverage": 4.2
+  },
+  {
+    "name": "HDFC Life Term with ROP",
+    "company": "HDFC Life",
+    "price": 16451,
+    "coverage": 5000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "return_of_premium",
+    "description": "Get all your premiums back upon survival to maturity along with robust life cover during the term from HDFC Life.",
+    "benefits": [
+      "100% Return of Premium on maturity",
+      "Comprehensive life cover",
+      "Tax benefits"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹50 Lakh"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "100% premiums returned"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹18,000/year approx",
+      "gst": "18%",
+      "discounts": "Annual mode",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-50 years",
+      "Term: 15-30 years"
+    ],
+    "termsAndConditions": [
+      "Survival till end of term required for ROP",
+      "Subject to all premiums paid"
+    ],
+    "claimProcess": [
+      "Maturity claim process",
+      "Submit original policy document"
+    ],
+    "policyId": "plan-gen-6",
+    "score": 78,
+    "reviewsCount": 174,
+    "ratingAverage": 4.6
+  },
+  {
+    "name": "HDFC Life Guaranteed Savings Plan",
+    "company": "HDFC Life",
+    "price": 33429,
+    "coverage": 1500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "endowment",
+    "description": "Traditional endowment plan combining life cover with guaranteed maturity benefit and loyalty additions by HDFC Life.",
+    "benefits": [
+      "Guaranteed returns",
+      "Life cover included",
+      "Loan facility available"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Sum assured + bonuses"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Guaranteed sum + bonuses"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹35,000/year approx",
+      "gst": "4.5% first year",
+      "discounts": "High SA",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Entry age: 0-55 years",
+      "Term: 10-25 years"
+    ],
+    "termsAndConditions": [
+      "Lock-in period applies",
+      "Surrender penalities early on"
+    ],
+    "claimProcess": [
+      "Submit claim form",
+      "Provide NEFT details"
+    ],
+    "policyId": "plan-gen-7",
+    "score": 89,
+    "reviewsCount": 48,
+    "ratingAverage": 4.1
+  },
+  {
+    "name": "HDFC Life Wealth Plus ULIP",
+    "company": "HDFC Life",
+    "price": 52884,
+    "coverage": 500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "ulip",
+    "description": "Market-linked investment plan with life cover, offering multiple fund options and tax-free maturity by HDFC Life.",
+    "benefits": [
+      "Choice of equity/debt funds",
+      "Life cover 10x premium",
+      "Tax-free maturity u/s 10(10D)"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Higher of Fund Value or SA"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Fund Value"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹1,00,000/year",
+      "gst": "18% on charges",
+      "discounts": "Online purchase",
+      "paymentOptions": "Annual, SIP"
+    },
+    "eligibility": [
+      "Entry age: 1 month to 60 years",
+      "Lock-in: 5 years"
+    ],
+    "termsAndConditions": [
+      "Market risk borne by policyholder",
+      "5-year lock-in mandatory"
+    ],
+    "claimProcess": [
+      "Submit surrender/maturity form",
+      "KYC docs required"
+    ],
+    "policyId": "plan-gen-8",
+    "score": 84,
+    "reviewsCount": 112,
+    "ratingAverage": 3.7
+  },
+  {
+    "name": "ICICI Prudential Smart Term Plan",
+    "company": "ICICI Prudential",
+    "price": 7945,
+    "coverage": 10000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "term_basic",
+    "description": "Pure term life insurance from ICICI Prudential offering high life cover at affordable premiums with simplified underwriting.",
+    "benefits": [
+      "High sum assured up to ₹1 Cr",
+      "Simple online purchase",
+      "Tax benefits under Section 80C"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹1 Crore lump sum"
+      },
+      {
+        "label": "Terminal Illness",
+        "value": "Accelerated benefit"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹8,000/year approx",
+      "gst": "18% applicable",
+      "discounts": "Non-smoker, online",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-65 years",
+      "Policy term: 10-40 years"
+    ],
+    "termsAndConditions": [
+      "Suicide exclusion: 12 months",
+      "Free-look: 30 days"
+    ],
+    "claimProcess": [
+      "Contact customer care",
+      "Submit death certificate and forms",
+      "Settled in 30 days"
+    ],
+    "policyId": "plan-gen-9",
+    "score": 78,
+    "reviewsCount": 164,
+    "ratingAverage": 4.4
+  },
+  {
+    "name": "ICICI Prudential Term with ROP",
+    "company": "ICICI Prudential",
+    "price": 16057,
+    "coverage": 5000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "return_of_premium",
+    "description": "Get all your premiums back upon survival to maturity along with robust life cover during the term from ICICI Prudential.",
+    "benefits": [
+      "100% Return of Premium on maturity",
+      "Comprehensive life cover",
+      "Tax benefits"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹50 Lakh"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "100% premiums returned"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹18,000/year approx",
+      "gst": "18%",
+      "discounts": "Annual mode",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-50 years",
+      "Term: 15-30 years"
+    ],
+    "termsAndConditions": [
+      "Survival till end of term required for ROP",
+      "Subject to all premiums paid"
+    ],
+    "claimProcess": [
+      "Maturity claim process",
+      "Submit original policy document"
+    ],
+    "policyId": "plan-gen-10",
+    "score": 89,
+    "reviewsCount": 42,
+    "ratingAverage": 4.1
+  },
+  {
+    "name": "ICICI Prudential Guaranteed Savings Plan",
+    "company": "ICICI Prudential",
+    "price": 34424,
+    "coverage": 1500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "endowment",
+    "description": "Traditional endowment plan combining life cover with guaranteed maturity benefit and loyalty additions by ICICI Prudential.",
+    "benefits": [
+      "Guaranteed returns",
+      "Life cover included",
+      "Loan facility available"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Sum assured + bonuses"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Guaranteed sum + bonuses"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹35,000/year approx",
+      "gst": "4.5% first year",
+      "discounts": "High SA",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Entry age: 0-55 years",
+      "Term: 10-25 years"
+    ],
+    "termsAndConditions": [
+      "Lock-in period applies",
+      "Surrender penalities early on"
+    ],
+    "claimProcess": [
+      "Submit claim form",
+      "Provide NEFT details"
+    ],
+    "policyId": "plan-gen-11",
+    "score": 76,
+    "reviewsCount": 17,
+    "ratingAverage": 4.9
+  },
+  {
+    "name": "ICICI Prudential Wealth Plus ULIP",
+    "company": "ICICI Prudential",
+    "price": 52771,
+    "coverage": 500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "ulip",
+    "description": "Market-linked investment plan with life cover, offering multiple fund options and tax-free maturity by ICICI Prudential.",
+    "benefits": [
+      "Choice of equity/debt funds",
+      "Life cover 10x premium",
+      "Tax-free maturity u/s 10(10D)"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Higher of Fund Value or SA"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Fund Value"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹1,00,000/year",
+      "gst": "18% on charges",
+      "discounts": "Online purchase",
+      "paymentOptions": "Annual, SIP"
+    },
+    "eligibility": [
+      "Entry age: 1 month to 60 years",
+      "Lock-in: 5 years"
+    ],
+    "termsAndConditions": [
+      "Market risk borne by policyholder",
+      "5-year lock-in mandatory"
+    ],
+    "claimProcess": [
+      "Submit surrender/maturity form",
+      "KYC docs required"
+    ],
+    "policyId": "plan-gen-12",
+    "score": 76,
+    "reviewsCount": 129,
+    "ratingAverage": 4.5
+  },
+  {
+    "name": "SBI Life Smart Term Plan",
+    "company": "SBI Life",
+    "price": 9738,
+    "coverage": 10000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "term_basic",
+    "description": "Pure term life insurance from SBI Life offering high life cover at affordable premiums with simplified underwriting.",
+    "benefits": [
+      "High sum assured up to ₹1 Cr",
+      "Simple online purchase",
+      "Tax benefits under Section 80C"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹1 Crore lump sum"
+      },
+      {
+        "label": "Terminal Illness",
+        "value": "Accelerated benefit"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹8,000/year approx",
+      "gst": "18% applicable",
+      "discounts": "Non-smoker, online",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-65 years",
+      "Policy term: 10-40 years"
+    ],
+    "termsAndConditions": [
+      "Suicide exclusion: 12 months",
+      "Free-look: 30 days"
+    ],
+    "claimProcess": [
+      "Contact customer care",
+      "Submit death certificate and forms",
+      "Settled in 30 days"
+    ],
+    "policyId": "plan-gen-13",
+    "score": 89,
+    "reviewsCount": 45,
+    "ratingAverage": 4.1
+  },
+  {
+    "name": "SBI Life Term with ROP",
+    "company": "SBI Life",
+    "price": 22405,
+    "coverage": 5000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "return_of_premium",
+    "description": "Get all your premiums back upon survival to maturity along with robust life cover during the term from SBI Life.",
+    "benefits": [
+      "100% Return of Premium on maturity",
+      "Comprehensive life cover",
+      "Tax benefits"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹50 Lakh"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "100% premiums returned"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹18,000/year approx",
+      "gst": "18%",
+      "discounts": "Annual mode",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-50 years",
+      "Term: 15-30 years"
+    ],
+    "termsAndConditions": [
+      "Survival till end of term required for ROP",
+      "Subject to all premiums paid"
+    ],
+    "claimProcess": [
+      "Maturity claim process",
+      "Submit original policy document"
+    ],
+    "policyId": "plan-gen-14",
+    "score": 88,
+    "reviewsCount": 176,
+    "ratingAverage": 4.5
+  },
+  {
+    "name": "SBI Life Guaranteed Savings Plan",
+    "company": "SBI Life",
+    "price": 30352,
+    "coverage": 1500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "endowment",
+    "description": "Traditional endowment plan combining life cover with guaranteed maturity benefit and loyalty additions by SBI Life.",
+    "benefits": [
+      "Guaranteed returns",
+      "Life cover included",
+      "Loan facility available"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Sum assured + bonuses"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Guaranteed sum + bonuses"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹35,000/year approx",
+      "gst": "4.5% first year",
+      "discounts": "High SA",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Entry age: 0-55 years",
+      "Term: 10-25 years"
+    ],
+    "termsAndConditions": [
+      "Lock-in period applies",
+      "Surrender penalities early on"
+    ],
+    "claimProcess": [
+      "Submit claim form",
+      "Provide NEFT details"
+    ],
+    "policyId": "plan-gen-15",
+    "score": 87,
+    "reviewsCount": 180,
+    "ratingAverage": 4.7
+  },
+  {
+    "name": "SBI Life Wealth Plus ULIP",
+    "company": "SBI Life",
+    "price": 98836,
+    "coverage": 500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "ulip",
+    "description": "Market-linked investment plan with life cover, offering multiple fund options and tax-free maturity by SBI Life.",
+    "benefits": [
+      "Choice of equity/debt funds",
+      "Life cover 10x premium",
+      "Tax-free maturity u/s 10(10D)"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Higher of Fund Value or SA"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Fund Value"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹1,00,000/year",
+      "gst": "18% on charges",
+      "discounts": "Online purchase",
+      "paymentOptions": "Annual, SIP"
+    },
+    "eligibility": [
+      "Entry age: 1 month to 60 years",
+      "Lock-in: 5 years"
+    ],
+    "termsAndConditions": [
+      "Market risk borne by policyholder",
+      "5-year lock-in mandatory"
+    ],
+    "claimProcess": [
+      "Submit surrender/maturity form",
+      "KYC docs required"
+    ],
+    "policyId": "plan-gen-16",
+    "score": 90,
+    "reviewsCount": 21,
+    "ratingAverage": 4.2
+  },
+  {
+    "name": "Max Life Smart Term Plan",
+    "company": "Max Life",
+    "price": 6142,
+    "coverage": 10000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "term_basic",
+    "description": "Pure term life insurance from Max Life offering high life cover at affordable premiums with simplified underwriting.",
+    "benefits": [
+      "High sum assured up to ₹1 Cr",
+      "Simple online purchase",
+      "Tax benefits under Section 80C"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹1 Crore lump sum"
+      },
+      {
+        "label": "Terminal Illness",
+        "value": "Accelerated benefit"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹8,000/year approx",
+      "gst": "18% applicable",
+      "discounts": "Non-smoker, online",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-65 years",
+      "Policy term: 10-40 years"
+    ],
+    "termsAndConditions": [
+      "Suicide exclusion: 12 months",
+      "Free-look: 30 days"
+    ],
+    "claimProcess": [
+      "Contact customer care",
+      "Submit death certificate and forms",
+      "Settled in 30 days"
+    ],
+    "policyId": "plan-gen-17",
+    "score": 89,
+    "reviewsCount": 197,
+    "ratingAverage": 4.7
+  },
+  {
+    "name": "Max Life Term with ROP",
+    "company": "Max Life",
+    "price": 20242,
+    "coverage": 5000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "return_of_premium",
+    "description": "Get all your premiums back upon survival to maturity along with robust life cover during the term from Max Life.",
+    "benefits": [
+      "100% Return of Premium on maturity",
+      "Comprehensive life cover",
+      "Tax benefits"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹50 Lakh"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "100% premiums returned"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹18,000/year approx",
+      "gst": "18%",
+      "discounts": "Annual mode",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-50 years",
+      "Term: 15-30 years"
+    ],
+    "termsAndConditions": [
+      "Survival till end of term required for ROP",
+      "Subject to all premiums paid"
+    ],
+    "claimProcess": [
+      "Maturity claim process",
+      "Submit original policy document"
+    ],
+    "policyId": "plan-gen-18",
+    "score": 84,
+    "reviewsCount": 14,
+    "ratingAverage": 3.9
+  },
+  {
+    "name": "Max Life Guaranteed Savings Plan",
+    "company": "Max Life",
+    "price": 37256,
+    "coverage": 1500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "endowment",
+    "description": "Traditional endowment plan combining life cover with guaranteed maturity benefit and loyalty additions by Max Life.",
+    "benefits": [
+      "Guaranteed returns",
+      "Life cover included",
+      "Loan facility available"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Sum assured + bonuses"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Guaranteed sum + bonuses"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹35,000/year approx",
+      "gst": "4.5% first year",
+      "discounts": "High SA",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Entry age: 0-55 years",
+      "Term: 10-25 years"
+    ],
+    "termsAndConditions": [
+      "Lock-in period applies",
+      "Surrender penalities early on"
+    ],
+    "claimProcess": [
+      "Submit claim form",
+      "Provide NEFT details"
+    ],
+    "policyId": "plan-gen-19",
+    "score": 93,
+    "reviewsCount": 174,
+    "ratingAverage": 4.7
+  },
+  {
+    "name": "Max Life Wealth Plus ULIP",
+    "company": "Max Life",
+    "price": 64295,
+    "coverage": 500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "ulip",
+    "description": "Market-linked investment plan with life cover, offering multiple fund options and tax-free maturity by Max Life.",
+    "benefits": [
+      "Choice of equity/debt funds",
+      "Life cover 10x premium",
+      "Tax-free maturity u/s 10(10D)"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Higher of Fund Value or SA"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Fund Value"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹1,00,000/year",
+      "gst": "18% on charges",
+      "discounts": "Online purchase",
+      "paymentOptions": "Annual, SIP"
+    },
+    "eligibility": [
+      "Entry age: 1 month to 60 years",
+      "Lock-in: 5 years"
+    ],
+    "termsAndConditions": [
+      "Market risk borne by policyholder",
+      "5-year lock-in mandatory"
+    ],
+    "claimProcess": [
+      "Submit surrender/maturity form",
+      "KYC docs required"
+    ],
+    "policyId": "plan-gen-20",
+    "score": 80,
+    "reviewsCount": 107,
+    "ratingAverage": 4.8
+  },
+  {
+    "name": "Kotak Life Smart Term Plan",
+    "company": "Kotak Life",
+    "price": 6760,
+    "coverage": 10000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "term_basic",
+    "description": "Pure term life insurance from Kotak Life offering high life cover at affordable premiums with simplified underwriting.",
+    "benefits": [
+      "High sum assured up to ₹1 Cr",
+      "Simple online purchase",
+      "Tax benefits under Section 80C"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹1 Crore lump sum"
+      },
+      {
+        "label": "Terminal Illness",
+        "value": "Accelerated benefit"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹8,000/year approx",
+      "gst": "18% applicable",
+      "discounts": "Non-smoker, online",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-65 years",
+      "Policy term: 10-40 years"
+    ],
+    "termsAndConditions": [
+      "Suicide exclusion: 12 months",
+      "Free-look: 30 days"
+    ],
+    "claimProcess": [
+      "Contact customer care",
+      "Submit death certificate and forms",
+      "Settled in 30 days"
+    ],
+    "policyId": "plan-gen-21",
+    "score": 88,
+    "reviewsCount": 38,
+    "ratingAverage": 4
+  },
+  {
+    "name": "Kotak Life Term with ROP",
+    "company": "Kotak Life",
+    "price": 21289,
+    "coverage": 5000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "return_of_premium",
+    "description": "Get all your premiums back upon survival to maturity along with robust life cover during the term from Kotak Life.",
+    "benefits": [
+      "100% Return of Premium on maturity",
+      "Comprehensive life cover",
+      "Tax benefits"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹50 Lakh"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "100% premiums returned"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹18,000/year approx",
+      "gst": "18%",
+      "discounts": "Annual mode",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-50 years",
+      "Term: 15-30 years"
+    ],
+    "termsAndConditions": [
+      "Survival till end of term required for ROP",
+      "Subject to all premiums paid"
+    ],
+    "claimProcess": [
+      "Maturity claim process",
+      "Submit original policy document"
+    ],
+    "policyId": "plan-gen-22",
+    "score": 95,
+    "reviewsCount": 181,
+    "ratingAverage": 3.9
+  },
+  {
+    "name": "Kotak Life Guaranteed Savings Plan",
+    "company": "Kotak Life",
+    "price": 37101,
+    "coverage": 1500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "endowment",
+    "description": "Traditional endowment plan combining life cover with guaranteed maturity benefit and loyalty additions by Kotak Life.",
+    "benefits": [
+      "Guaranteed returns",
+      "Life cover included",
+      "Loan facility available"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Sum assured + bonuses"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Guaranteed sum + bonuses"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹35,000/year approx",
+      "gst": "4.5% first year",
+      "discounts": "High SA",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Entry age: 0-55 years",
+      "Term: 10-25 years"
+    ],
+    "termsAndConditions": [
+      "Lock-in period applies",
+      "Surrender penalities early on"
+    ],
+    "claimProcess": [
+      "Submit claim form",
+      "Provide NEFT details"
+    ],
+    "policyId": "plan-gen-23",
+    "score": 86,
+    "reviewsCount": 171,
+    "ratingAverage": 4.7
+  },
+  {
+    "name": "Kotak Life Wealth Plus ULIP",
+    "company": "Kotak Life",
+    "price": 76385,
+    "coverage": 500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "ulip",
+    "description": "Market-linked investment plan with life cover, offering multiple fund options and tax-free maturity by Kotak Life.",
+    "benefits": [
+      "Choice of equity/debt funds",
+      "Life cover 10x premium",
+      "Tax-free maturity u/s 10(10D)"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Higher of Fund Value or SA"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Fund Value"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹1,00,000/year",
+      "gst": "18% on charges",
+      "discounts": "Online purchase",
+      "paymentOptions": "Annual, SIP"
+    },
+    "eligibility": [
+      "Entry age: 1 month to 60 years",
+      "Lock-in: 5 years"
+    ],
+    "termsAndConditions": [
+      "Market risk borne by policyholder",
+      "5-year lock-in mandatory"
+    ],
+    "claimProcess": [
+      "Submit surrender/maturity form",
+      "KYC docs required"
+    ],
+    "policyId": "plan-gen-24",
+    "score": 90,
+    "reviewsCount": 140,
+    "ratingAverage": 4.5
+  },
+  {
+    "name": "Tata AIA Smart Term Plan",
+    "company": "Tata AIA",
+    "price": 9212,
+    "coverage": 10000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "term_basic",
+    "description": "Pure term life insurance from Tata AIA offering high life cover at affordable premiums with simplified underwriting.",
+    "benefits": [
+      "High sum assured up to ₹1 Cr",
+      "Simple online purchase",
+      "Tax benefits under Section 80C"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹1 Crore lump sum"
+      },
+      {
+        "label": "Terminal Illness",
+        "value": "Accelerated benefit"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹8,000/year approx",
+      "gst": "18% applicable",
+      "discounts": "Non-smoker, online",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-65 years",
+      "Policy term: 10-40 years"
+    ],
+    "termsAndConditions": [
+      "Suicide exclusion: 12 months",
+      "Free-look: 30 days"
+    ],
+    "claimProcess": [
+      "Contact customer care",
+      "Submit death certificate and forms",
+      "Settled in 30 days"
+    ],
+    "policyId": "plan-gen-25",
+    "score": 86,
+    "reviewsCount": 163,
+    "ratingAverage": 4.6
+  },
+  {
+    "name": "Tata AIA Term with ROP",
+    "company": "Tata AIA",
+    "price": 15588,
+    "coverage": 5000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "return_of_premium",
+    "description": "Get all your premiums back upon survival to maturity along with robust life cover during the term from Tata AIA.",
+    "benefits": [
+      "100% Return of Premium on maturity",
+      "Comprehensive life cover",
+      "Tax benefits"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹50 Lakh"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "100% premiums returned"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹18,000/year approx",
+      "gst": "18%",
+      "discounts": "Annual mode",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-50 years",
+      "Term: 15-30 years"
+    ],
+    "termsAndConditions": [
+      "Survival till end of term required for ROP",
+      "Subject to all premiums paid"
+    ],
+    "claimProcess": [
+      "Maturity claim process",
+      "Submit original policy document"
+    ],
+    "policyId": "plan-gen-26",
+    "score": 94,
+    "reviewsCount": 113,
+    "ratingAverage": 4.7
+  },
+  {
+    "name": "Tata AIA Guaranteed Savings Plan",
+    "company": "Tata AIA",
+    "price": 40906,
+    "coverage": 1500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "endowment",
+    "description": "Traditional endowment plan combining life cover with guaranteed maturity benefit and loyalty additions by Tata AIA.",
+    "benefits": [
+      "Guaranteed returns",
+      "Life cover included",
+      "Loan facility available"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Sum assured + bonuses"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Guaranteed sum + bonuses"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹35,000/year approx",
+      "gst": "4.5% first year",
+      "discounts": "High SA",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Entry age: 0-55 years",
+      "Term: 10-25 years"
+    ],
+    "termsAndConditions": [
+      "Lock-in period applies",
+      "Surrender penalities early on"
+    ],
+    "claimProcess": [
+      "Submit claim form",
+      "Provide NEFT details"
+    ],
+    "policyId": "plan-gen-27",
+    "score": 93,
+    "reviewsCount": 155,
+    "ratingAverage": 3.7
+  },
+  {
+    "name": "Tata AIA Wealth Plus ULIP",
+    "company": "Tata AIA",
+    "price": 63131,
+    "coverage": 500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "ulip",
+    "description": "Market-linked investment plan with life cover, offering multiple fund options and tax-free maturity by Tata AIA.",
+    "benefits": [
+      "Choice of equity/debt funds",
+      "Life cover 10x premium",
+      "Tax-free maturity u/s 10(10D)"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Higher of Fund Value or SA"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Fund Value"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹1,00,000/year",
+      "gst": "18% on charges",
+      "discounts": "Online purchase",
+      "paymentOptions": "Annual, SIP"
+    },
+    "eligibility": [
+      "Entry age: 1 month to 60 years",
+      "Lock-in: 5 years"
+    ],
+    "termsAndConditions": [
+      "Market risk borne by policyholder",
+      "5-year lock-in mandatory"
+    ],
+    "claimProcess": [
+      "Submit surrender/maturity form",
+      "KYC docs required"
+    ],
+    "policyId": "plan-gen-28",
+    "score": 75,
+    "reviewsCount": 128,
+    "ratingAverage": 4.6
+  },
+  {
+    "name": "Aditya Birla Sun Life Smart Term Plan",
+    "company": "Aditya Birla Sun Life",
+    "price": 6371,
+    "coverage": 10000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "term_basic",
+    "description": "Pure term life insurance from Aditya Birla Sun Life offering high life cover at affordable premiums with simplified underwriting.",
+    "benefits": [
+      "High sum assured up to ₹1 Cr",
+      "Simple online purchase",
+      "Tax benefits under Section 80C"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹1 Crore lump sum"
+      },
+      {
+        "label": "Terminal Illness",
+        "value": "Accelerated benefit"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹8,000/year approx",
+      "gst": "18% applicable",
+      "discounts": "Non-smoker, online",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-65 years",
+      "Policy term: 10-40 years"
+    ],
+    "termsAndConditions": [
+      "Suicide exclusion: 12 months",
+      "Free-look: 30 days"
+    ],
+    "claimProcess": [
+      "Contact customer care",
+      "Submit death certificate and forms",
+      "Settled in 30 days"
+    ],
+    "policyId": "plan-gen-29",
+    "score": 93,
+    "reviewsCount": 197,
+    "ratingAverage": 3.9
+  },
+  {
+    "name": "Aditya Birla Sun Life Term with ROP",
+    "company": "Aditya Birla Sun Life",
+    "price": 18903,
+    "coverage": 5000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "return_of_premium",
+    "description": "Get all your premiums back upon survival to maturity along with robust life cover during the term from Aditya Birla Sun Life.",
+    "benefits": [
+      "100% Return of Premium on maturity",
+      "Comprehensive life cover",
+      "Tax benefits"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹50 Lakh"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "100% premiums returned"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹18,000/year approx",
+      "gst": "18%",
+      "discounts": "Annual mode",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-50 years",
+      "Term: 15-30 years"
+    ],
+    "termsAndConditions": [
+      "Survival till end of term required for ROP",
+      "Subject to all premiums paid"
+    ],
+    "claimProcess": [
+      "Maturity claim process",
+      "Submit original policy document"
+    ],
+    "policyId": "plan-gen-30",
+    "score": 78,
+    "reviewsCount": 47,
+    "ratingAverage": 4.8
+  },
+  {
+    "name": "Aditya Birla Sun Life Guaranteed Savings Plan",
+    "company": "Aditya Birla Sun Life",
+    "price": 30170,
+    "coverage": 1500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "endowment",
+    "description": "Traditional endowment plan combining life cover with guaranteed maturity benefit and loyalty additions by Aditya Birla Sun Life.",
+    "benefits": [
+      "Guaranteed returns",
+      "Life cover included",
+      "Loan facility available"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Sum assured + bonuses"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Guaranteed sum + bonuses"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹35,000/year approx",
+      "gst": "4.5% first year",
+      "discounts": "High SA",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Entry age: 0-55 years",
+      "Term: 10-25 years"
+    ],
+    "termsAndConditions": [
+      "Lock-in period applies",
+      "Surrender penalities early on"
+    ],
+    "claimProcess": [
+      "Submit claim form",
+      "Provide NEFT details"
+    ],
+    "policyId": "plan-gen-31",
+    "score": 92,
+    "reviewsCount": 183,
+    "ratingAverage": 4
+  },
+  {
+    "name": "Aditya Birla Sun Life Wealth Plus ULIP",
+    "company": "Aditya Birla Sun Life",
+    "price": 60930,
+    "coverage": 500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "ulip",
+    "description": "Market-linked investment plan with life cover, offering multiple fund options and tax-free maturity by Aditya Birla Sun Life.",
+    "benefits": [
+      "Choice of equity/debt funds",
+      "Life cover 10x premium",
+      "Tax-free maturity u/s 10(10D)"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Higher of Fund Value or SA"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Fund Value"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹1,00,000/year",
+      "gst": "18% on charges",
+      "discounts": "Online purchase",
+      "paymentOptions": "Annual, SIP"
+    },
+    "eligibility": [
+      "Entry age: 1 month to 60 years",
+      "Lock-in: 5 years"
+    ],
+    "termsAndConditions": [
+      "Market risk borne by policyholder",
+      "5-year lock-in mandatory"
+    ],
+    "claimProcess": [
+      "Submit surrender/maturity form",
+      "KYC docs required"
+    ],
+    "policyId": "plan-gen-32",
+    "score": 76,
+    "reviewsCount": 204,
+    "ratingAverage": 4.6
+  },
+  {
+    "name": "Bajaj Allianz Life Smart Term Plan",
+    "company": "Bajaj Allianz Life",
+    "price": 8521,
+    "coverage": 10000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "term_basic",
+    "description": "Pure term life insurance from Bajaj Allianz Life offering high life cover at affordable premiums with simplified underwriting.",
+    "benefits": [
+      "High sum assured up to ₹1 Cr",
+      "Simple online purchase",
+      "Tax benefits under Section 80C"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹1 Crore lump sum"
+      },
+      {
+        "label": "Terminal Illness",
+        "value": "Accelerated benefit"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹8,000/year approx",
+      "gst": "18% applicable",
+      "discounts": "Non-smoker, online",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-65 years",
+      "Policy term: 10-40 years"
+    ],
+    "termsAndConditions": [
+      "Suicide exclusion: 12 months",
+      "Free-look: 30 days"
+    ],
+    "claimProcess": [
+      "Contact customer care",
+      "Submit death certificate and forms",
+      "Settled in 30 days"
+    ],
+    "policyId": "plan-gen-33",
+    "score": 77,
+    "reviewsCount": 142,
+    "ratingAverage": 3.9
+  },
+  {
+    "name": "Bajaj Allianz Life Term with ROP",
+    "company": "Bajaj Allianz Life",
+    "price": 17775,
+    "coverage": 5000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "return_of_premium",
+    "description": "Get all your premiums back upon survival to maturity along with robust life cover during the term from Bajaj Allianz Life.",
+    "benefits": [
+      "100% Return of Premium on maturity",
+      "Comprehensive life cover",
+      "Tax benefits"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹50 Lakh"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "100% premiums returned"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹18,000/year approx",
+      "gst": "18%",
+      "discounts": "Annual mode",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-50 years",
+      "Term: 15-30 years"
+    ],
+    "termsAndConditions": [
+      "Survival till end of term required for ROP",
+      "Subject to all premiums paid"
+    ],
+    "claimProcess": [
+      "Maturity claim process",
+      "Submit original policy document"
+    ],
+    "policyId": "plan-gen-34",
+    "score": 90,
+    "reviewsCount": 52,
+    "ratingAverage": 4.5
+  },
+  {
+    "name": "Bajaj Allianz Life Guaranteed Savings Plan",
+    "company": "Bajaj Allianz Life",
+    "price": 41353,
+    "coverage": 1500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "endowment",
+    "description": "Traditional endowment plan combining life cover with guaranteed maturity benefit and loyalty additions by Bajaj Allianz Life.",
+    "benefits": [
+      "Guaranteed returns",
+      "Life cover included",
+      "Loan facility available"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Sum assured + bonuses"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Guaranteed sum + bonuses"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹35,000/year approx",
+      "gst": "4.5% first year",
+      "discounts": "High SA",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Entry age: 0-55 years",
+      "Term: 10-25 years"
+    ],
+    "termsAndConditions": [
+      "Lock-in period applies",
+      "Surrender penalities early on"
+    ],
+    "claimProcess": [
+      "Submit claim form",
+      "Provide NEFT details"
+    ],
+    "policyId": "plan-gen-35",
+    "score": 78,
+    "reviewsCount": 201,
+    "ratingAverage": 4.2
+  },
+  {
+    "name": "Bajaj Allianz Life Wealth Plus ULIP",
+    "company": "Bajaj Allianz Life",
+    "price": 86537,
+    "coverage": 500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "ulip",
+    "description": "Market-linked investment plan with life cover, offering multiple fund options and tax-free maturity by Bajaj Allianz Life.",
+    "benefits": [
+      "Choice of equity/debt funds",
+      "Life cover 10x premium",
+      "Tax-free maturity u/s 10(10D)"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Higher of Fund Value or SA"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Fund Value"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹1,00,000/year",
+      "gst": "18% on charges",
+      "discounts": "Online purchase",
+      "paymentOptions": "Annual, SIP"
+    },
+    "eligibility": [
+      "Entry age: 1 month to 60 years",
+      "Lock-in: 5 years"
+    ],
+    "termsAndConditions": [
+      "Market risk borne by policyholder",
+      "5-year lock-in mandatory"
+    ],
+    "claimProcess": [
+      "Submit surrender/maturity form",
+      "KYC docs required"
+    ],
+    "policyId": "plan-gen-36",
+    "score": 90,
+    "reviewsCount": 115,
+    "ratingAverage": 4.8
+  },
+  {
+    "name": "PNB MetLife Smart Term Plan",
+    "company": "PNB MetLife",
+    "price": 9305,
+    "coverage": 10000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "term_basic",
+    "description": "Pure term life insurance from PNB MetLife offering high life cover at affordable premiums with simplified underwriting.",
+    "benefits": [
+      "High sum assured up to ₹1 Cr",
+      "Simple online purchase",
+      "Tax benefits under Section 80C"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹1 Crore lump sum"
+      },
+      {
+        "label": "Terminal Illness",
+        "value": "Accelerated benefit"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹8,000/year approx",
+      "gst": "18% applicable",
+      "discounts": "Non-smoker, online",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-65 years",
+      "Policy term: 10-40 years"
+    ],
+    "termsAndConditions": [
+      "Suicide exclusion: 12 months",
+      "Free-look: 30 days"
+    ],
+    "claimProcess": [
+      "Contact customer care",
+      "Submit death certificate and forms",
+      "Settled in 30 days"
+    ],
+    "policyId": "plan-gen-37",
+    "score": 79,
+    "reviewsCount": 53,
+    "ratingAverage": 4
+  },
+  {
+    "name": "PNB MetLife Term with ROP",
+    "company": "PNB MetLife",
+    "price": 20556,
+    "coverage": 5000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "return_of_premium",
+    "description": "Get all your premiums back upon survival to maturity along with robust life cover during the term from PNB MetLife.",
+    "benefits": [
+      "100% Return of Premium on maturity",
+      "Comprehensive life cover",
+      "Tax benefits"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹50 Lakh"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "100% premiums returned"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹18,000/year approx",
+      "gst": "18%",
+      "discounts": "Annual mode",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-50 years",
+      "Term: 15-30 years"
+    ],
+    "termsAndConditions": [
+      "Survival till end of term required for ROP",
+      "Subject to all premiums paid"
+    ],
+    "claimProcess": [
+      "Maturity claim process",
+      "Submit original policy document"
+    ],
+    "policyId": "plan-gen-38",
+    "score": 90,
+    "reviewsCount": 146,
+    "ratingAverage": 3.8
+  },
+  {
+    "name": "PNB MetLife Guaranteed Savings Plan",
+    "company": "PNB MetLife",
+    "price": 37223,
+    "coverage": 1500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "endowment",
+    "description": "Traditional endowment plan combining life cover with guaranteed maturity benefit and loyalty additions by PNB MetLife.",
+    "benefits": [
+      "Guaranteed returns",
+      "Life cover included",
+      "Loan facility available"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Sum assured + bonuses"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Guaranteed sum + bonuses"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹35,000/year approx",
+      "gst": "4.5% first year",
+      "discounts": "High SA",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Entry age: 0-55 years",
+      "Term: 10-25 years"
+    ],
+    "termsAndConditions": [
+      "Lock-in period applies",
+      "Surrender penalities early on"
+    ],
+    "claimProcess": [
+      "Submit claim form",
+      "Provide NEFT details"
+    ],
+    "policyId": "plan-gen-39",
+    "score": 88,
+    "reviewsCount": 197,
+    "ratingAverage": 4.7
+  },
+  {
+    "name": "PNB MetLife Wealth Plus ULIP",
+    "company": "PNB MetLife",
+    "price": 96294,
+    "coverage": 500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "ulip",
+    "description": "Market-linked investment plan with life cover, offering multiple fund options and tax-free maturity by PNB MetLife.",
+    "benefits": [
+      "Choice of equity/debt funds",
+      "Life cover 10x premium",
+      "Tax-free maturity u/s 10(10D)"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Higher of Fund Value or SA"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Fund Value"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹1,00,000/year",
+      "gst": "18% on charges",
+      "discounts": "Online purchase",
+      "paymentOptions": "Annual, SIP"
+    },
+    "eligibility": [
+      "Entry age: 1 month to 60 years",
+      "Lock-in: 5 years"
+    ],
+    "termsAndConditions": [
+      "Market risk borne by policyholder",
+      "5-year lock-in mandatory"
+    ],
+    "claimProcess": [
+      "Submit surrender/maturity form",
+      "KYC docs required"
+    ],
+    "policyId": "plan-gen-40",
+    "score": 89,
+    "reviewsCount": 31,
+    "ratingAverage": 4
+  },
+  {
+    "name": "Reliance Nippon Life Smart Term Plan",
+    "company": "Reliance Nippon Life",
+    "price": 10014,
+    "coverage": 10000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "term_basic",
+    "description": "Pure term life insurance from Reliance Nippon Life offering high life cover at affordable premiums with simplified underwriting.",
+    "benefits": [
+      "High sum assured up to ₹1 Cr",
+      "Simple online purchase",
+      "Tax benefits under Section 80C"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹1 Crore lump sum"
+      },
+      {
+        "label": "Terminal Illness",
+        "value": "Accelerated benefit"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹8,000/year approx",
+      "gst": "18% applicable",
+      "discounts": "Non-smoker, online",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-65 years",
+      "Policy term: 10-40 years"
+    ],
+    "termsAndConditions": [
+      "Suicide exclusion: 12 months",
+      "Free-look: 30 days"
+    ],
+    "claimProcess": [
+      "Contact customer care",
+      "Submit death certificate and forms",
+      "Settled in 30 days"
+    ],
+    "policyId": "plan-gen-41",
+    "score": 78,
+    "reviewsCount": 118,
+    "ratingAverage": 4.4
+  },
+  {
+    "name": "Reliance Nippon Life Term with ROP",
+    "company": "Reliance Nippon Life",
+    "price": 16228,
+    "coverage": 5000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "return_of_premium",
+    "description": "Get all your premiums back upon survival to maturity along with robust life cover during the term from Reliance Nippon Life.",
+    "benefits": [
+      "100% Return of Premium on maturity",
+      "Comprehensive life cover",
+      "Tax benefits"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹50 Lakh"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "100% premiums returned"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹18,000/year approx",
+      "gst": "18%",
+      "discounts": "Annual mode",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-50 years",
+      "Term: 15-30 years"
+    ],
+    "termsAndConditions": [
+      "Survival till end of term required for ROP",
+      "Subject to all premiums paid"
+    ],
+    "claimProcess": [
+      "Maturity claim process",
+      "Submit original policy document"
+    ],
+    "policyId": "plan-gen-42",
+    "score": 80,
+    "reviewsCount": 187,
+    "ratingAverage": 4.7
+  },
+  {
+    "name": "Reliance Nippon Life Guaranteed Savings Plan",
+    "company": "Reliance Nippon Life",
+    "price": 31968,
+    "coverage": 1500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "endowment",
+    "description": "Traditional endowment plan combining life cover with guaranteed maturity benefit and loyalty additions by Reliance Nippon Life.",
+    "benefits": [
+      "Guaranteed returns",
+      "Life cover included",
+      "Loan facility available"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Sum assured + bonuses"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Guaranteed sum + bonuses"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹35,000/year approx",
+      "gst": "4.5% first year",
+      "discounts": "High SA",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Entry age: 0-55 years",
+      "Term: 10-25 years"
+    ],
+    "termsAndConditions": [
+      "Lock-in period applies",
+      "Surrender penalities early on"
+    ],
+    "claimProcess": [
+      "Submit claim form",
+      "Provide NEFT details"
+    ],
+    "policyId": "plan-gen-43",
+    "score": 79,
+    "reviewsCount": 48,
+    "ratingAverage": 3.8
+  },
+  {
+    "name": "Reliance Nippon Life Wealth Plus ULIP",
+    "company": "Reliance Nippon Life",
+    "price": 53344,
+    "coverage": 500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "ulip",
+    "description": "Market-linked investment plan with life cover, offering multiple fund options and tax-free maturity by Reliance Nippon Life.",
+    "benefits": [
+      "Choice of equity/debt funds",
+      "Life cover 10x premium",
+      "Tax-free maturity u/s 10(10D)"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Higher of Fund Value or SA"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Fund Value"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹1,00,000/year",
+      "gst": "18% on charges",
+      "discounts": "Online purchase",
+      "paymentOptions": "Annual, SIP"
+    },
+    "eligibility": [
+      "Entry age: 1 month to 60 years",
+      "Lock-in: 5 years"
+    ],
+    "termsAndConditions": [
+      "Market risk borne by policyholder",
+      "5-year lock-in mandatory"
+    ],
+    "claimProcess": [
+      "Submit surrender/maturity form",
+      "KYC docs required"
+    ],
+    "policyId": "plan-gen-44",
+    "score": 83,
+    "reviewsCount": 198,
+    "ratingAverage": 4.3
+  },
+  {
+    "name": "Aviva Life Smart Term Plan",
+    "company": "Aviva Life",
+    "price": 6273,
+    "coverage": 10000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "term_basic",
+    "description": "Pure term life insurance from Aviva Life offering high life cover at affordable premiums with simplified underwriting.",
+    "benefits": [
+      "High sum assured up to ₹1 Cr",
+      "Simple online purchase",
+      "Tax benefits under Section 80C"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹1 Crore lump sum"
+      },
+      {
+        "label": "Terminal Illness",
+        "value": "Accelerated benefit"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹8,000/year approx",
+      "gst": "18% applicable",
+      "discounts": "Non-smoker, online",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-65 years",
+      "Policy term: 10-40 years"
+    ],
+    "termsAndConditions": [
+      "Suicide exclusion: 12 months",
+      "Free-look: 30 days"
+    ],
+    "claimProcess": [
+      "Contact customer care",
+      "Submit death certificate and forms",
+      "Settled in 30 days"
+    ],
+    "policyId": "plan-gen-45",
+    "score": 91,
+    "reviewsCount": 123,
+    "ratingAverage": 4.3
+  },
+  {
+    "name": "Aviva Life Term with ROP",
+    "company": "Aviva Life",
+    "price": 20908,
+    "coverage": 5000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "return_of_premium",
+    "description": "Get all your premiums back upon survival to maturity along with robust life cover during the term from Aviva Life.",
+    "benefits": [
+      "100% Return of Premium on maturity",
+      "Comprehensive life cover",
+      "Tax benefits"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹50 Lakh"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "100% premiums returned"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹18,000/year approx",
+      "gst": "18%",
+      "discounts": "Annual mode",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-50 years",
+      "Term: 15-30 years"
+    ],
+    "termsAndConditions": [
+      "Survival till end of term required for ROP",
+      "Subject to all premiums paid"
+    ],
+    "claimProcess": [
+      "Maturity claim process",
+      "Submit original policy document"
+    ],
+    "policyId": "plan-gen-46",
+    "score": 75,
+    "reviewsCount": 38,
+    "ratingAverage": 4.7
+  },
+  {
+    "name": "Aviva Life Guaranteed Savings Plan",
+    "company": "Aviva Life",
+    "price": 35831,
+    "coverage": 1500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "endowment",
+    "description": "Traditional endowment plan combining life cover with guaranteed maturity benefit and loyalty additions by Aviva Life.",
+    "benefits": [
+      "Guaranteed returns",
+      "Life cover included",
+      "Loan facility available"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Sum assured + bonuses"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Guaranteed sum + bonuses"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹35,000/year approx",
+      "gst": "4.5% first year",
+      "discounts": "High SA",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Entry age: 0-55 years",
+      "Term: 10-25 years"
+    ],
+    "termsAndConditions": [
+      "Lock-in period applies",
+      "Surrender penalities early on"
+    ],
+    "claimProcess": [
+      "Submit claim form",
+      "Provide NEFT details"
+    ],
+    "policyId": "plan-gen-47",
+    "score": 80,
+    "reviewsCount": 185,
+    "ratingAverage": 4.2
+  },
+  {
+    "name": "Aviva Life Wealth Plus ULIP",
+    "company": "Aviva Life",
+    "price": 52710,
+    "coverage": 500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "ulip",
+    "description": "Market-linked investment plan with life cover, offering multiple fund options and tax-free maturity by Aviva Life.",
+    "benefits": [
+      "Choice of equity/debt funds",
+      "Life cover 10x premium",
+      "Tax-free maturity u/s 10(10D)"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Higher of Fund Value or SA"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Fund Value"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹1,00,000/year",
+      "gst": "18% on charges",
+      "discounts": "Online purchase",
+      "paymentOptions": "Annual, SIP"
+    },
+    "eligibility": [
+      "Entry age: 1 month to 60 years",
+      "Lock-in: 5 years"
+    ],
+    "termsAndConditions": [
+      "Market risk borne by policyholder",
+      "5-year lock-in mandatory"
+    ],
+    "claimProcess": [
+      "Submit surrender/maturity form",
+      "KYC docs required"
+    ],
+    "policyId": "plan-gen-48",
+    "score": 84,
+    "reviewsCount": 112,
+    "ratingAverage": 3.9
+  },
+  {
+    "name": "Edelweiss Tokio Life Smart Term Plan",
+    "company": "Edelweiss Tokio Life",
+    "price": 8674,
+    "coverage": 10000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "term_basic",
+    "description": "Pure term life insurance from Edelweiss Tokio Life offering high life cover at affordable premiums with simplified underwriting.",
+    "benefits": [
+      "High sum assured up to ₹1 Cr",
+      "Simple online purchase",
+      "Tax benefits under Section 80C"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹1 Crore lump sum"
+      },
+      {
+        "label": "Terminal Illness",
+        "value": "Accelerated benefit"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹8,000/year approx",
+      "gst": "18% applicable",
+      "discounts": "Non-smoker, online",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-65 years",
+      "Policy term: 10-40 years"
+    ],
+    "termsAndConditions": [
+      "Suicide exclusion: 12 months",
+      "Free-look: 30 days"
+    ],
+    "claimProcess": [
+      "Contact customer care",
+      "Submit death certificate and forms",
+      "Settled in 30 days"
+    ],
+    "policyId": "plan-gen-49",
+    "score": 87,
+    "reviewsCount": 171,
+    "ratingAverage": 4.6
+  },
+  {
+    "name": "Edelweiss Tokio Life Term with ROP",
+    "company": "Edelweiss Tokio Life",
+    "price": 15739,
+    "coverage": 5000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "return_of_premium",
+    "description": "Get all your premiums back upon survival to maturity along with robust life cover during the term from Edelweiss Tokio Life.",
+    "benefits": [
+      "100% Return of Premium on maturity",
+      "Comprehensive life cover",
+      "Tax benefits"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹50 Lakh"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "100% premiums returned"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹18,000/year approx",
+      "gst": "18%",
+      "discounts": "Annual mode",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-50 years",
+      "Term: 15-30 years"
+    ],
+    "termsAndConditions": [
+      "Survival till end of term required for ROP",
+      "Subject to all premiums paid"
+    ],
+    "claimProcess": [
+      "Maturity claim process",
+      "Submit original policy document"
+    ],
+    "policyId": "plan-gen-50",
+    "score": 87,
+    "reviewsCount": 136,
+    "ratingAverage": 5
+  },
+  {
+    "name": "Edelweiss Tokio Life Guaranteed Savings Plan",
+    "company": "Edelweiss Tokio Life",
+    "price": 46694,
+    "coverage": 1500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "endowment",
+    "description": "Traditional endowment plan combining life cover with guaranteed maturity benefit and loyalty additions by Edelweiss Tokio Life.",
+    "benefits": [
+      "Guaranteed returns",
+      "Life cover included",
+      "Loan facility available"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Sum assured + bonuses"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Guaranteed sum + bonuses"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹35,000/year approx",
+      "gst": "4.5% first year",
+      "discounts": "High SA",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Entry age: 0-55 years",
+      "Term: 10-25 years"
+    ],
+    "termsAndConditions": [
+      "Lock-in period applies",
+      "Surrender penalities early on"
+    ],
+    "claimProcess": [
+      "Submit claim form",
+      "Provide NEFT details"
+    ],
+    "policyId": "plan-gen-51",
+    "score": 80,
+    "reviewsCount": 53,
+    "ratingAverage": 4.7
+  },
+  {
+    "name": "Edelweiss Tokio Life Wealth Plus ULIP",
+    "company": "Edelweiss Tokio Life",
+    "price": 75506,
+    "coverage": 500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "ulip",
+    "description": "Market-linked investment plan with life cover, offering multiple fund options and tax-free maturity by Edelweiss Tokio Life.",
+    "benefits": [
+      "Choice of equity/debt funds",
+      "Life cover 10x premium",
+      "Tax-free maturity u/s 10(10D)"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Higher of Fund Value or SA"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Fund Value"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹1,00,000/year",
+      "gst": "18% on charges",
+      "discounts": "Online purchase",
+      "paymentOptions": "Annual, SIP"
+    },
+    "eligibility": [
+      "Entry age: 1 month to 60 years",
+      "Lock-in: 5 years"
+    ],
+    "termsAndConditions": [
+      "Market risk borne by policyholder",
+      "5-year lock-in mandatory"
+    ],
+    "claimProcess": [
+      "Submit surrender/maturity form",
+      "KYC docs required"
+    ],
+    "policyId": "plan-gen-52",
+    "score": 84,
+    "reviewsCount": 71,
+    "ratingAverage": 3.7
+  },
+  {
+    "name": "Canara HSBC Life Smart Term Plan",
+    "company": "Canara HSBC Life",
+    "price": 8977,
+    "coverage": 10000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "term_basic",
+    "description": "Pure term life insurance from Canara HSBC Life offering high life cover at affordable premiums with simplified underwriting.",
+    "benefits": [
+      "High sum assured up to ₹1 Cr",
+      "Simple online purchase",
+      "Tax benefits under Section 80C"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹1 Crore lump sum"
+      },
+      {
+        "label": "Terminal Illness",
+        "value": "Accelerated benefit"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹8,000/year approx",
+      "gst": "18% applicable",
+      "discounts": "Non-smoker, online",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-65 years",
+      "Policy term: 10-40 years"
+    ],
+    "termsAndConditions": [
+      "Suicide exclusion: 12 months",
+      "Free-look: 30 days"
+    ],
+    "claimProcess": [
+      "Contact customer care",
+      "Submit death certificate and forms",
+      "Settled in 30 days"
+    ],
+    "policyId": "plan-gen-53",
+    "score": 80,
+    "reviewsCount": 50,
+    "ratingAverage": 3.8
+  },
+  {
+    "name": "Canara HSBC Life Term with ROP",
+    "company": "Canara HSBC Life",
+    "price": 20074,
+    "coverage": 5000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "return_of_premium",
+    "description": "Get all your premiums back upon survival to maturity along with robust life cover during the term from Canara HSBC Life.",
+    "benefits": [
+      "100% Return of Premium on maturity",
+      "Comprehensive life cover",
+      "Tax benefits"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹50 Lakh"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "100% premiums returned"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹18,000/year approx",
+      "gst": "18%",
+      "discounts": "Annual mode",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-50 years",
+      "Term: 15-30 years"
+    ],
+    "termsAndConditions": [
+      "Survival till end of term required for ROP",
+      "Subject to all premiums paid"
+    ],
+    "claimProcess": [
+      "Maturity claim process",
+      "Submit original policy document"
+    ],
+    "policyId": "plan-gen-54",
+    "score": 92,
+    "reviewsCount": 40,
+    "ratingAverage": 4.5
+  },
+  {
+    "name": "Canara HSBC Life Guaranteed Savings Plan",
+    "company": "Canara HSBC Life",
+    "price": 48220,
+    "coverage": 1500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "endowment",
+    "description": "Traditional endowment plan combining life cover with guaranteed maturity benefit and loyalty additions by Canara HSBC Life.",
+    "benefits": [
+      "Guaranteed returns",
+      "Life cover included",
+      "Loan facility available"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Sum assured + bonuses"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Guaranteed sum + bonuses"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹35,000/year approx",
+      "gst": "4.5% first year",
+      "discounts": "High SA",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Entry age: 0-55 years",
+      "Term: 10-25 years"
+    ],
+    "termsAndConditions": [
+      "Lock-in period applies",
+      "Surrender penalities early on"
+    ],
+    "claimProcess": [
+      "Submit claim form",
+      "Provide NEFT details"
+    ],
+    "policyId": "plan-gen-55",
+    "score": 88,
+    "reviewsCount": 64,
+    "ratingAverage": 4.2
+  },
+  {
+    "name": "Canara HSBC Life Wealth Plus ULIP",
+    "company": "Canara HSBC Life",
+    "price": 62990,
+    "coverage": 500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "ulip",
+    "description": "Market-linked investment plan with life cover, offering multiple fund options and tax-free maturity by Canara HSBC Life.",
+    "benefits": [
+      "Choice of equity/debt funds",
+      "Life cover 10x premium",
+      "Tax-free maturity u/s 10(10D)"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Higher of Fund Value or SA"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Fund Value"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹1,00,000/year",
+      "gst": "18% on charges",
+      "discounts": "Online purchase",
+      "paymentOptions": "Annual, SIP"
+    },
+    "eligibility": [
+      "Entry age: 1 month to 60 years",
+      "Lock-in: 5 years"
+    ],
+    "termsAndConditions": [
+      "Market risk borne by policyholder",
+      "5-year lock-in mandatory"
+    ],
+    "claimProcess": [
+      "Submit surrender/maturity form",
+      "KYC docs required"
+    ],
+    "policyId": "plan-gen-56",
+    "score": 87,
+    "reviewsCount": 134,
+    "ratingAverage": 4.3
+  },
+  {
+    "name": "IndiaFirst Life Smart Term Plan",
+    "company": "IndiaFirst Life",
+    "price": 8596,
+    "coverage": 10000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "term_basic",
+    "description": "Pure term life insurance from IndiaFirst Life offering high life cover at affordable premiums with simplified underwriting.",
+    "benefits": [
+      "High sum assured up to ₹1 Cr",
+      "Simple online purchase",
+      "Tax benefits under Section 80C"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹1 Crore lump sum"
+      },
+      {
+        "label": "Terminal Illness",
+        "value": "Accelerated benefit"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹8,000/year approx",
+      "gst": "18% applicable",
+      "discounts": "Non-smoker, online",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-65 years",
+      "Policy term: 10-40 years"
+    ],
+    "termsAndConditions": [
+      "Suicide exclusion: 12 months",
+      "Free-look: 30 days"
+    ],
+    "claimProcess": [
+      "Contact customer care",
+      "Submit death certificate and forms",
+      "Settled in 30 days"
+    ],
+    "policyId": "plan-gen-57",
+    "score": 80,
+    "reviewsCount": 43,
+    "ratingAverage": 4.9
+  },
+  {
+    "name": "IndiaFirst Life Term with ROP",
+    "company": "IndiaFirst Life",
+    "price": 20553,
+    "coverage": 5000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "return_of_premium",
+    "description": "Get all your premiums back upon survival to maturity along with robust life cover during the term from IndiaFirst Life.",
+    "benefits": [
+      "100% Return of Premium on maturity",
+      "Comprehensive life cover",
+      "Tax benefits"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹50 Lakh"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "100% premiums returned"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹18,000/year approx",
+      "gst": "18%",
+      "discounts": "Annual mode",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-50 years",
+      "Term: 15-30 years"
+    ],
+    "termsAndConditions": [
+      "Survival till end of term required for ROP",
+      "Subject to all premiums paid"
+    ],
+    "claimProcess": [
+      "Maturity claim process",
+      "Submit original policy document"
+    ],
+    "policyId": "plan-gen-58",
+    "score": 85,
+    "reviewsCount": 73,
+    "ratingAverage": 4.4
+  },
+  {
+    "name": "IndiaFirst Life Guaranteed Savings Plan",
+    "company": "IndiaFirst Life",
+    "price": 35158,
+    "coverage": 1500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "endowment",
+    "description": "Traditional endowment plan combining life cover with guaranteed maturity benefit and loyalty additions by IndiaFirst Life.",
+    "benefits": [
+      "Guaranteed returns",
+      "Life cover included",
+      "Loan facility available"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Sum assured + bonuses"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Guaranteed sum + bonuses"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹35,000/year approx",
+      "gst": "4.5% first year",
+      "discounts": "High SA",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Entry age: 0-55 years",
+      "Term: 10-25 years"
+    ],
+    "termsAndConditions": [
+      "Lock-in period applies",
+      "Surrender penalities early on"
+    ],
+    "claimProcess": [
+      "Submit claim form",
+      "Provide NEFT details"
+    ],
+    "policyId": "plan-gen-59",
+    "score": 81,
+    "reviewsCount": 182,
+    "ratingAverage": 3.6
+  },
+  {
+    "name": "IndiaFirst Life Wealth Plus ULIP",
+    "company": "IndiaFirst Life",
+    "price": 83443,
+    "coverage": 500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "ulip",
+    "description": "Market-linked investment plan with life cover, offering multiple fund options and tax-free maturity by IndiaFirst Life.",
+    "benefits": [
+      "Choice of equity/debt funds",
+      "Life cover 10x premium",
+      "Tax-free maturity u/s 10(10D)"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Higher of Fund Value or SA"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Fund Value"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹1,00,000/year",
+      "gst": "18% on charges",
+      "discounts": "Online purchase",
+      "paymentOptions": "Annual, SIP"
+    },
+    "eligibility": [
+      "Entry age: 1 month to 60 years",
+      "Lock-in: 5 years"
+    ],
+    "termsAndConditions": [
+      "Market risk borne by policyholder",
+      "5-year lock-in mandatory"
+    ],
+    "claimProcess": [
+      "Submit surrender/maturity form",
+      "KYC docs required"
+    ],
+    "policyId": "plan-gen-60",
+    "score": 95,
+    "reviewsCount": 139,
+    "ratingAverage": 4.2
+  },
+  {
+    "name": "Bandhan Life Smart Term Plan",
+    "company": "Bandhan Life",
+    "price": 6210,
+    "coverage": 10000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "term_basic",
+    "description": "Pure term life insurance from Bandhan Life offering high life cover at affordable premiums with simplified underwriting.",
+    "benefits": [
+      "High sum assured up to ₹1 Cr",
+      "Simple online purchase",
+      "Tax benefits under Section 80C"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹1 Crore lump sum"
+      },
+      {
+        "label": "Terminal Illness",
+        "value": "Accelerated benefit"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹8,000/year approx",
+      "gst": "18% applicable",
+      "discounts": "Non-smoker, online",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-65 years",
+      "Policy term: 10-40 years"
+    ],
+    "termsAndConditions": [
+      "Suicide exclusion: 12 months",
+      "Free-look: 30 days"
+    ],
+    "claimProcess": [
+      "Contact customer care",
+      "Submit death certificate and forms",
+      "Settled in 30 days"
+    ],
+    "policyId": "plan-gen-61",
+    "score": 86,
+    "reviewsCount": 112,
+    "ratingAverage": 4.5
+  },
+  {
+    "name": "Bandhan Life Term with ROP",
+    "company": "Bandhan Life",
+    "price": 17301,
+    "coverage": 5000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "return_of_premium",
+    "description": "Get all your premiums back upon survival to maturity along with robust life cover during the term from Bandhan Life.",
+    "benefits": [
+      "100% Return of Premium on maturity",
+      "Comprehensive life cover",
+      "Tax benefits"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹50 Lakh"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "100% premiums returned"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹18,000/year approx",
+      "gst": "18%",
+      "discounts": "Annual mode",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-50 years",
+      "Term: 15-30 years"
+    ],
+    "termsAndConditions": [
+      "Survival till end of term required for ROP",
+      "Subject to all premiums paid"
+    ],
+    "claimProcess": [
+      "Maturity claim process",
+      "Submit original policy document"
+    ],
+    "policyId": "plan-gen-62",
+    "score": 81,
+    "reviewsCount": 37,
+    "ratingAverage": 4.8
+  },
+  {
+    "name": "Bandhan Life Guaranteed Savings Plan",
+    "company": "Bandhan Life",
+    "price": 48276,
+    "coverage": 1500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "endowment",
+    "description": "Traditional endowment plan combining life cover with guaranteed maturity benefit and loyalty additions by Bandhan Life.",
+    "benefits": [
+      "Guaranteed returns",
+      "Life cover included",
+      "Loan facility available"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Sum assured + bonuses"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Guaranteed sum + bonuses"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹35,000/year approx",
+      "gst": "4.5% first year",
+      "discounts": "High SA",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Entry age: 0-55 years",
+      "Term: 10-25 years"
+    ],
+    "termsAndConditions": [
+      "Lock-in period applies",
+      "Surrender penalities early on"
+    ],
+    "claimProcess": [
+      "Submit claim form",
+      "Provide NEFT details"
+    ],
+    "policyId": "plan-gen-63",
+    "score": 84,
+    "reviewsCount": 154,
+    "ratingAverage": 4.4
+  },
+  {
+    "name": "Bandhan Life Wealth Plus ULIP",
+    "company": "Bandhan Life",
+    "price": 59545,
+    "coverage": 500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "ulip",
+    "description": "Market-linked investment plan with life cover, offering multiple fund options and tax-free maturity by Bandhan Life.",
+    "benefits": [
+      "Choice of equity/debt funds",
+      "Life cover 10x premium",
+      "Tax-free maturity u/s 10(10D)"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Higher of Fund Value or SA"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Fund Value"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹1,00,000/year",
+      "gst": "18% on charges",
+      "discounts": "Online purchase",
+      "paymentOptions": "Annual, SIP"
+    },
+    "eligibility": [
+      "Entry age: 1 month to 60 years",
+      "Lock-in: 5 years"
+    ],
+    "termsAndConditions": [
+      "Market risk borne by policyholder",
+      "5-year lock-in mandatory"
+    ],
+    "claimProcess": [
+      "Submit surrender/maturity form",
+      "KYC docs required"
+    ],
+    "policyId": "plan-gen-64",
+    "score": 87,
+    "reviewsCount": 68,
+    "ratingAverage": 4.1
+  },
+  {
+    "name": "Acko Life Smart Term Plan",
+    "company": "Acko Life",
+    "price": 7001,
+    "coverage": 10000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "term_basic",
+    "description": "Pure term life insurance from Acko Life offering high life cover at affordable premiums with simplified underwriting.",
+    "benefits": [
+      "High sum assured up to ₹1 Cr",
+      "Simple online purchase",
+      "Tax benefits under Section 80C"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹1 Crore lump sum"
+      },
+      {
+        "label": "Terminal Illness",
+        "value": "Accelerated benefit"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹8,000/year approx",
+      "gst": "18% applicable",
+      "discounts": "Non-smoker, online",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-65 years",
+      "Policy term: 10-40 years"
+    ],
+    "termsAndConditions": [
+      "Suicide exclusion: 12 months",
+      "Free-look: 30 days"
+    ],
+    "claimProcess": [
+      "Contact customer care",
+      "Submit death certificate and forms",
+      "Settled in 30 days"
+    ],
+    "policyId": "plan-gen-65",
+    "score": 79,
+    "reviewsCount": 65,
+    "ratingAverage": 5
+  },
+  {
+    "name": "Acko Life Term with ROP",
+    "company": "Acko Life",
+    "price": 17227,
+    "coverage": 5000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "return_of_premium",
+    "description": "Get all your premiums back upon survival to maturity along with robust life cover during the term from Acko Life.",
+    "benefits": [
+      "100% Return of Premium on maturity",
+      "Comprehensive life cover",
+      "Tax benefits"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹50 Lakh"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "100% premiums returned"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹18,000/year approx",
+      "gst": "18%",
+      "discounts": "Annual mode",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-50 years",
+      "Term: 15-30 years"
+    ],
+    "termsAndConditions": [
+      "Survival till end of term required for ROP",
+      "Subject to all premiums paid"
+    ],
+    "claimProcess": [
+      "Maturity claim process",
+      "Submit original policy document"
+    ],
+    "policyId": "plan-gen-66",
+    "score": 76,
+    "reviewsCount": 196,
+    "ratingAverage": 4.3
+  },
+  {
+    "name": "Acko Life Guaranteed Savings Plan",
+    "company": "Acko Life",
+    "price": 42774,
+    "coverage": 1500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "endowment",
+    "description": "Traditional endowment plan combining life cover with guaranteed maturity benefit and loyalty additions by Acko Life.",
+    "benefits": [
+      "Guaranteed returns",
+      "Life cover included",
+      "Loan facility available"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Sum assured + bonuses"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Guaranteed sum + bonuses"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹35,000/year approx",
+      "gst": "4.5% first year",
+      "discounts": "High SA",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Entry age: 0-55 years",
+      "Term: 10-25 years"
+    ],
+    "termsAndConditions": [
+      "Lock-in period applies",
+      "Surrender penalities early on"
+    ],
+    "claimProcess": [
+      "Submit claim form",
+      "Provide NEFT details"
+    ],
+    "policyId": "plan-gen-67",
+    "score": 88,
+    "reviewsCount": 176,
+    "ratingAverage": 4.8
+  },
+  {
+    "name": "Acko Life Wealth Plus ULIP",
+    "company": "Acko Life",
+    "price": 92389,
+    "coverage": 500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "ulip",
+    "description": "Market-linked investment plan with life cover, offering multiple fund options and tax-free maturity by Acko Life.",
+    "benefits": [
+      "Choice of equity/debt funds",
+      "Life cover 10x premium",
+      "Tax-free maturity u/s 10(10D)"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Higher of Fund Value or SA"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Fund Value"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹1,00,000/year",
+      "gst": "18% on charges",
+      "discounts": "Online purchase",
+      "paymentOptions": "Annual, SIP"
+    },
+    "eligibility": [
+      "Entry age: 1 month to 60 years",
+      "Lock-in: 5 years"
+    ],
+    "termsAndConditions": [
+      "Market risk borne by policyholder",
+      "5-year lock-in mandatory"
+    ],
+    "claimProcess": [
+      "Submit surrender/maturity form",
+      "KYC docs required"
+    ],
+    "policyId": "plan-gen-68",
+    "score": 91,
+    "reviewsCount": 203,
+    "ratingAverage": 4.7
+  },
+  {
+    "name": "Go Digit Life Smart Term Plan",
+    "company": "Go Digit Life",
+    "price": 8716,
+    "coverage": 10000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "term_basic",
+    "description": "Pure term life insurance from Go Digit Life offering high life cover at affordable premiums with simplified underwriting.",
+    "benefits": [
+      "High sum assured up to ₹1 Cr",
+      "Simple online purchase",
+      "Tax benefits under Section 80C"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹1 Crore lump sum"
+      },
+      {
+        "label": "Terminal Illness",
+        "value": "Accelerated benefit"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹8,000/year approx",
+      "gst": "18% applicable",
+      "discounts": "Non-smoker, online",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-65 years",
+      "Policy term: 10-40 years"
+    ],
+    "termsAndConditions": [
+      "Suicide exclusion: 12 months",
+      "Free-look: 30 days"
+    ],
+    "claimProcess": [
+      "Contact customer care",
+      "Submit death certificate and forms",
+      "Settled in 30 days"
+    ],
+    "policyId": "plan-gen-69",
+    "score": 85,
+    "reviewsCount": 33,
+    "ratingAverage": 4.1
+  },
+  {
+    "name": "Go Digit Life Term with ROP",
+    "company": "Go Digit Life",
+    "price": 16789,
+    "coverage": 5000000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "return_of_premium",
+    "description": "Get all your premiums back upon survival to maturity along with robust life cover during the term from Go Digit Life.",
+    "benefits": [
+      "100% Return of Premium on maturity",
+      "Comprehensive life cover",
+      "Tax benefits"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "₹50 Lakh"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "100% premiums returned"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹18,000/year approx",
+      "gst": "18%",
+      "discounts": "Annual mode",
+      "paymentOptions": "Annual, Monthly"
+    },
+    "eligibility": [
+      "Entry age: 18-50 years",
+      "Term: 15-30 years"
+    ],
+    "termsAndConditions": [
+      "Survival till end of term required for ROP",
+      "Subject to all premiums paid"
+    ],
+    "claimProcess": [
+      "Maturity claim process",
+      "Submit original policy document"
+    ],
+    "policyId": "plan-gen-70",
+    "score": 89,
+    "reviewsCount": 178,
+    "ratingAverage": 4.4
+  },
+  {
+    "name": "Go Digit Life Guaranteed Savings Plan",
+    "company": "Go Digit Life",
+    "price": 41602,
+    "coverage": 1500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "endowment",
+    "description": "Traditional endowment plan combining life cover with guaranteed maturity benefit and loyalty additions by Go Digit Life.",
+    "benefits": [
+      "Guaranteed returns",
+      "Life cover included",
+      "Loan facility available"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Sum assured + bonuses"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Guaranteed sum + bonuses"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹35,000/year approx",
+      "gst": "4.5% first year",
+      "discounts": "High SA",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Entry age: 0-55 years",
+      "Term: 10-25 years"
+    ],
+    "termsAndConditions": [
+      "Lock-in period applies",
+      "Surrender penalities early on"
+    ],
+    "claimProcess": [
+      "Submit claim form",
+      "Provide NEFT details"
+    ],
+    "policyId": "plan-gen-71",
+    "score": 87,
+    "reviewsCount": 25,
+    "ratingAverage": 3.5
+  },
+  {
+    "name": "Go Digit Life Wealth Plus ULIP",
+    "company": "Go Digit Life",
+    "price": 54613,
+    "coverage": 500000,
+    "category": "life",
+    "segment": "life",
+    "subtype": "ulip",
+    "description": "Market-linked investment plan with life cover, offering multiple fund options and tax-free maturity by Go Digit Life.",
+    "benefits": [
+      "Choice of equity/debt funds",
+      "Life cover 10x premium",
+      "Tax-free maturity u/s 10(10D)"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Death Benefit",
+        "value": "Higher of Fund Value or SA"
+      },
+      {
+        "label": "Maturity Benefit",
+        "value": "Fund Value"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹1,00,000/year",
+      "gst": "18% on charges",
+      "discounts": "Online purchase",
+      "paymentOptions": "Annual, SIP"
+    },
+    "eligibility": [
+      "Entry age: 1 month to 60 years",
+      "Lock-in: 5 years"
+    ],
+    "termsAndConditions": [
+      "Market risk borne by policyholder",
+      "5-year lock-in mandatory"
+    ],
+    "claimProcess": [
+      "Submit surrender/maturity form",
+      "KYC docs required"
+    ],
+    "policyId": "plan-gen-72",
+    "score": 95,
+    "reviewsCount": 27,
+    "ratingAverage": 4.8
+  },
+  {
+    "name": "Star Health Health Care Individual",
+    "company": "Star Health",
+    "price": 10048,
+    "coverage": 500000,
+    "category": "health",
+    "segment": "health",
+    "subtype": "individual_health",
+    "description": "Comprehensive health coverage for individuals including hospitalisation, day care, and wellness benefits.",
+    "benefits": [
+      "Cashless network hospitals",
+      "No room rent capping",
+      "Annual health checkup"
+    ],
+    "coverageDetails": [
+      {
+        "label": "In-patient",
+        "value": "Up to SA"
+      },
+      {
+        "label": "Pre/Post Hospitalization",
+        "value": "60/180 days"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹9,500/year approx",
+      "gst": "18%",
+      "discounts": "Healthy lifestyle",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Entry age: 18-65 years"
+    ],
+    "termsAndConditions": [
+      "Waiting periods apply"
+    ],
+    "claimProcess": [
+      "Cashless via TPA"
+    ],
+    "policyId": "plan-gen-73",
+    "score": 77,
+    "reviewsCount": 186,
+    "ratingAverage": 3.5
+  },
+  {
+    "name": "Star Health Family Shield",
+    "company": "Star Health",
+    "price": 15483,
+    "coverage": 1000000,
+    "category": "health",
+    "segment": "health",
+    "subtype": "family_floater",
+    "description": "One policy for the whole family covering parents and children with high sum insured and maternity cover.",
+    "benefits": [
+      "Cover for up to 6 members",
+      "Maternity benefit",
+      "Automatic restoration"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Hospitalization",
+        "value": "Shared SA ₹10 Lakh"
+      },
+      {
+        "label": "Maternity",
+        "value": "Up to ₹50k"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹18,000/year approx",
+      "gst": "18%",
+      "discounts": "Online discount",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Family of 2A+4C max"
+    ],
+    "termsAndConditions": [
+      "Maternity waiting period 2 yrs"
+    ],
+    "claimProcess": [
+      "Cashless via App"
+    ],
+    "policyId": "plan-gen-74",
+    "score": 94,
+    "reviewsCount": 91,
+    "ratingAverage": 3.9
+  },
+  {
+    "name": "Niva Bupa Health Care Individual",
+    "company": "Niva Bupa",
+    "price": 8171,
+    "coverage": 500000,
+    "category": "health",
+    "segment": "health",
+    "subtype": "individual_health",
+    "description": "Comprehensive health coverage for individuals including hospitalisation, day care, and wellness benefits.",
+    "benefits": [
+      "Cashless network hospitals",
+      "No room rent capping",
+      "Annual health checkup"
+    ],
+    "coverageDetails": [
+      {
+        "label": "In-patient",
+        "value": "Up to SA"
+      },
+      {
+        "label": "Pre/Post Hospitalization",
+        "value": "60/180 days"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹9,500/year approx",
+      "gst": "18%",
+      "discounts": "Healthy lifestyle",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Entry age: 18-65 years"
+    ],
+    "termsAndConditions": [
+      "Waiting periods apply"
+    ],
+    "claimProcess": [
+      "Cashless via TPA"
+    ],
+    "policyId": "plan-gen-75",
+    "score": 82,
+    "reviewsCount": 57,
+    "ratingAverage": 4.4
+  },
+  {
+    "name": "Niva Bupa Family Shield",
+    "company": "Niva Bupa",
+    "price": 20988,
+    "coverage": 1000000,
+    "category": "health",
+    "segment": "health",
+    "subtype": "family_floater",
+    "description": "One policy for the whole family covering parents and children with high sum insured and maternity cover.",
+    "benefits": [
+      "Cover for up to 6 members",
+      "Maternity benefit",
+      "Automatic restoration"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Hospitalization",
+        "value": "Shared SA ₹10 Lakh"
+      },
+      {
+        "label": "Maternity",
+        "value": "Up to ₹50k"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹18,000/year approx",
+      "gst": "18%",
+      "discounts": "Online discount",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Family of 2A+4C max"
+    ],
+    "termsAndConditions": [
+      "Maternity waiting period 2 yrs"
+    ],
+    "claimProcess": [
+      "Cashless via App"
+    ],
+    "policyId": "plan-gen-76",
+    "score": 79,
+    "reviewsCount": 203,
+    "ratingAverage": 3.9
+  },
+  {
+    "name": "Care Health Health Care Individual",
+    "company": "Care Health",
+    "price": 11862,
+    "coverage": 500000,
+    "category": "health",
+    "segment": "health",
+    "subtype": "individual_health",
+    "description": "Comprehensive health coverage for individuals including hospitalisation, day care, and wellness benefits.",
+    "benefits": [
+      "Cashless network hospitals",
+      "No room rent capping",
+      "Annual health checkup"
+    ],
+    "coverageDetails": [
+      {
+        "label": "In-patient",
+        "value": "Up to SA"
+      },
+      {
+        "label": "Pre/Post Hospitalization",
+        "value": "60/180 days"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹9,500/year approx",
+      "gst": "18%",
+      "discounts": "Healthy lifestyle",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Entry age: 18-65 years"
+    ],
+    "termsAndConditions": [
+      "Waiting periods apply"
+    ],
+    "claimProcess": [
+      "Cashless via TPA"
+    ],
+    "policyId": "plan-gen-77",
+    "score": 88,
+    "reviewsCount": 103,
+    "ratingAverage": 3.9
+  },
+  {
+    "name": "Care Health Family Shield",
+    "company": "Care Health",
+    "price": 16815,
+    "coverage": 1000000,
+    "category": "health",
+    "segment": "health",
+    "subtype": "family_floater",
+    "description": "One policy for the whole family covering parents and children with high sum insured and maternity cover.",
+    "benefits": [
+      "Cover for up to 6 members",
+      "Maternity benefit",
+      "Automatic restoration"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Hospitalization",
+        "value": "Shared SA ₹10 Lakh"
+      },
+      {
+        "label": "Maternity",
+        "value": "Up to ₹50k"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹18,000/year approx",
+      "gst": "18%",
+      "discounts": "Online discount",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Family of 2A+4C max"
+    ],
+    "termsAndConditions": [
+      "Maternity waiting period 2 yrs"
+    ],
+    "claimProcess": [
+      "Cashless via App"
+    ],
+    "policyId": "plan-gen-78",
+    "score": 83,
+    "reviewsCount": 10,
+    "ratingAverage": 3.8
+  },
+  {
+    "name": "HDFC ERGO Health Care Individual",
+    "company": "HDFC ERGO",
+    "price": 10511,
+    "coverage": 500000,
+    "category": "health",
+    "segment": "health",
+    "subtype": "individual_health",
+    "description": "Comprehensive health coverage for individuals including hospitalisation, day care, and wellness benefits.",
+    "benefits": [
+      "Cashless network hospitals",
+      "No room rent capping",
+      "Annual health checkup"
+    ],
+    "coverageDetails": [
+      {
+        "label": "In-patient",
+        "value": "Up to SA"
+      },
+      {
+        "label": "Pre/Post Hospitalization",
+        "value": "60/180 days"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹9,500/year approx",
+      "gst": "18%",
+      "discounts": "Healthy lifestyle",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Entry age: 18-65 years"
+    ],
+    "termsAndConditions": [
+      "Waiting periods apply"
+    ],
+    "claimProcess": [
+      "Cashless via TPA"
+    ],
+    "policyId": "plan-gen-79",
+    "score": 76,
+    "reviewsCount": 80,
+    "ratingAverage": 4.9
+  },
+  {
+    "name": "HDFC ERGO Family Shield",
+    "company": "HDFC ERGO",
+    "price": 15549,
+    "coverage": 1000000,
+    "category": "health",
+    "segment": "health",
+    "subtype": "family_floater",
+    "description": "One policy for the whole family covering parents and children with high sum insured and maternity cover.",
+    "benefits": [
+      "Cover for up to 6 members",
+      "Maternity benefit",
+      "Automatic restoration"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Hospitalization",
+        "value": "Shared SA ₹10 Lakh"
+      },
+      {
+        "label": "Maternity",
+        "value": "Up to ₹50k"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹18,000/year approx",
+      "gst": "18%",
+      "discounts": "Online discount",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Family of 2A+4C max"
+    ],
+    "termsAndConditions": [
+      "Maternity waiting period 2 yrs"
+    ],
+    "claimProcess": [
+      "Cashless via App"
+    ],
+    "policyId": "plan-gen-80",
+    "score": 83,
+    "reviewsCount": 47,
+    "ratingAverage": 3.9
+  },
+  {
+    "name": "ICICI Lombard Health Care Individual",
+    "company": "ICICI Lombard",
+    "price": 11169,
+    "coverage": 500000,
+    "category": "health",
+    "segment": "health",
+    "subtype": "individual_health",
+    "description": "Comprehensive health coverage for individuals including hospitalisation, day care, and wellness benefits.",
+    "benefits": [
+      "Cashless network hospitals",
+      "No room rent capping",
+      "Annual health checkup"
+    ],
+    "coverageDetails": [
+      {
+        "label": "In-patient",
+        "value": "Up to SA"
+      },
+      {
+        "label": "Pre/Post Hospitalization",
+        "value": "60/180 days"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹9,500/year approx",
+      "gst": "18%",
+      "discounts": "Healthy lifestyle",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Entry age: 18-65 years"
+    ],
+    "termsAndConditions": [
+      "Waiting periods apply"
+    ],
+    "claimProcess": [
+      "Cashless via TPA"
+    ],
+    "policyId": "plan-gen-81",
+    "score": 76,
+    "reviewsCount": 58,
+    "ratingAverage": 4.5
+  },
+  {
+    "name": "ICICI Lombard Family Shield",
+    "company": "ICICI Lombard",
+    "price": 20132,
+    "coverage": 1000000,
+    "category": "health",
+    "segment": "health",
+    "subtype": "family_floater",
+    "description": "One policy for the whole family covering parents and children with high sum insured and maternity cover.",
+    "benefits": [
+      "Cover for up to 6 members",
+      "Maternity benefit",
+      "Automatic restoration"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Hospitalization",
+        "value": "Shared SA ₹10 Lakh"
+      },
+      {
+        "label": "Maternity",
+        "value": "Up to ₹50k"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹18,000/year approx",
+      "gst": "18%",
+      "discounts": "Online discount",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Family of 2A+4C max"
+    ],
+    "termsAndConditions": [
+      "Maternity waiting period 2 yrs"
+    ],
+    "claimProcess": [
+      "Cashless via App"
+    ],
+    "policyId": "plan-gen-82",
+    "score": 81,
+    "reviewsCount": 105,
+    "ratingAverage": 4.8
+  },
+  {
+    "name": "Bajaj Allianz Health Care Individual",
+    "company": "Bajaj Allianz",
+    "price": 11972,
+    "coverage": 500000,
+    "category": "health",
+    "segment": "health",
+    "subtype": "individual_health",
+    "description": "Comprehensive health coverage for individuals including hospitalisation, day care, and wellness benefits.",
+    "benefits": [
+      "Cashless network hospitals",
+      "No room rent capping",
+      "Annual health checkup"
+    ],
+    "coverageDetails": [
+      {
+        "label": "In-patient",
+        "value": "Up to SA"
+      },
+      {
+        "label": "Pre/Post Hospitalization",
+        "value": "60/180 days"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹9,500/year approx",
+      "gst": "18%",
+      "discounts": "Healthy lifestyle",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Entry age: 18-65 years"
+    ],
+    "termsAndConditions": [
+      "Waiting periods apply"
+    ],
+    "claimProcess": [
+      "Cashless via TPA"
+    ],
+    "policyId": "plan-gen-83",
+    "score": 83,
+    "reviewsCount": 27,
+    "ratingAverage": 4.4
+  },
+  {
+    "name": "Bajaj Allianz Family Shield",
+    "company": "Bajaj Allianz",
+    "price": 21758,
+    "coverage": 1000000,
+    "category": "health",
+    "segment": "health",
+    "subtype": "family_floater",
+    "description": "One policy for the whole family covering parents and children with high sum insured and maternity cover.",
+    "benefits": [
+      "Cover for up to 6 members",
+      "Maternity benefit",
+      "Automatic restoration"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Hospitalization",
+        "value": "Shared SA ₹10 Lakh"
+      },
+      {
+        "label": "Maternity",
+        "value": "Up to ₹50k"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹18,000/year approx",
+      "gst": "18%",
+      "discounts": "Online discount",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Family of 2A+4C max"
+    ],
+    "termsAndConditions": [
+      "Maternity waiting period 2 yrs"
+    ],
+    "claimProcess": [
+      "Cashless via App"
+    ],
+    "policyId": "plan-gen-84",
+    "score": 80,
+    "reviewsCount": 139,
+    "ratingAverage": 4.8
+  },
+  {
+    "name": "Tata AIG Health Care Individual",
+    "company": "Tata AIG",
+    "price": 8009,
+    "coverage": 500000,
+    "category": "health",
+    "segment": "health",
+    "subtype": "individual_health",
+    "description": "Comprehensive health coverage for individuals including hospitalisation, day care, and wellness benefits.",
+    "benefits": [
+      "Cashless network hospitals",
+      "No room rent capping",
+      "Annual health checkup"
+    ],
+    "coverageDetails": [
+      {
+        "label": "In-patient",
+        "value": "Up to SA"
+      },
+      {
+        "label": "Pre/Post Hospitalization",
+        "value": "60/180 days"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹9,500/year approx",
+      "gst": "18%",
+      "discounts": "Healthy lifestyle",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Entry age: 18-65 years"
+    ],
+    "termsAndConditions": [
+      "Waiting periods apply"
+    ],
+    "claimProcess": [
+      "Cashless via TPA"
+    ],
+    "policyId": "plan-gen-85",
+    "score": 82,
+    "reviewsCount": 14,
+    "ratingAverage": 4.4
+  },
+  {
+    "name": "Tata AIG Family Shield",
+    "company": "Tata AIG",
+    "price": 21231,
+    "coverage": 1000000,
+    "category": "health",
+    "segment": "health",
+    "subtype": "family_floater",
+    "description": "One policy for the whole family covering parents and children with high sum insured and maternity cover.",
+    "benefits": [
+      "Cover for up to 6 members",
+      "Maternity benefit",
+      "Automatic restoration"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Hospitalization",
+        "value": "Shared SA ₹10 Lakh"
+      },
+      {
+        "label": "Maternity",
+        "value": "Up to ₹50k"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹18,000/year approx",
+      "gst": "18%",
+      "discounts": "Online discount",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Family of 2A+4C max"
+    ],
+    "termsAndConditions": [
+      "Maternity waiting period 2 yrs"
+    ],
+    "claimProcess": [
+      "Cashless via App"
+    ],
+    "policyId": "plan-gen-86",
+    "score": 79,
+    "reviewsCount": 81,
+    "ratingAverage": 4.2
+  },
+  {
+    "name": "ICICI Lombard Car Protect",
+    "company": "ICICI Lombard",
+    "price": 18202,
+    "coverage": 800000,
+    "category": "car",
+    "segment": "general",
+    "subtype": "comprehensive_car",
+    "description": "Complete protection for your car against accidents, theft, fire, and third-party liabilities.",
+    "benefits": [
+      "Own damage cover",
+      "Third party liability",
+      "Cashless garages"
+    ],
+    "coverageDetails": [
+      {
+        "label": "OD",
+        "value": "Up to IDV"
+      },
+      {
+        "label": "TP",
+        "value": "Unlimited liability"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹15,000/year approx",
+      "gst": "18%",
+      "discounts": "NCB up to 50%",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Valid RC and DL"
+    ],
+    "termsAndConditions": [
+      "Deductible applies"
+    ],
+    "claimProcess": [
+      "Surveyor inspection"
+    ],
+    "policyId": "plan-gen-87",
+    "score": 82,
+    "reviewsCount": 105,
+    "ratingAverage": 4.3
+  },
+  {
+    "name": "ICICI Lombard Two-Wheeler Guard",
+    "company": "ICICI Lombard",
+    "price": 2946,
+    "coverage": 80000,
+    "category": "bike",
+    "segment": "general",
+    "subtype": "comprehensive_bike",
+    "description": "Affordable comprehensive cover for your two-wheeler against damage, theft, and third-party claims.",
+    "benefits": [
+      "Own damage",
+      "Third party liability"
+    ],
+    "coverageDetails": [
+      {
+        "label": "OD",
+        "value": "Up to IDV"
+      },
+      {
+        "label": "TP",
+        "value": "Unlimited liability"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹2,000/year approx",
+      "gst": "18%",
+      "discounts": "NCB",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Valid RC"
+    ],
+    "termsAndConditions": [
+      "Wear & tear excluded"
+    ],
+    "claimProcess": [
+      "Cashless at network"
+    ],
+    "policyId": "plan-gen-88",
+    "score": 94,
+    "reviewsCount": 190,
+    "ratingAverage": 5
+  },
+  {
+    "name": "HDFC ERGO Car Protect",
+    "company": "HDFC ERGO",
+    "price": 17013,
+    "coverage": 800000,
+    "category": "car",
+    "segment": "general",
+    "subtype": "comprehensive_car",
+    "description": "Complete protection for your car against accidents, theft, fire, and third-party liabilities.",
+    "benefits": [
+      "Own damage cover",
+      "Third party liability",
+      "Cashless garages"
+    ],
+    "coverageDetails": [
+      {
+        "label": "OD",
+        "value": "Up to IDV"
+      },
+      {
+        "label": "TP",
+        "value": "Unlimited liability"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹15,000/year approx",
+      "gst": "18%",
+      "discounts": "NCB up to 50%",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Valid RC and DL"
+    ],
+    "termsAndConditions": [
+      "Deductible applies"
+    ],
+    "claimProcess": [
+      "Surveyor inspection"
+    ],
+    "policyId": "plan-gen-89",
+    "score": 76,
+    "reviewsCount": 10,
+    "ratingAverage": 4
+  },
+  {
+    "name": "HDFC ERGO Two-Wheeler Guard",
+    "company": "HDFC ERGO",
+    "price": 1745,
+    "coverage": 80000,
+    "category": "bike",
+    "segment": "general",
+    "subtype": "comprehensive_bike",
+    "description": "Affordable comprehensive cover for your two-wheeler against damage, theft, and third-party claims.",
+    "benefits": [
+      "Own damage",
+      "Third party liability"
+    ],
+    "coverageDetails": [
+      {
+        "label": "OD",
+        "value": "Up to IDV"
+      },
+      {
+        "label": "TP",
+        "value": "Unlimited liability"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹2,000/year approx",
+      "gst": "18%",
+      "discounts": "NCB",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Valid RC"
+    ],
+    "termsAndConditions": [
+      "Wear & tear excluded"
+    ],
+    "claimProcess": [
+      "Cashless at network"
+    ],
+    "policyId": "plan-gen-90",
+    "score": 84,
+    "reviewsCount": 29,
+    "ratingAverage": 4.3
+  },
+  {
+    "name": "Bajaj Allianz Car Protect",
+    "company": "Bajaj Allianz",
+    "price": 13250,
+    "coverage": 800000,
+    "category": "car",
+    "segment": "general",
+    "subtype": "comprehensive_car",
+    "description": "Complete protection for your car against accidents, theft, fire, and third-party liabilities.",
+    "benefits": [
+      "Own damage cover",
+      "Third party liability",
+      "Cashless garages"
+    ],
+    "coverageDetails": [
+      {
+        "label": "OD",
+        "value": "Up to IDV"
+      },
+      {
+        "label": "TP",
+        "value": "Unlimited liability"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹15,000/year approx",
+      "gst": "18%",
+      "discounts": "NCB up to 50%",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Valid RC and DL"
+    ],
+    "termsAndConditions": [
+      "Deductible applies"
+    ],
+    "claimProcess": [
+      "Surveyor inspection"
+    ],
+    "policyId": "plan-gen-91",
+    "score": 95,
+    "reviewsCount": 192,
+    "ratingAverage": 4.5
+  },
+  {
+    "name": "Bajaj Allianz Two-Wheeler Guard",
+    "company": "Bajaj Allianz",
+    "price": 2353,
+    "coverage": 80000,
+    "category": "bike",
+    "segment": "general",
+    "subtype": "comprehensive_bike",
+    "description": "Affordable comprehensive cover for your two-wheeler against damage, theft, and third-party claims.",
+    "benefits": [
+      "Own damage",
+      "Third party liability"
+    ],
+    "coverageDetails": [
+      {
+        "label": "OD",
+        "value": "Up to IDV"
+      },
+      {
+        "label": "TP",
+        "value": "Unlimited liability"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹2,000/year approx",
+      "gst": "18%",
+      "discounts": "NCB",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Valid RC"
+    ],
+    "termsAndConditions": [
+      "Wear & tear excluded"
+    ],
+    "claimProcess": [
+      "Cashless at network"
+    ],
+    "policyId": "plan-gen-92",
+    "score": 85,
+    "reviewsCount": 24,
+    "ratingAverage": 4.8
+  },
+  {
+    "name": "Tata AIG Car Protect",
+    "company": "Tata AIG",
+    "price": 14910,
+    "coverage": 800000,
+    "category": "car",
+    "segment": "general",
+    "subtype": "comprehensive_car",
+    "description": "Complete protection for your car against accidents, theft, fire, and third-party liabilities.",
+    "benefits": [
+      "Own damage cover",
+      "Third party liability",
+      "Cashless garages"
+    ],
+    "coverageDetails": [
+      {
+        "label": "OD",
+        "value": "Up to IDV"
+      },
+      {
+        "label": "TP",
+        "value": "Unlimited liability"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹15,000/year approx",
+      "gst": "18%",
+      "discounts": "NCB up to 50%",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Valid RC and DL"
+    ],
+    "termsAndConditions": [
+      "Deductible applies"
+    ],
+    "claimProcess": [
+      "Surveyor inspection"
+    ],
+    "policyId": "plan-gen-93",
+    "score": 93,
+    "reviewsCount": 7,
+    "ratingAverage": 4.5
+  },
+  {
+    "name": "Tata AIG Two-Wheeler Guard",
+    "company": "Tata AIG",
+    "price": 1939,
+    "coverage": 80000,
+    "category": "bike",
+    "segment": "general",
+    "subtype": "comprehensive_bike",
+    "description": "Affordable comprehensive cover for your two-wheeler against damage, theft, and third-party claims.",
+    "benefits": [
+      "Own damage",
+      "Third party liability"
+    ],
+    "coverageDetails": [
+      {
+        "label": "OD",
+        "value": "Up to IDV"
+      },
+      {
+        "label": "TP",
+        "value": "Unlimited liability"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹2,000/year approx",
+      "gst": "18%",
+      "discounts": "NCB",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Valid RC"
+    ],
+    "termsAndConditions": [
+      "Wear & tear excluded"
+    ],
+    "claimProcess": [
+      "Cashless at network"
+    ],
+    "policyId": "plan-gen-94",
+    "score": 88,
+    "reviewsCount": 31,
+    "ratingAverage": 4
+  },
+  {
+    "name": "New India Assurance Car Protect",
+    "company": "New India Assurance",
+    "price": 16308,
+    "coverage": 800000,
+    "category": "car",
+    "segment": "general",
+    "subtype": "comprehensive_car",
+    "description": "Complete protection for your car against accidents, theft, fire, and third-party liabilities.",
+    "benefits": [
+      "Own damage cover",
+      "Third party liability",
+      "Cashless garages"
+    ],
+    "coverageDetails": [
+      {
+        "label": "OD",
+        "value": "Up to IDV"
+      },
+      {
+        "label": "TP",
+        "value": "Unlimited liability"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹15,000/year approx",
+      "gst": "18%",
+      "discounts": "NCB up to 50%",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Valid RC and DL"
+    ],
+    "termsAndConditions": [
+      "Deductible applies"
+    ],
+    "claimProcess": [
+      "Surveyor inspection"
+    ],
+    "policyId": "plan-gen-95",
+    "score": 77,
+    "reviewsCount": 11,
+    "ratingAverage": 4.6
+  },
+  {
+    "name": "New India Assurance Two-Wheeler Guard",
+    "company": "New India Assurance",
+    "price": 2074,
+    "coverage": 80000,
+    "category": "bike",
+    "segment": "general",
+    "subtype": "comprehensive_bike",
+    "description": "Affordable comprehensive cover for your two-wheeler against damage, theft, and third-party claims.",
+    "benefits": [
+      "Own damage",
+      "Third party liability"
+    ],
+    "coverageDetails": [
+      {
+        "label": "OD",
+        "value": "Up to IDV"
+      },
+      {
+        "label": "TP",
+        "value": "Unlimited liability"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹2,000/year approx",
+      "gst": "18%",
+      "discounts": "NCB",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Valid RC"
+    ],
+    "termsAndConditions": [
+      "Wear & tear excluded"
+    ],
+    "claimProcess": [
+      "Cashless at network"
+    ],
+    "policyId": "plan-gen-96",
+    "score": 77,
+    "reviewsCount": 124,
+    "ratingAverage": 4.1
+  },
+  {
+    "name": "Oriental Insurance Car Protect",
+    "company": "Oriental Insurance",
+    "price": 14611,
+    "coverage": 800000,
+    "category": "car",
+    "segment": "general",
+    "subtype": "comprehensive_car",
+    "description": "Complete protection for your car against accidents, theft, fire, and third-party liabilities.",
+    "benefits": [
+      "Own damage cover",
+      "Third party liability",
+      "Cashless garages"
+    ],
+    "coverageDetails": [
+      {
+        "label": "OD",
+        "value": "Up to IDV"
+      },
+      {
+        "label": "TP",
+        "value": "Unlimited liability"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹15,000/year approx",
+      "gst": "18%",
+      "discounts": "NCB up to 50%",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Valid RC and DL"
+    ],
+    "termsAndConditions": [
+      "Deductible applies"
+    ],
+    "claimProcess": [
+      "Surveyor inspection"
+    ],
+    "policyId": "plan-gen-97",
+    "score": 92,
+    "reviewsCount": 82,
+    "ratingAverage": 4.8
+  },
+  {
+    "name": "Oriental Insurance Two-Wheeler Guard",
+    "company": "Oriental Insurance",
+    "price": 2788,
+    "coverage": 80000,
+    "category": "bike",
+    "segment": "general",
+    "subtype": "comprehensive_bike",
+    "description": "Affordable comprehensive cover for your two-wheeler against damage, theft, and third-party claims.",
+    "benefits": [
+      "Own damage",
+      "Third party liability"
+    ],
+    "coverageDetails": [
+      {
+        "label": "OD",
+        "value": "Up to IDV"
+      },
+      {
+        "label": "TP",
+        "value": "Unlimited liability"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹2,000/year approx",
+      "gst": "18%",
+      "discounts": "NCB",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Valid RC"
+    ],
+    "termsAndConditions": [
+      "Wear & tear excluded"
+    ],
+    "claimProcess": [
+      "Cashless at network"
+    ],
+    "policyId": "plan-gen-98",
+    "score": 80,
+    "reviewsCount": 50,
+    "ratingAverage": 4.5
+  },
+  {
+    "name": "New India Assurance Home Secure",
+    "company": "New India Assurance",
+    "price": 6001,
+    "coverage": 5000000,
+    "category": "home",
+    "segment": "general",
+    "subtype": "home_structure",
+    "description": "Protect your house structure and contents against fire, burglary, natural calamities.",
+    "benefits": [
+      "Structure cover",
+      "Contents cover",
+      "Burglary cover"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Structure",
+        "value": "₹50 Lakh"
+      },
+      {
+        "label": "Contents",
+        "value": "₹10 Lakh"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹5,000/year approx",
+      "gst": "18%",
+      "discounts": "Long term discount",
+      "paymentOptions": "Annual, 3-yr, 5-yr"
+    },
+    "eligibility": [
+      "Owned or rented residence"
+    ],
+    "termsAndConditions": [
+      "Valuables need declaration"
+    ],
+    "claimProcess": [
+      "Surveyor visit"
+    ],
+    "policyId": "plan-gen-99",
+    "score": 75,
+    "reviewsCount": 29,
+    "ratingAverage": 4.4
+  },
+  {
+    "name": "HDFC ERGO Home Secure",
+    "company": "HDFC ERGO",
+    "price": 5561,
+    "coverage": 5000000,
+    "category": "home",
+    "segment": "general",
+    "subtype": "home_structure",
+    "description": "Protect your house structure and contents against fire, burglary, natural calamities.",
+    "benefits": [
+      "Structure cover",
+      "Contents cover",
+      "Burglary cover"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Structure",
+        "value": "₹50 Lakh"
+      },
+      {
+        "label": "Contents",
+        "value": "₹10 Lakh"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹5,000/year approx",
+      "gst": "18%",
+      "discounts": "Long term discount",
+      "paymentOptions": "Annual, 3-yr, 5-yr"
+    },
+    "eligibility": [
+      "Owned or rented residence"
+    ],
+    "termsAndConditions": [
+      "Valuables need declaration"
+    ],
+    "claimProcess": [
+      "Surveyor visit"
+    ],
+    "policyId": "plan-gen-100",
+    "score": 90,
+    "reviewsCount": 191,
+    "ratingAverage": 4
+  },
+  {
+    "name": "ICICI Lombard Home Secure",
+    "company": "ICICI Lombard",
+    "price": 6619,
+    "coverage": 5000000,
+    "category": "home",
+    "segment": "general",
+    "subtype": "home_structure",
+    "description": "Protect your house structure and contents against fire, burglary, natural calamities.",
+    "benefits": [
+      "Structure cover",
+      "Contents cover",
+      "Burglary cover"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Structure",
+        "value": "₹50 Lakh"
+      },
+      {
+        "label": "Contents",
+        "value": "₹10 Lakh"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹5,000/year approx",
+      "gst": "18%",
+      "discounts": "Long term discount",
+      "paymentOptions": "Annual, 3-yr, 5-yr"
+    },
+    "eligibility": [
+      "Owned or rented residence"
+    ],
+    "termsAndConditions": [
+      "Valuables need declaration"
+    ],
+    "claimProcess": [
+      "Surveyor visit"
+    ],
+    "policyId": "plan-gen-101",
+    "score": 84,
+    "reviewsCount": 131,
+    "ratingAverage": 3.8
+  },
+  {
+    "name": "Bajaj Allianz Home Secure",
+    "company": "Bajaj Allianz",
+    "price": 6910,
+    "coverage": 5000000,
+    "category": "home",
+    "segment": "general",
+    "subtype": "home_structure",
+    "description": "Protect your house structure and contents against fire, burglary, natural calamities.",
+    "benefits": [
+      "Structure cover",
+      "Contents cover",
+      "Burglary cover"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Structure",
+        "value": "₹50 Lakh"
+      },
+      {
+        "label": "Contents",
+        "value": "₹10 Lakh"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹5,000/year approx",
+      "gst": "18%",
+      "discounts": "Long term discount",
+      "paymentOptions": "Annual, 3-yr, 5-yr"
+    },
+    "eligibility": [
+      "Owned or rented residence"
+    ],
+    "termsAndConditions": [
+      "Valuables need declaration"
+    ],
+    "claimProcess": [
+      "Surveyor visit"
+    ],
+    "policyId": "plan-gen-102",
+    "score": 95,
+    "reviewsCount": 48,
+    "ratingAverage": 3.7
+  },
+  {
+    "name": "Tata AIG Home Secure",
+    "company": "Tata AIG",
+    "price": 6483,
+    "coverage": 5000000,
+    "category": "home",
+    "segment": "general",
+    "subtype": "home_structure",
+    "description": "Protect your house structure and contents against fire, burglary, natural calamities.",
+    "benefits": [
+      "Structure cover",
+      "Contents cover",
+      "Burglary cover"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Structure",
+        "value": "₹50 Lakh"
+      },
+      {
+        "label": "Contents",
+        "value": "₹10 Lakh"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹5,000/year approx",
+      "gst": "18%",
+      "discounts": "Long term discount",
+      "paymentOptions": "Annual, 3-yr, 5-yr"
+    },
+    "eligibility": [
+      "Owned or rented residence"
+    ],
+    "termsAndConditions": [
+      "Valuables need declaration"
+    ],
+    "claimProcess": [
+      "Surveyor visit"
+    ],
+    "policyId": "plan-gen-103",
+    "score": 88,
+    "reviewsCount": 106,
+    "ratingAverage": 4.4
+  },
+  {
+    "name": "New India Assurance Global Travel Shield",
+    "company": "New India Assurance",
+    "price": 2200,
+    "coverage": 3500000,
+    "category": "travel",
+    "segment": "general",
+    "subtype": "international_travel",
+    "description": "International travel insurance covering medical emergencies, trip delay, baggage loss.",
+    "benefits": [
+      "Medical emergency abroad",
+      "Trip cancellation",
+      "Lost baggage"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Medical",
+        "value": "$50,000"
+      },
+      {
+        "label": "Baggage",
+        "value": "$500"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹2,000 approx",
+      "gst": "18%",
+      "discounts": "Family package",
+      "paymentOptions": "Per Trip"
+    },
+    "eligibility": [
+      "Valid passport & visa"
+    ],
+    "termsAndConditions": [
+      "Pre-existing diseases excluded"
+    ],
+    "claimProcess": [
+      "Toll-free international help desk"
+    ],
+    "policyId": "plan-gen-104",
+    "score": 90,
+    "reviewsCount": 168,
+    "ratingAverage": 4.4
+  },
+  {
+    "name": "HDFC ERGO Global Travel Shield",
+    "company": "HDFC ERGO",
+    "price": 3129,
+    "coverage": 3500000,
+    "category": "travel",
+    "segment": "general",
+    "subtype": "international_travel",
+    "description": "International travel insurance covering medical emergencies, trip delay, baggage loss.",
+    "benefits": [
+      "Medical emergency abroad",
+      "Trip cancellation",
+      "Lost baggage"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Medical",
+        "value": "$50,000"
+      },
+      {
+        "label": "Baggage",
+        "value": "$500"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹2,000 approx",
+      "gst": "18%",
+      "discounts": "Family package",
+      "paymentOptions": "Per Trip"
+    },
+    "eligibility": [
+      "Valid passport & visa"
+    ],
+    "termsAndConditions": [
+      "Pre-existing diseases excluded"
+    ],
+    "claimProcess": [
+      "Toll-free international help desk"
+    ],
+    "policyId": "plan-gen-105",
+    "score": 76,
+    "reviewsCount": 127,
+    "ratingAverage": 4.3
+  },
+  {
+    "name": "ICICI Lombard Global Travel Shield",
+    "company": "ICICI Lombard",
+    "price": 3411,
+    "coverage": 3500000,
+    "category": "travel",
+    "segment": "general",
+    "subtype": "international_travel",
+    "description": "International travel insurance covering medical emergencies, trip delay, baggage loss.",
+    "benefits": [
+      "Medical emergency abroad",
+      "Trip cancellation",
+      "Lost baggage"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Medical",
+        "value": "$50,000"
+      },
+      {
+        "label": "Baggage",
+        "value": "$500"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹2,000 approx",
+      "gst": "18%",
+      "discounts": "Family package",
+      "paymentOptions": "Per Trip"
+    },
+    "eligibility": [
+      "Valid passport & visa"
+    ],
+    "termsAndConditions": [
+      "Pre-existing diseases excluded"
+    ],
+    "claimProcess": [
+      "Toll-free international help desk"
+    ],
+    "policyId": "plan-gen-106",
+    "score": 84,
+    "reviewsCount": 19,
+    "ratingAverage": 3.8
+  },
+  {
+    "name": "Bajaj Allianz Global Travel Shield",
+    "company": "Bajaj Allianz",
+    "price": 2428,
+    "coverage": 3500000,
+    "category": "travel",
+    "segment": "general",
+    "subtype": "international_travel",
+    "description": "International travel insurance covering medical emergencies, trip delay, baggage loss.",
+    "benefits": [
+      "Medical emergency abroad",
+      "Trip cancellation",
+      "Lost baggage"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Medical",
+        "value": "$50,000"
+      },
+      {
+        "label": "Baggage",
+        "value": "$500"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹2,000 approx",
+      "gst": "18%",
+      "discounts": "Family package",
+      "paymentOptions": "Per Trip"
+    },
+    "eligibility": [
+      "Valid passport & visa"
+    ],
+    "termsAndConditions": [
+      "Pre-existing diseases excluded"
+    ],
+    "claimProcess": [
+      "Toll-free international help desk"
+    ],
+    "policyId": "plan-gen-107",
+    "score": 79,
+    "reviewsCount": 173,
+    "ratingAverage": 3.9
+  },
+  {
+    "name": "Tata AIG Global Travel Shield",
+    "company": "Tata AIG",
+    "price": 2731,
+    "coverage": 3500000,
+    "category": "travel",
+    "segment": "general",
+    "subtype": "international_travel",
+    "description": "International travel insurance covering medical emergencies, trip delay, baggage loss.",
+    "benefits": [
+      "Medical emergency abroad",
+      "Trip cancellation",
+      "Lost baggage"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Medical",
+        "value": "$50,000"
+      },
+      {
+        "label": "Baggage",
+        "value": "$500"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹2,000 approx",
+      "gst": "18%",
+      "discounts": "Family package",
+      "paymentOptions": "Per Trip"
+    },
+    "eligibility": [
+      "Valid passport & visa"
+    ],
+    "termsAndConditions": [
+      "Pre-existing diseases excluded"
+    ],
+    "claimProcess": [
+      "Toll-free international help desk"
+    ],
+    "policyId": "plan-gen-108",
+    "score": 93,
+    "reviewsCount": 144,
+    "ratingAverage": 4.3
+  },
+  {
+    "name": "ICICI Lombard Personal Accident Guard",
+    "company": "ICICI Lombard",
+    "price": 2170,
+    "coverage": 2500000,
+    "category": "personal_accident",
+    "segment": "health",
+    "subtype": "personal_accident",
+    "description": "Comprehensive personal accident cover providing financial security against accidental death, and permanent/temporary disability.",
+    "benefits": [
+      "Accidental Death Cover",
+      "Permanent Total Disability",
+      "Temporary Total Disability income",
+      "Education grant for children"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Accidental Death",
+        "value": "100% of SA"
+      },
+      {
+        "label": "Total Permanent Disability",
+        "value": "150% of SA"
+      },
+      {
+        "label": "Weekly Income",
+        "value": "0.1% of SA per week for TTD"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹1,500/year approx",
+      "gst": "18%",
+      "discounts": "No claim discount",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Entry age: 18-70 years",
+      "Occupational classes 1, 2, and 3"
+    ],
+    "termsAndConditions": [
+      "Adventure sports participation excluded",
+      "Self-inflicted injuries excluded"
+    ],
+    "claimProcess": [
+      "File FIR",
+      "Submit claim form with medical certificates"
+    ],
+    "policyId": "plan-gen-109",
+    "score": 75,
+    "reviewsCount": 178,
+    "ratingAverage": 4.2
+  },
+  {
+    "name": "HDFC ERGO Personal Accident Guard",
+    "company": "HDFC ERGO",
+    "price": 1304,
+    "coverage": 2500000,
+    "category": "personal_accident",
+    "segment": "health",
+    "subtype": "personal_accident",
+    "description": "Comprehensive personal accident cover providing financial security against accidental death, and permanent/temporary disability.",
+    "benefits": [
+      "Accidental Death Cover",
+      "Permanent Total Disability",
+      "Temporary Total Disability income",
+      "Education grant for children"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Accidental Death",
+        "value": "100% of SA"
+      },
+      {
+        "label": "Total Permanent Disability",
+        "value": "150% of SA"
+      },
+      {
+        "label": "Weekly Income",
+        "value": "0.1% of SA per week for TTD"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹1,500/year approx",
+      "gst": "18%",
+      "discounts": "No claim discount",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Entry age: 18-70 years",
+      "Occupational classes 1, 2, and 3"
+    ],
+    "termsAndConditions": [
+      "Adventure sports participation excluded",
+      "Self-inflicted injuries excluded"
+    ],
+    "claimProcess": [
+      "File FIR",
+      "Submit claim form with medical certificates"
+    ],
+    "policyId": "plan-gen-110",
+    "score": 80,
+    "reviewsCount": 67,
+    "ratingAverage": 5
+  },
+  {
+    "name": "New India Assurance Personal Accident Guard",
+    "company": "New India Assurance",
+    "price": 1453,
+    "coverage": 2500000,
+    "category": "personal_accident",
+    "segment": "health",
+    "subtype": "personal_accident",
+    "description": "Comprehensive personal accident cover providing financial security against accidental death, and permanent/temporary disability.",
+    "benefits": [
+      "Accidental Death Cover",
+      "Permanent Total Disability",
+      "Temporary Total Disability income",
+      "Education grant for children"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Accidental Death",
+        "value": "100% of SA"
+      },
+      {
+        "label": "Total Permanent Disability",
+        "value": "150% of SA"
+      },
+      {
+        "label": "Weekly Income",
+        "value": "0.1% of SA per week for TTD"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹1,500/year approx",
+      "gst": "18%",
+      "discounts": "No claim discount",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Entry age: 18-70 years",
+      "Occupational classes 1, 2, and 3"
+    ],
+    "termsAndConditions": [
+      "Adventure sports participation excluded",
+      "Self-inflicted injuries excluded"
+    ],
+    "claimProcess": [
+      "File FIR",
+      "Submit claim form with medical certificates"
+    ],
+    "policyId": "plan-gen-111",
+    "score": 85,
+    "reviewsCount": 86,
+    "ratingAverage": 4.3
+  },
+  {
+    "name": "Tata AIG Personal Accident Guard",
+    "company": "Tata AIG",
+    "price": 1690,
+    "coverage": 2500000,
+    "category": "personal_accident",
+    "segment": "health",
+    "subtype": "personal_accident",
+    "description": "Comprehensive personal accident cover providing financial security against accidental death, and permanent/temporary disability.",
+    "benefits": [
+      "Accidental Death Cover",
+      "Permanent Total Disability",
+      "Temporary Total Disability income",
+      "Education grant for children"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Accidental Death",
+        "value": "100% of SA"
+      },
+      {
+        "label": "Total Permanent Disability",
+        "value": "150% of SA"
+      },
+      {
+        "label": "Weekly Income",
+        "value": "0.1% of SA per week for TTD"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹1,500/year approx",
+      "gst": "18%",
+      "discounts": "No claim discount",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Entry age: 18-70 years",
+      "Occupational classes 1, 2, and 3"
+    ],
+    "termsAndConditions": [
+      "Adventure sports participation excluded",
+      "Self-inflicted injuries excluded"
+    ],
+    "claimProcess": [
+      "File FIR",
+      "Submit claim form with medical certificates"
+    ],
+    "policyId": "plan-gen-112",
+    "score": 84,
+    "reviewsCount": 95,
+    "ratingAverage": 4
+  },
+  {
+    "name": "SBI General Personal Accident Guard",
+    "company": "SBI General",
+    "price": 1884,
+    "coverage": 2500000,
+    "category": "personal_accident",
+    "segment": "health",
+    "subtype": "personal_accident",
+    "description": "Comprehensive personal accident cover providing financial security against accidental death, and permanent/temporary disability.",
+    "benefits": [
+      "Accidental Death Cover",
+      "Permanent Total Disability",
+      "Temporary Total Disability income",
+      "Education grant for children"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Accidental Death",
+        "value": "100% of SA"
+      },
+      {
+        "label": "Total Permanent Disability",
+        "value": "150% of SA"
+      },
+      {
+        "label": "Weekly Income",
+        "value": "0.1% of SA per week for TTD"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹1,500/year approx",
+      "gst": "18%",
+      "discounts": "No claim discount",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Entry age: 18-70 years",
+      "Occupational classes 1, 2, and 3"
+    ],
+    "termsAndConditions": [
+      "Adventure sports participation excluded",
+      "Self-inflicted injuries excluded"
+    ],
+    "claimProcess": [
+      "File FIR",
+      "Submit claim form with medical certificates"
+    ],
+    "policyId": "plan-gen-113",
+    "score": 75,
+    "reviewsCount": 156,
+    "ratingAverage": 4.8
+  },
+  {
+    "name": "New India Assurance SME Business Protect",
+    "company": "New India Assurance",
+    "price": 28520,
+    "coverage": 10000000,
+    "category": "business",
+    "segment": "general",
+    "subtype": "sme_package",
+    "description": "Complete package policy for Small and Medium Enterprises covering fire, burglary, liability and business interruption.",
+    "benefits": [
+      "Fire & Special Perils",
+      "Burglary Cover",
+      "Public Liability",
+      "Business Interruption"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Property Cover",
+        "value": "₹1 Crore"
+      },
+      {
+        "label": "Liability",
+        "value": "₹25 Lakh"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹35,000/year approx",
+      "gst": "18%",
+      "discounts": "Good risk discount",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Registered SMEs"
+    ],
+    "termsAndConditions": [
+      "Subject to risk inspection"
+    ],
+    "claimProcess": [
+      "Immediate intimation required"
+    ],
+    "policyId": "plan-gen-114",
+    "score": 95,
+    "reviewsCount": 84,
+    "ratingAverage": 5
+  },
+  {
+    "name": "HDFC ERGO SME Business Protect",
+    "company": "HDFC ERGO",
+    "price": 41218,
+    "coverage": 10000000,
+    "category": "business",
+    "segment": "general",
+    "subtype": "sme_package",
+    "description": "Complete package policy for Small and Medium Enterprises covering fire, burglary, liability and business interruption.",
+    "benefits": [
+      "Fire & Special Perils",
+      "Burglary Cover",
+      "Public Liability",
+      "Business Interruption"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Property Cover",
+        "value": "₹1 Crore"
+      },
+      {
+        "label": "Liability",
+        "value": "₹25 Lakh"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹35,000/year approx",
+      "gst": "18%",
+      "discounts": "Good risk discount",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Registered SMEs"
+    ],
+    "termsAndConditions": [
+      "Subject to risk inspection"
+    ],
+    "claimProcess": [
+      "Immediate intimation required"
+    ],
+    "policyId": "plan-gen-115",
+    "score": 83,
+    "reviewsCount": 40,
+    "ratingAverage": 4.7
+  },
+  {
+    "name": "ICICI Lombard SME Business Protect",
+    "company": "ICICI Lombard",
+    "price": 36243,
+    "coverage": 10000000,
+    "category": "business",
+    "segment": "general",
+    "subtype": "sme_package",
+    "description": "Complete package policy for Small and Medium Enterprises covering fire, burglary, liability and business interruption.",
+    "benefits": [
+      "Fire & Special Perils",
+      "Burglary Cover",
+      "Public Liability",
+      "Business Interruption"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Property Cover",
+        "value": "₹1 Crore"
+      },
+      {
+        "label": "Liability",
+        "value": "₹25 Lakh"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹35,000/year approx",
+      "gst": "18%",
+      "discounts": "Good risk discount",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Registered SMEs"
+    ],
+    "termsAndConditions": [
+      "Subject to risk inspection"
+    ],
+    "claimProcess": [
+      "Immediate intimation required"
+    ],
+    "policyId": "plan-gen-116",
+    "score": 92,
+    "reviewsCount": 91,
+    "ratingAverage": 3.9
+  },
+  {
+    "name": "Bajaj Allianz SME Business Protect",
+    "company": "Bajaj Allianz",
+    "price": 44042,
+    "coverage": 10000000,
+    "category": "business",
+    "segment": "general",
+    "subtype": "sme_package",
+    "description": "Complete package policy for Small and Medium Enterprises covering fire, burglary, liability and business interruption.",
+    "benefits": [
+      "Fire & Special Perils",
+      "Burglary Cover",
+      "Public Liability",
+      "Business Interruption"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Property Cover",
+        "value": "₹1 Crore"
+      },
+      {
+        "label": "Liability",
+        "value": "₹25 Lakh"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹35,000/year approx",
+      "gst": "18%",
+      "discounts": "Good risk discount",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Registered SMEs"
+    ],
+    "termsAndConditions": [
+      "Subject to risk inspection"
+    ],
+    "claimProcess": [
+      "Immediate intimation required"
+    ],
+    "policyId": "plan-gen-117",
+    "score": 78,
+    "reviewsCount": 39,
+    "ratingAverage": 4.2
+  },
+  {
+    "name": "Tata AIG SME Business Protect",
+    "company": "Tata AIG",
+    "price": 31493,
+    "coverage": 10000000,
+    "category": "business",
+    "segment": "general",
+    "subtype": "sme_package",
+    "description": "Complete package policy for Small and Medium Enterprises covering fire, burglary, liability and business interruption.",
+    "benefits": [
+      "Fire & Special Perils",
+      "Burglary Cover",
+      "Public Liability",
+      "Business Interruption"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Property Cover",
+        "value": "₹1 Crore"
+      },
+      {
+        "label": "Liability",
+        "value": "₹25 Lakh"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹35,000/year approx",
+      "gst": "18%",
+      "discounts": "Good risk discount",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Registered SMEs"
+    ],
+    "termsAndConditions": [
+      "Subject to risk inspection"
+    ],
+    "claimProcess": [
+      "Immediate intimation required"
+    ],
+    "policyId": "plan-gen-118",
+    "score": 93,
+    "reviewsCount": 200,
+    "ratingAverage": 4
+  },
+  {
+    "name": "ICICI Lombard Corporate Group Cover",
+    "company": "ICICI Lombard",
+    "price": 5000,
+    "coverage": 300000,
+    "category": "group",
+    "segment": "health",
+    "subtype": "group_health",
+    "description": "Group health and life insurance solution for corporate employees offering day-1 coverage for pre-existing diseases.",
+    "benefits": [
+      "Day-1 pre-existing coverage",
+      "Maternity benefit included",
+      "Corporate buffer facility",
+      "Cashless claims at network hospitals"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Employee Health",
+        "value": "₹3 Lakh Base Cover"
+      },
+      {
+        "label": "Corporate Buffer",
+        "value": "₹20 Lakh shared pool"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "Customized per group size",
+      "gst": "18%",
+      "discounts": "Large group discount",
+      "paymentOptions": "Annual Corporate Pay"
+    },
+    "eligibility": [
+      "Minimum group size: 10 employees",
+      "Employer-employee relationship mandatory"
+    ],
+    "termsAndConditions": [
+      "Details of employees leaving/joining must be reported monthly",
+      "Dependants cover optional based on corporate plan"
+    ],
+    "claimProcess": [
+      "Corporate TPA desk",
+      "E-cards for all employees",
+      "Cashless authorization"
+    ],
+    "policyId": "plan-gen-119",
+    "score": 91,
+    "reviewsCount": 183,
+    "ratingAverage": 3.6
+  },
+  {
+    "name": "Star Health Corporate Group Cover",
+    "company": "Star Health",
+    "price": 5000,
+    "coverage": 300000,
+    "category": "group",
+    "segment": "health",
+    "subtype": "group_health",
+    "description": "Group health and life insurance solution for corporate employees offering day-1 coverage for pre-existing diseases.",
+    "benefits": [
+      "Day-1 pre-existing coverage",
+      "Maternity benefit included",
+      "Corporate buffer facility",
+      "Cashless claims at network hospitals"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Employee Health",
+        "value": "₹3 Lakh Base Cover"
+      },
+      {
+        "label": "Corporate Buffer",
+        "value": "₹20 Lakh shared pool"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "Customized per group size",
+      "gst": "18%",
+      "discounts": "Large group discount",
+      "paymentOptions": "Annual Corporate Pay"
+    },
+    "eligibility": [
+      "Minimum group size: 10 employees",
+      "Employer-employee relationship mandatory"
+    ],
+    "termsAndConditions": [
+      "Details of employees leaving/joining must be reported monthly",
+      "Dependants cover optional based on corporate plan"
+    ],
+    "claimProcess": [
+      "Corporate TPA desk",
+      "E-cards for all employees",
+      "Cashless authorization"
+    ],
+    "policyId": "plan-gen-120",
+    "score": 77,
+    "reviewsCount": 18,
+    "ratingAverage": 4
+  },
+  {
+    "name": "HDFC ERGO Corporate Group Cover",
+    "company": "HDFC ERGO",
+    "price": 5000,
+    "coverage": 300000,
+    "category": "group",
+    "segment": "health",
+    "subtype": "group_health",
+    "description": "Group health and life insurance solution for corporate employees offering day-1 coverage for pre-existing diseases.",
+    "benefits": [
+      "Day-1 pre-existing coverage",
+      "Maternity benefit included",
+      "Corporate buffer facility",
+      "Cashless claims at network hospitals"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Employee Health",
+        "value": "₹3 Lakh Base Cover"
+      },
+      {
+        "label": "Corporate Buffer",
+        "value": "₹20 Lakh shared pool"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "Customized per group size",
+      "gst": "18%",
+      "discounts": "Large group discount",
+      "paymentOptions": "Annual Corporate Pay"
+    },
+    "eligibility": [
+      "Minimum group size: 10 employees",
+      "Employer-employee relationship mandatory"
+    ],
+    "termsAndConditions": [
+      "Details of employees leaving/joining must be reported monthly",
+      "Dependants cover optional based on corporate plan"
+    ],
+    "claimProcess": [
+      "Corporate TPA desk",
+      "E-cards for all employees",
+      "Cashless authorization"
+    ],
+    "policyId": "plan-gen-121",
+    "score": 77,
+    "reviewsCount": 24,
+    "ratingAverage": 3.8
+  },
+  {
+    "name": "Max Life Corporate Group Cover",
+    "company": "Max Life",
+    "price": 5000,
+    "coverage": 300000,
+    "category": "group",
+    "segment": "health",
+    "subtype": "group_health",
+    "description": "Group health and life insurance solution for corporate employees offering day-1 coverage for pre-existing diseases.",
+    "benefits": [
+      "Day-1 pre-existing coverage",
+      "Maternity benefit included",
+      "Corporate buffer facility",
+      "Cashless claims at network hospitals"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Employee Health",
+        "value": "₹3 Lakh Base Cover"
+      },
+      {
+        "label": "Corporate Buffer",
+        "value": "₹20 Lakh shared pool"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "Customized per group size",
+      "gst": "18%",
+      "discounts": "Large group discount",
+      "paymentOptions": "Annual Corporate Pay"
+    },
+    "eligibility": [
+      "Minimum group size: 10 employees",
+      "Employer-employee relationship mandatory"
+    ],
+    "termsAndConditions": [
+      "Details of employees leaving/joining must be reported monthly",
+      "Dependants cover optional based on corporate plan"
+    ],
+    "claimProcess": [
+      "Corporate TPA desk",
+      "E-cards for all employees",
+      "Cashless authorization"
+    ],
+    "policyId": "plan-gen-122",
+    "score": 83,
+    "reviewsCount": 152,
+    "ratingAverage": 4.9
+  },
+  {
+    "name": "LIC Corporate Group Cover",
+    "company": "LIC",
+    "price": 5000,
+    "coverage": 300000,
+    "category": "group",
+    "segment": "health",
+    "subtype": "group_health",
+    "description": "Group health and life insurance solution for corporate employees offering day-1 coverage for pre-existing diseases.",
+    "benefits": [
+      "Day-1 pre-existing coverage",
+      "Maternity benefit included",
+      "Corporate buffer facility",
+      "Cashless claims at network hospitals"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Employee Health",
+        "value": "₹3 Lakh Base Cover"
+      },
+      {
+        "label": "Corporate Buffer",
+        "value": "₹20 Lakh shared pool"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "Customized per group size",
+      "gst": "18%",
+      "discounts": "Large group discount",
+      "paymentOptions": "Annual Corporate Pay"
+    },
+    "eligibility": [
+      "Minimum group size: 10 employees",
+      "Employer-employee relationship mandatory"
+    ],
+    "termsAndConditions": [
+      "Details of employees leaving/joining must be reported monthly",
+      "Dependants cover optional based on corporate plan"
+    ],
+    "claimProcess": [
+      "Corporate TPA desk",
+      "E-cards for all employees",
+      "Cashless authorization"
+    ],
+    "policyId": "plan-gen-123",
+    "score": 87,
+    "reviewsCount": 188,
+    "ratingAverage": 4.1
+  },
+  {
+    "name": "Agriculture Insurance Co. Micro Secure",
+    "company": "Agriculture Insurance Co.",
+    "price": 500,
+    "coverage": 50000,
+    "category": "micro_social",
+    "segment": "general",
+    "subtype": "rural_health",
+    "description": "Targeted at rural and low-income demographics offering highly affordable life and health coverage.",
+    "benefits": [
+      "Affordable premium",
+      "Simple enrolment",
+      "Basic hospital cash benefit"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Hospital Cash",
+        "value": "₹500/day"
+      },
+      {
+        "label": "Death Cover",
+        "value": "₹50,000"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹500/year",
+      "gst": "Exempt",
+      "discounts": "None",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Age 18-50",
+      "Rural/semi-urban residence"
+    ],
+    "termsAndConditions": [
+      "Simple terms"
+    ],
+    "claimProcess": [
+      "Through local NGOs/banks"
+    ],
+    "policyId": "plan-gen-124",
+    "score": 95,
+    "reviewsCount": 131,
+    "ratingAverage": 4.2
+  },
+  {
+    "name": "LIC Micro Secure",
+    "company": "LIC",
+    "price": 500,
+    "coverage": 50000,
+    "category": "micro_social",
+    "segment": "general",
+    "subtype": "rural_health",
+    "description": "Targeted at rural and low-income demographics offering highly affordable life and health coverage.",
+    "benefits": [
+      "Affordable premium",
+      "Simple enrolment",
+      "Basic hospital cash benefit"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Hospital Cash",
+        "value": "₹500/day"
+      },
+      {
+        "label": "Death Cover",
+        "value": "₹50,000"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹500/year",
+      "gst": "Exempt",
+      "discounts": "None",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Age 18-50",
+      "Rural/semi-urban residence"
+    ],
+    "termsAndConditions": [
+      "Simple terms"
+    ],
+    "claimProcess": [
+      "Through local NGOs/banks"
+    ],
+    "policyId": "plan-gen-125",
+    "score": 78,
+    "reviewsCount": 119,
+    "ratingAverage": 4.4
+  },
+  {
+    "name": "Bajaj Allianz Micro Secure",
+    "company": "Bajaj Allianz",
+    "price": 500,
+    "coverage": 50000,
+    "category": "micro_social",
+    "segment": "general",
+    "subtype": "rural_health",
+    "description": "Targeted at rural and low-income demographics offering highly affordable life and health coverage.",
+    "benefits": [
+      "Affordable premium",
+      "Simple enrolment",
+      "Basic hospital cash benefit"
+    ],
+    "coverageDetails": [
+      {
+        "label": "Hospital Cash",
+        "value": "₹500/day"
+      },
+      {
+        "label": "Death Cover",
+        "value": "₹50,000"
+      }
+    ],
+    "premiumInfo": {
+      "basePremium": "₹500/year",
+      "gst": "Exempt",
+      "discounts": "None",
+      "paymentOptions": "Annual"
+    },
+    "eligibility": [
+      "Age 18-50",
+      "Rural/semi-urban residence"
+    ],
+    "termsAndConditions": [
+      "Simple terms"
+    ],
+    "claimProcess": [
+      "Through local NGOs/banks"
+    ],
+    "policyId": "plan-gen-126",
+    "score": 87,
+    "reviewsCount": 47,
+    "ratingAverage": 4
+  }
+]
