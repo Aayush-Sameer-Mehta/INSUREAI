@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useForm, useWatch } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { GoogleLogin } from "@react-oauth/google";
 import {
   ArrowRight,
   Briefcase,
@@ -22,6 +23,9 @@ import { Button, Input } from "../../components/common";
 import BrandMark from "../../components/BrandMark";
 import { loginSchema } from "../../validation";
 import { useScrollToFirstError } from "../../hooks/useScrollToFirstError";
+import { googleLogin } from "../../services/googleAuthService";
+import { loginUser } from "../../services/authService";
+import { setTokens } from "../../services/authStorage";
 
 const ROLE_OPTIONS = [
   {
@@ -51,6 +55,12 @@ export default function Login() {
   const navigate = useNavigate();
   const { login } = useAuth();
   const [showPassword, setShowPassword] = useState(false);
+  const [isGoogleLoading, setIsGoogleLoading] = useState(false);
+  const googleClientId = import.meta.env.VITE_GOOGLE_CLIENT_ID;
+  const isGoogleConfigured =
+    typeof googleClientId === "string" &&
+    googleClientId.endsWith(".apps.googleusercontent.com") &&
+    !googleClientId.includes("your-google-client-id");
 
   const {
     register,
@@ -86,6 +96,35 @@ export default function Login() {
     } catch (err) {
       toast.error(err?.response?.data?.message || "Login failed");
     }
+  };
+
+  const handleGoogleSuccess = async (credentialResponse) => {
+    setIsGoogleLoading(true);
+    try {
+      // Send Google token to backend
+      const response = await googleLogin(credentialResponse.credential);
+
+      // Store tokens
+      setTokens(response);
+
+      toast.success("Successfully signed in with Google!");
+
+      // Navigate to dashboard
+      navigate(response.dashboardRoute || "/user/dashboard");
+    } catch (err) {
+      console.error("Google login error:", err);
+      toast.error(
+        err?.response?.data?.message ||
+          "Google sign-in failed. Please try again.",
+      );
+    } finally {
+      setIsGoogleLoading(false);
+    }
+  };
+
+  const handleGoogleError = () => {
+    toast.error("Google sign-in failed. Please try again.");
+    setIsGoogleLoading(false);
   };
 
   return (
@@ -128,8 +167,10 @@ export default function Login() {
                 <button
                   key={role.value}
                   type="button"
-                  onClick={() => setValue("login_role", role.value, { shouldValidate: true })}
-                  disabled={isSubmitting}
+                  onClick={() =>
+                    setValue("login_role", role.value, { shouldValidate: true })
+                  }
+                  disabled={isSubmitting || isGoogleLoading}
                   className={`flex items-center gap-3 rounded-2xl border px-4 py-3 text-left transition-all ${
                     isSelected
                       ? "border-slate-900 bg-slate-900 text-white shadow-lg"
@@ -166,7 +207,11 @@ export default function Login() {
           </p>
         )}
 
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-5" noValidate>
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="space-y-5"
+          noValidate
+        >
           <Input
             label="Email Address"
             icon={Mail}
@@ -232,7 +277,7 @@ export default function Login() {
           <Button
             type="submit"
             loading={isSubmitting}
-            disabled={!isValid || isSubmitting}
+            disabled={!isValid || isSubmitting || isGoogleLoading}
             icon={LogIn}
             iconRight={ArrowRight}
             className="w-full"
@@ -242,34 +287,26 @@ export default function Login() {
         </form>
 
         <div className="mt-6">
-          <div className="divider-labeled text-xs text-slate-400">or continue with</div>
-          
+          <div className="divider-labeled text-xs text-slate-400">
+            or continue with
+          </div>
+
           <div className="mt-5">
-            <button
-              type="button"
-              onClick={() => toast.success("Google Authentication Initiated")}
-              className="flex w-full items-center justify-center gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 shadow-sm transition-all hover:bg-slate-50 hover:border-slate-300 focus:outline-none focus:ring-2 focus:ring-slate-200"
-            >
-              <svg viewBox="0 0 24 24" className="h-5 w-5" aria-hidden="true">
-                <path
-                  d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
-                  fill="#4285F4"
+            <div className="flex justify-center">
+              {isGoogleConfigured ? (
+                <GoogleLogin
+                  onSuccess={handleGoogleSuccess}
+                  onError={handleGoogleError}
+                  theme="outline"
+                  size="large"
+                  width="100%"
                 />
-                <path
-                  d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
-                  fill="#34A853"
-                />
-                <path
-                  d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
-                  fill="#FBBC05"
-                />
-                <path
-                  d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
-                  fill="#EA4335"
-                />
-              </svg>
-              Sign in with Google
-            </button>
+              ) : (
+                <p className="text-xs text-slate-500">
+                  Google sign-in is not configured for this environment.
+                </p>
+              )}
+            </div>
           </div>
 
           <p className="mt-6 text-center text-sm text-slate-600">

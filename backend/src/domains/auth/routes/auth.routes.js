@@ -7,6 +7,8 @@ import AppError from "../../../utils/AppError.js";
 import { verifyToken } from "../../../utils/token.js";
 import { issueAuthTokens } from "../services/auth.service.js";
 import { getDashboardRoute, normalizeRole, ROLES } from "../../../utils/roles.js";
+import { sendPasswordResetEmail } from "../../../services/emailService.js";
+import { verifyGoogleToken } from "../../../services/googleOAuthService.js";
 import {
     registerSchema,
     loginSchema,
@@ -157,7 +159,11 @@ router.post("/forgot-password", validate(forgotPasswordSchema), async (req, res,
 
         const user = await User.findOne({ email });
         if (!user) {
-            return next(new AppError("No user found with that email", 404));
+            // Don't reveal if email exists (security best practice)
+            return res.json({
+                success: true,
+                message: "If an account exists with that email, a password reset link has been sent.",
+            });
         }
 
         // Generate a random reset token
@@ -169,11 +175,17 @@ router.post("/forgot-password", validate(forgotPasswordSchema), async (req, res,
         user.passwordResetExpires = Date.now() + 15 * 60 * 1000; // 15 minutes
         await user.save({ validateBeforeSave: false });
 
-        // In production, send this via email. For dev, return in response.
+        // Send email with magic link (async - don't wait for it)
+        try {
+            await sendPasswordResetEmail(email, resetToken);
+        } catch (emailError) {
+            console.error("Email send failed:", emailError);
+            // Still return success to user - they can request another email
+        }
+
         res.json({
             success: true,
-            message: "Password reset token generated (valid for 15 minutes)",
-            resetToken,
+            message: "If an account exists with that email, a password reset link has been sent. Check your inbox and spam folder.",
         });
     } catch (err) {
         next(err);
@@ -210,6 +222,78 @@ router.post("/reset-password", validate(resetPasswordSchema), async (req, res, n
         res.json({
             success: true,
             message: "Password reset successful. Please log in with your new password.",
+        });
+    } catch (err) {
+        next(err);
+    }
+});
+
+/* ─── Google OAuth ───────────────────────────────────── */
+router.post("/google", async (req, res, next) => {
+    try {
+        const { token } = req.body;
+
+        if (!token) {
+            return next(new AppError("Google token is required", 400));
+        }
+
+        // Verify Google token
+        let googleUser;
+        try {
+            googleUser = await verifyGoogleToken(token);
+        } catch (err) {
+            return next(new AppError("Invalid or expired Google token", 401));
+        }
+
+        // Find or create user
+        let user = await User.findOne({ email: googleUser.email });
+
+        if (!user) {
+            // Create new user from Google data
+            user = await User.create({
+                fullName: googleUser.name,
+                email: googleUser.email,
+                password: crypto.randomBytes(16).toString("hex"), // Random password for OAuth users
+                role: ROLES.USER,
+                is_active: true,
+                mobileNumber: "",
+                kycDetails: {
+                    isKycVerified: googleUser.emailVerified || false,
+                },
+            });
+        } else {
+            // Update user picture if available
+            if (googleUser.picture && !user.avatar) {
+                // Note: You might want to add an avatar field to User model
+                // For now, we'll just store the picture URL in a comment field
+            }
+        }
+
+        // Check if user is active
+        if (!user.is_active || user.isBlocked) {
+            return next(
+                new AppError("Your account is inactive. Please contact support.", 403)
+            );
+        }
+
+        // Issue tokens
+        const tokens = await issueAuthTokens(user);
+
+        // Log successful login
+        user.login_history.push({
+            login_time: new Date(),
+            device_info: req.headers["user-agent"] || "Google OAuth",
+            ip_address: req.ip,
+            login_status: "Success",
+        });
+        await user.save({ validateBeforeSave: false });
+
+        res.json({
+            userId: user._id,
+            role: user.role,
+            token: tokens.accessToken,
+            ...tokens,
+            user,
         });
     } catch (err) {
         next(err);
