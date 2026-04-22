@@ -5,7 +5,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { GoogleLogin } from "@react-oauth/google";
 import {
   ArrowRight,
-  Briefcase,
   Eye,
   EyeOff,
   KeyRound,
@@ -34,13 +33,6 @@ const ROLE_OPTIONS = [
     hint: "Personal insurance access",
     icon: UserCircle2,
     accent: "from-sky-500 to-blue-600",
-  },
-  {
-    value: "AGENT",
-    label: "Agent",
-    hint: "Advisory workspace access",
-    icon: Briefcase,
-    accent: "from-emerald-500 to-teal-600",
   },
   {
     value: "ADMIN",

@@ -94,7 +94,6 @@ export default function Dashboard() {
  : 12;
  const riskScore = Math.max(0, Math.min(100, 100 - avgRisk));
  const firstName = profile?.fullName?.split(" ")?.[0] || "there";
- const assignedAgent = profile?.user_profile?.assigned_agent_id;
  const completionChecks = [
  profile?.dateOfBirth,
  profile?.occupation,
@@ -253,8 +252,8 @@ export default function Dashboard() {
  <span className="font-semibold">{openNotifications}</span>
  </div>
  <div className="flex items-center justify-between">
- <span>Assigned agent</span>
- <span className="font-semibold">{assignedAgent ? "Connected" : "Not Assigned"}</span>
+ <span>Renewal reminders</span>
+ <span className="font-semibold">{renewalReminders.length}</span>
  </div>
  </div>
  </div>

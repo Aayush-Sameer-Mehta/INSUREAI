@@ -6,7 +6,6 @@ export function getDashboardRouteForRole(role) {
  const normalizedRole = normalizeRole(role);
 
  if (normalizedRole === "ADMIN") return "/admin/dashboard";
- if (normalizedRole === "AGENT") return "/agent/dashboard";
  return "/user/dashboard";
 }
 

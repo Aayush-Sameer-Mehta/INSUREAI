@@ -44,13 +44,6 @@ const AdminPremiumAnalytics = lazy(
 const AdminReports = lazy(() => import("./pages/admin/AdminReports"));
 const AdminPolicyForm = lazy(() => import("./pages/admin/AdminPolicyForm"));
 
-/* ─── Agent Pages ────────────────────────────────── */
-const AgentDashboard = lazy(
- () => import("./pages/agent/dashboard/AgentDashboard"),
-);
-const AgentClientsList = lazy(
- () => import("./pages/agent/clients/ClientsList"),
-);
 const AdminSettings = lazy(() => import("./pages/admin/AdminSettings"));
 
 /* ─── Page transition wrapper ────────────────────── */
@@ -69,7 +62,6 @@ export default function App() {
  const location = useLocation();
  const isHome = location.pathname === "/";
  const isAdmin = location.pathname.startsWith("/admin");
- const isAgent = location.pathname.startsWith("/agent");
  const isPolicies = location.pathname === "/policies";
 
  return (
@@ -77,7 +69,7 @@ export default function App() {
  <Navbar />
  <main
  className={
- isHome || isAdmin || isAgent
+ isHome || isAdmin
  ? "w-full"
  : isPolicies
  ? "mx-auto w-full max-w-[1600px] px-4 sm:px-6 lg:px-8 py-6 sm:py-8"
@@ -239,24 +231,6 @@ export default function App() {
  element={
  <PageWrapper>
  <Payment />
- </PageWrapper>
- }
- />
- </Route>
- <Route element={<ProtectedRoute allowedRoles={["AGENT"]} />}>
- <Route
- path="/agent/dashboard"
- element={
- <PageWrapper>
- <AgentDashboard />
- </PageWrapper>
- }
- />
- <Route
- path="/agent/clients"
- element={
- <PageWrapper>
- <AgentClientsList />
  </PageWrapper>
  }
  />

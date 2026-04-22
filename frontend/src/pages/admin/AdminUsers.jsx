@@ -18,7 +18,7 @@ const itemVariants = {
  visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 300, damping: 28 } },
 };
 
-const ROLES = ["All", "USER", "AGENT", "ADMIN"];
+const ROLES = ["All", "USER", "ADMIN"];
 const STATUSES = ["All", "Active", "Blocked"];
 const PAGE_SIZE = 10;
 

@@ -17,7 +17,6 @@ export function isValidRole(role) {
 export function getDashboardRoute(role) {
   const normalizedRole = normalizeRole(role);
 
-  if (normalizedRole === ROLES.AGENT) return "/agent/dashboard";
   if (normalizedRole === ROLES.ADMIN) return "/admin/dashboard";
   return "/user/dashboard";
 }

@@ -21,7 +21,6 @@ import {
  Car,
  HomeIcon,
  Briefcase,
- Users,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useAuth } from "../hooks/useAuth";
@@ -40,7 +39,6 @@ export default function Navbar() {
  const searchRef = useRef(null);
  const dashboardRoute = getDashboardRouteForRole(user?.role);
  const isAdmin = normalizeRole(user?.role) === "ADMIN";
- const isAgent = normalizeRole(user?.role) === "AGENT";
  const isUser = normalizeRole(user?.role) === "USER";
 
  /* close profile dropdown on outside click */
@@ -436,15 +434,6 @@ export default function Navbar() {
  <FileWarning className="h-4 w-4" /> My Claims
  </Link>
  </>
- )}
- {isAgent && (
- <Link
- to="/agent/clients"
- onClick={() => setProfileOpen(false)}
- className="flex items-center gap-2 rounded-xl px-3 py-2 text-sm text-slate-700 hover:bg-slate-100 "
- >
- <Users className="h-4 w-4" /> My Clients
- </Link>
  )}
  {isAdmin && (
  <Link
