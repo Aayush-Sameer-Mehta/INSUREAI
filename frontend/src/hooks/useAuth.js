@@ -3,6 +3,7 @@ import { useCallback, useEffect } from 'react';
 import {
   loadProfile,
   login as loginAction,
+  loginWithGoogle as loginWithGoogleAction,
   register as registerAction,
   logout as logoutAction,
   setUser as setUserAction,
@@ -34,6 +35,14 @@ export function useAuth() {
     [dispatch]
   );
 
+  const loginWithGoogle = useCallback(
+    async (googleCredentialToken) => {
+      const result = await dispatch(loginWithGoogleAction(googleCredentialToken)).unwrap();
+      return result;
+    },
+    [dispatch],
+  );
+
   const logout = useCallback(() => {
     dispatch(logoutAction());
   }, [dispatch]);
@@ -49,6 +58,7 @@ export function useAuth() {
     ...authState,
     isAuthenticated: Boolean(authState.token),
     login,
+    loginWithGoogle,
     register,
     logout,
     setUser,

@@ -22,9 +22,6 @@ import { Button, Input } from "../../components/common";
 import BrandMark from "../../components/BrandMark";
 import { loginSchema } from "../../validation";
 import { useScrollToFirstError } from "../../hooks/useScrollToFirstError";
-import { googleLogin } from "../../services/googleAuthService";
-import { loginUser } from "../../services/authService";
-import { setTokens } from "../../services/authStorage";
 
 const ROLE_OPTIONS = [
   {
@@ -45,7 +42,7 @@ const ROLE_OPTIONS = [
 
 export default function Login() {
   const navigate = useNavigate();
-  const { login } = useAuth();
+  const { login, loginWithGoogle } = useAuth();
   const [showPassword, setShowPassword] = useState(false);
   const [isGoogleLoading, setIsGoogleLoading] = useState(false);
   const googleClientId = import.meta.env.VITE_GOOGLE_CLIENT_ID;
@@ -93,16 +90,11 @@ export default function Login() {
   const handleGoogleSuccess = async (credentialResponse) => {
     setIsGoogleLoading(true);
     try {
-      // Send Google token to backend
-      const response = await googleLogin(credentialResponse.credential);
-
-      // Store tokens
-      setTokens(response);
+      const response = await loginWithGoogle(credentialResponse.credential);
 
       toast.success("Successfully signed in with Google!");
 
-      // Navigate to dashboard
-      navigate(response.dashboardRoute || "/user/dashboard");
+      navigate(response.dashboardRoute || "/dashboard");
     } catch (err) {
       console.error("Google login error:", err);
       toast.error(
