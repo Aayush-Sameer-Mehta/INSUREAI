@@ -131,10 +131,14 @@ router.patch("/users/:id/role", async (req, res, next) => {
             return next(new AppError("Admin cannot change their own role", 400));
         }
 
-        const update = { role: nextRole };
+        const previousRole = normalizeRole(user.role);
+
+        // Update on document + save to ensure model hooks run
+        // and the persisted role is guaranteed in MongoDB.
+        user.role = nextRole;
 
         if (nextRole !== ROLES.AGENT) {
-            update.agent_details = {
+            user.agent_details = {
                 license_number: undefined,
                 commission_percentage: 0,
                 region: "Pan-India",
@@ -143,21 +147,23 @@ router.patch("/users/:id/role", async (req, res, next) => {
         }
 
         if (nextRole !== ROLES.ADMIN) {
-            update.admin_permissions = [];
+            user.admin_permissions = [];
         }
 
-        const updatedUser = await User.findByIdAndUpdate(
-            req.params.id,
-            update,
-            {
-                new: true,
-                runValidators: true,
-            },
-        ).select("-password -refreshToken -passwordResetToken -passwordResetExpires");
+        await user.save();
+
+        const updatedUser = await User.findById(user._id).select(
+            "-password -refreshToken -passwordResetToken -passwordResetExpires",
+        );
+
+        if (!updatedUser || normalizeRole(updatedUser.role) !== nextRole) {
+            return next(new AppError("Role update was not persisted. Please retry.", 500));
+        }
 
         res.json({
             success: true,
             message: `User role updated to ${nextRole}`,
+            previousRole,
             user: updatedUser,
         });
     } catch (err) {

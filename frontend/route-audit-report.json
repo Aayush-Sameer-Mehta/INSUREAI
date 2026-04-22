@@ -1,0 +1,1119 @@
+{
+  "summary": {
+    "generatedAt": "2026-04-22T10:19:41.174Z",
+    "baseUrl": "http://localhost:5173",
+    "totalRoutes": 31,
+    "routesWithAnyIssue": 21
+  },
+  "results": [
+    {
+      "route": "/",
+      "target": "http://localhost:5173/",
+      "finalUrl": "http://localhost:5173/",
+      "title": "InsureAI — AI-Powered Insurance Recommendations",
+      "status": 200,
+      "redirected": false,
+      "durationMs": 2938,
+      "navigationError": null,
+      "counts": {
+        "consoleIssues": 0,
+        "pageErrors": 0,
+        "requestFailures": 0
+      },
+      "consoleIssues": [],
+      "pageErrors": [],
+      "requestFailures": []
+    },
+    {
+      "route": "/policies",
+      "target": "http://localhost:5173/policies",
+      "finalUrl": "http://localhost:5173/policies",
+      "title": "InsureAI — AI-Powered Insurance Recommendations",
+      "status": 200,
+      "redirected": false,
+      "durationMs": 2728,
+      "navigationError": null,
+      "counts": {
+        "consoleIssues": 0,
+        "pageErrors": 0,
+        "requestFailures": 0
+      },
+      "consoleIssues": [],
+      "pageErrors": [],
+      "requestFailures": []
+    },
+    {
+      "route": "/policies/invalid-id",
+      "target": "http://localhost:5173/policies/invalid-id",
+      "finalUrl": "http://localhost:5173/policies/invalid-id",
+      "title": "InsureAI — AI-Powered Insurance Recommendations",
+      "status": 200,
+      "redirected": false,
+      "durationMs": 2735,
+      "navigationError": null,
+      "counts": {
+        "consoleIssues": 2,
+        "pageErrors": 0,
+        "requestFailures": 0
+      },
+      "consoleIssues": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+          "location": "http://localhost:5001/api/policies/invalid-id:0:0"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+          "location": "http://localhost:5001/api/policies/invalid-id/reviews:0:0"
+        }
+      ],
+      "pageErrors": [],
+      "requestFailures": []
+    },
+    {
+      "route": "/compare-policies",
+      "target": "http://localhost:5173/compare-policies",
+      "finalUrl": "http://localhost:5173/compare-policies",
+      "title": "InsureAI — AI-Powered Insurance Recommendations",
+      "status": 200,
+      "redirected": false,
+      "durationMs": 2726,
+      "navigationError": null,
+      "counts": {
+        "consoleIssues": 0,
+        "pageErrors": 0,
+        "requestFailures": 0
+      },
+      "consoleIssues": [],
+      "pageErrors": [],
+      "requestFailures": []
+    },
+    {
+      "route": "/premium-calculator",
+      "target": "http://localhost:5173/premium-calculator",
+      "finalUrl": "http://localhost:5173/premium-calculator",
+      "title": "InsureAI — AI-Powered Insurance Recommendations",
+      "status": 200,
+      "redirected": false,
+      "durationMs": 2747,
+      "navigationError": null,
+      "counts": {
+        "consoleIssues": 0,
+        "pageErrors": 0,
+        "requestFailures": 0
+      },
+      "consoleIssues": [],
+      "pageErrors": [],
+      "requestFailures": []
+    },
+    {
+      "route": "/recommendations",
+      "target": "http://localhost:5173/recommendations",
+      "finalUrl": "http://localhost:5173/recommendations",
+      "title": "InsureAI — AI-Powered Insurance Recommendations",
+      "status": 200,
+      "redirected": false,
+      "durationMs": 2738,
+      "navigationError": null,
+      "counts": {
+        "consoleIssues": 0,
+        "pageErrors": 0,
+        "requestFailures": 0
+      },
+      "consoleIssues": [],
+      "pageErrors": [],
+      "requestFailures": []
+    },
+    {
+      "route": "/login",
+      "target": "http://localhost:5173/login",
+      "finalUrl": "http://localhost:5173/login",
+      "title": "InsureAI — AI-Powered Insurance Recommendations",
+      "status": 200,
+      "redirected": false,
+      "durationMs": 2739,
+      "navigationError": null,
+      "counts": {
+        "consoleIssues": 4,
+        "pageErrors": 0,
+        "requestFailures": 1
+      },
+      "consoleIssues": [
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: Provided button width is invalid: 100%",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: google.accounts.id.initialize() is called multiple times. This could cause unexpected behavior and only the last initialized instance will be used.",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()",
+          "location": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listener=undefined&is_fedcm_supported=true&client_id=188307028748-3tqa78svkjn6erf1mnjvbs8rv4s6jgia.apps.googleusercontent.com&iframe_id=gsi_112056_258485&cas=%2FnQB1gGEI5lheZ9fFvAnrSMAxIVwozPgtsy8lwzxPP0:0:0"
+        },
+        {
+          "type": "error",
+          "text": "[GSI_LOGGER]: The given origin is not allowed for the given client ID.",
+          "location": "https://ssl.gstatic.com/_/gsi/_/js/k=gsi.gsi.en_GB.LzxwsWuIvI8.O/am=AAAACQLYAgEB/d=1/rs=AF0KOtWn6i4PygyCc5ou5ZfNUyAOqQ09jA/m=credential_button_library:85:88"
+        }
+      ],
+      "pageErrors": [],
+      "requestFailures": [
+        {
+          "method": "GET",
+          "url": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listene...",
+          "failure": "net::ERR_ABORTED"
+        }
+      ]
+    },
+    {
+      "route": "/register",
+      "target": "http://localhost:5173/register",
+      "finalUrl": "http://localhost:5173/register",
+      "title": "InsureAI — AI-Powered Insurance Recommendations",
+      "status": 200,
+      "redirected": false,
+      "durationMs": 2772,
+      "navigationError": null,
+      "counts": {
+        "consoleIssues": 0,
+        "pageErrors": 0,
+        "requestFailures": 0
+      },
+      "consoleIssues": [],
+      "pageErrors": [],
+      "requestFailures": []
+    },
+    {
+      "route": "/forgot-password",
+      "target": "http://localhost:5173/forgot-password",
+      "finalUrl": "http://localhost:5173/forgot-password",
+      "title": "InsureAI — AI-Powered Insurance Recommendations",
+      "status": 200,
+      "redirected": false,
+      "durationMs": 2740,
+      "navigationError": null,
+      "counts": {
+        "consoleIssues": 0,
+        "pageErrors": 0,
+        "requestFailures": 0
+      },
+      "consoleIssues": [],
+      "pageErrors": [],
+      "requestFailures": []
+    },
+    {
+      "route": "/reset-password",
+      "target": "http://localhost:5173/reset-password",
+      "finalUrl": "http://localhost:5173/reset-password",
+      "title": "InsureAI — AI-Powered Insurance Recommendations",
+      "status": 200,
+      "redirected": false,
+      "durationMs": 2718,
+      "navigationError": null,
+      "counts": {
+        "consoleIssues": 0,
+        "pageErrors": 0,
+        "requestFailures": 0
+      },
+      "consoleIssues": [],
+      "pageErrors": [],
+      "requestFailures": []
+    },
+    {
+      "route": "/dashboard",
+      "target": "http://localhost:5173/dashboard",
+      "finalUrl": "http://localhost:5173/login",
+      "title": "InsureAI — AI-Powered Insurance Recommendations",
+      "status": 200,
+      "redirected": true,
+      "durationMs": 2735,
+      "navigationError": null,
+      "counts": {
+        "consoleIssues": 4,
+        "pageErrors": 0,
+        "requestFailures": 1
+      },
+      "consoleIssues": [
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: Provided button width is invalid: 100%",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: google.accounts.id.initialize() is called multiple times. This could cause unexpected behavior and only the last initialized instance will be used.",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()",
+          "location": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listener=undefined&is_fedcm_supported=true&client_id=188307028748-3tqa78svkjn6erf1mnjvbs8rv4s6jgia.apps.googleusercontent.com&iframe_id=gsi_123430_279146&cas=z8dvg%2F82gnN9aw5f5UYHP8kfN7IMuh%2BOb20lAsiJeqk:0:0"
+        },
+        {
+          "type": "error",
+          "text": "[GSI_LOGGER]: The given origin is not allowed for the given client ID.",
+          "location": "https://ssl.gstatic.com/_/gsi/_/js/k=gsi.gsi.en_GB.LzxwsWuIvI8.O/am=AAAACQKYAkE/d=1/rs=AF0KOtUFis-D9uabiUNn4_TXs-4MM8PPQA/m=credential_button_library:85:88"
+        }
+      ],
+      "pageErrors": [],
+      "requestFailures": [
+        {
+          "method": "GET",
+          "url": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listene...",
+          "failure": "net::ERR_ABORTED"
+        }
+      ]
+    },
+    {
+      "route": "/user/dashboard",
+      "target": "http://localhost:5173/user/dashboard",
+      "finalUrl": "http://localhost:5173/login",
+      "title": "InsureAI — AI-Powered Insurance Recommendations",
+      "status": 200,
+      "redirected": true,
+      "durationMs": 2765,
+      "navigationError": null,
+      "counts": {
+        "consoleIssues": 4,
+        "pageErrors": 0,
+        "requestFailures": 1
+      },
+      "consoleIssues": [
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: Provided button width is invalid: 100%",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: google.accounts.id.initialize() is called multiple times. This could cause unexpected behavior and only the last initialized instance will be used.",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()",
+          "location": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listener=undefined&is_fedcm_supported=true&client_id=188307028748-3tqa78svkjn6erf1mnjvbs8rv4s6jgia.apps.googleusercontent.com&iframe_id=gsi_126248_386679&cas=IN7dKGnCuCAS4fr6TNLGIdkhZFLBBxUYariMpOTLo98:0:0"
+        },
+        {
+          "type": "error",
+          "text": "[GSI_LOGGER]: The given origin is not allowed for the given client ID.",
+          "location": "https://ssl.gstatic.com/_/gsi/_/js/k=gsi.gsi.en_GB.LzxwsWuIvI8.O/am=AAAACQLYAiE/d=1/rs=AF0KOtW94Hv2hPnrH8z068sXLTVcFSGsHw/m=credential_button_library:85:88"
+        }
+      ],
+      "pageErrors": [],
+      "requestFailures": [
+        {
+          "method": "GET",
+          "url": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listene...",
+          "failure": "net::ERR_ABORTED"
+        }
+      ]
+    },
+    {
+      "route": "/my-policies",
+      "target": "http://localhost:5173/my-policies",
+      "finalUrl": "http://localhost:5173/login",
+      "title": "InsureAI — AI-Powered Insurance Recommendations",
+      "status": 200,
+      "redirected": true,
+      "durationMs": 2718,
+      "navigationError": null,
+      "counts": {
+        "consoleIssues": 4,
+        "pageErrors": 0,
+        "requestFailures": 1
+      },
+      "consoleIssues": [
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: Provided button width is invalid: 100%",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: google.accounts.id.initialize() is called multiple times. This could cause unexpected behavior and only the last initialized instance will be used.",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()",
+          "location": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listener=undefined&is_fedcm_supported=true&client_id=188307028748-3tqa78svkjn6erf1mnjvbs8rv4s6jgia.apps.googleusercontent.com&iframe_id=gsi_129026_372975&cas=WVW%2FxSPO0w7OKurWPJ4JGjvkbZDKUS0ECn9pwDokgz4:0:0"
+        },
+        {
+          "type": "error",
+          "text": "[GSI_LOGGER]: The given origin is not allowed for the given client ID.",
+          "location": "https://ssl.gstatic.com/_/gsi/_/js/k=gsi.gsi.en_GB.LzxwsWuIvI8.O/am=AAAACQKYAgE/d=1/rs=AF0KOtW4JadyQ5Q3V7MeOSxk2qZ0ZDH28A/m=credential_button_library:85:88"
+        }
+      ],
+      "pageErrors": [],
+      "requestFailures": [
+        {
+          "method": "GET",
+          "url": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listene...",
+          "failure": "net::ERR_ABORTED"
+        }
+      ]
+    },
+    {
+      "route": "/renewals",
+      "target": "http://localhost:5173/renewals",
+      "finalUrl": "http://localhost:5173/login",
+      "title": "InsureAI — AI-Powered Insurance Recommendations",
+      "status": 200,
+      "redirected": true,
+      "durationMs": 2718,
+      "navigationError": null,
+      "counts": {
+        "consoleIssues": 4,
+        "pageErrors": 0,
+        "requestFailures": 1
+      },
+      "consoleIssues": [
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: Provided button width is invalid: 100%",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: google.accounts.id.initialize() is called multiple times. This could cause unexpected behavior and only the last initialized instance will be used.",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()",
+          "location": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listener=undefined&is_fedcm_supported=true&client_id=188307028748-3tqa78svkjn6erf1mnjvbs8rv4s6jgia.apps.googleusercontent.com&iframe_id=gsi_131788_985027&cas=A5UKrSpU%2FE%2BicUQsd%2FSxMV4GyguG8wSfOcEA5qy4yw0:0:0"
+        },
+        {
+          "type": "error",
+          "text": "[GSI_LOGGER]: The given origin is not allowed for the given client ID.",
+          "location": "https://ssl.gstatic.com/_/gsi/_/js/k=gsi.gsi.en_GB.LzxwsWuIvI8.O/am=AAAACQLYAgEAAg/d=1/rs=AF0KOtUvHFXmRCEXnT9dia7Yt8pQO9d5bQ/m=credential_button_library:85:88"
+        }
+      ],
+      "pageErrors": [],
+      "requestFailures": [
+        {
+          "method": "GET",
+          "url": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listene...",
+          "failure": "net::ERR_ABORTED"
+        }
+      ]
+    },
+    {
+      "route": "/profile",
+      "target": "http://localhost:5173/profile",
+      "finalUrl": "http://localhost:5173/login",
+      "title": "InsureAI — AI-Powered Insurance Recommendations",
+      "status": 200,
+      "redirected": true,
+      "durationMs": 2718,
+      "navigationError": null,
+      "counts": {
+        "consoleIssues": 4,
+        "pageErrors": 0,
+        "requestFailures": 1
+      },
+      "consoleIssues": [
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: Provided button width is invalid: 100%",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: google.accounts.id.initialize() is called multiple times. This could cause unexpected behavior and only the last initialized instance will be used.",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()",
+          "location": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listener=undefined&is_fedcm_supported=true&client_id=188307028748-3tqa78svkjn6erf1mnjvbs8rv4s6jgia.apps.googleusercontent.com&iframe_id=gsi_134596_66309&cas=lcz%2BQNf1dK3j0Ux4vtfT3q6Vna6Wzn1QT%2BGuyE801Z4:0:0"
+        },
+        {
+          "type": "error",
+          "text": "[GSI_LOGGER]: The given origin is not allowed for the given client ID.",
+          "location": "https://ssl.gstatic.com/_/gsi/_/js/k=gsi.gsi.en_GB.LzxwsWuIvI8.O/am=AAAACQKYAgE/d=1/rs=AF0KOtW4JadyQ5Q3V7MeOSxk2qZ0ZDH28A/m=credential_button_library:85:88"
+        }
+      ],
+      "pageErrors": [],
+      "requestFailures": [
+        {
+          "method": "GET",
+          "url": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listene...",
+          "failure": "net::ERR_ABORTED"
+        }
+      ]
+    },
+    {
+      "route": "/onboarding",
+      "target": "http://localhost:5173/onboarding",
+      "finalUrl": "http://localhost:5173/login",
+      "title": "InsureAI — AI-Powered Insurance Recommendations",
+      "status": 200,
+      "redirected": true,
+      "durationMs": 2711,
+      "navigationError": null,
+      "counts": {
+        "consoleIssues": 4,
+        "pageErrors": 0,
+        "requestFailures": 1
+      },
+      "consoleIssues": [
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: Provided button width is invalid: 100%",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: google.accounts.id.initialize() is called multiple times. This could cause unexpected behavior and only the last initialized instance will be used.",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()",
+          "location": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listener=undefined&is_fedcm_supported=true&client_id=188307028748-3tqa78svkjn6erf1mnjvbs8rv4s6jgia.apps.googleusercontent.com&iframe_id=gsi_137399_448717&cas=fqvn%2FjSDSduGTkt3ZK9YscnUKRPLI9N7C9htT69iwhk:0:0"
+        },
+        {
+          "type": "error",
+          "text": "[GSI_LOGGER]: The given origin is not allowed for the given client ID.",
+          "location": "https://ssl.gstatic.com/_/gsi/_/js/k=gsi.gsi.en_GB.LzxwsWuIvI8.O/am=AAAACQKYAgEQ/d=1/rs=AF0KOtVe7RNTYkC-tEB1abJxhE0hSeX4jg/m=credential_button_library:85:88"
+        }
+      ],
+      "pageErrors": [],
+      "requestFailures": [
+        {
+          "method": "GET",
+          "url": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listene...",
+          "failure": "net::ERR_ABORTED"
+        }
+      ]
+    },
+    {
+      "route": "/preferences",
+      "target": "http://localhost:5173/preferences",
+      "finalUrl": "http://localhost:5173/login",
+      "title": "InsureAI — AI-Powered Insurance Recommendations",
+      "status": 200,
+      "redirected": true,
+      "durationMs": 2694,
+      "navigationError": null,
+      "counts": {
+        "consoleIssues": 4,
+        "pageErrors": 0,
+        "requestFailures": 1
+      },
+      "consoleIssues": [
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: Provided button width is invalid: 100%",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: google.accounts.id.initialize() is called multiple times. This could cause unexpected behavior and only the last initialized instance will be used.",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()",
+          "location": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listener=undefined&is_fedcm_supported=true&client_id=188307028748-3tqa78svkjn6erf1mnjvbs8rv4s6jgia.apps.googleusercontent.com&iframe_id=gsi_140139_145858&cas=6wJrejK5ZvdbbpdvRCMbvv2MzBwMP1VM2oT0VPZut%2FM:0:0"
+        },
+        {
+          "type": "error",
+          "text": "[GSI_LOGGER]: The given origin is not allowed for the given client ID.",
+          "location": "https://ssl.gstatic.com/_/gsi/_/js/k=gsi.gsi.en_GB.LzxwsWuIvI8.O/am=AAAACQLYggE/d=1/rs=AF0KOtV8WAM_C1WPnhoOX-nimxBF5Ips9Q/m=credential_button_library:85:88"
+        }
+      ],
+      "pageErrors": [],
+      "requestFailures": [
+        {
+          "method": "GET",
+          "url": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listene...",
+          "failure": "net::ERR_ABORTED"
+        }
+      ]
+    },
+    {
+      "route": "/claims",
+      "target": "http://localhost:5173/claims",
+      "finalUrl": "http://localhost:5173/login",
+      "title": "InsureAI — AI-Powered Insurance Recommendations",
+      "status": 200,
+      "redirected": true,
+      "durationMs": 2710,
+      "navigationError": null,
+      "counts": {
+        "consoleIssues": 4,
+        "pageErrors": 0,
+        "requestFailures": 1
+      },
+      "consoleIssues": [
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: Provided button width is invalid: 100%",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: google.accounts.id.initialize() is called multiple times. This could cause unexpected behavior and only the last initialized instance will be used.",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()",
+          "location": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listener=undefined&is_fedcm_supported=true&client_id=188307028748-3tqa78svkjn6erf1mnjvbs8rv4s6jgia.apps.googleusercontent.com&iframe_id=gsi_142926_50227&cas=to9IKjo7jiaXs5H5PoSi8y6CwcTkVHcovQdAwZaGzoU:0:0"
+        },
+        {
+          "type": "error",
+          "text": "[GSI_LOGGER]: The given origin is not allowed for the given client ID.",
+          "location": "https://ssl.gstatic.com/_/gsi/_/js/k=gsi.gsi.en_GB.LzxwsWuIvI8.O/am=AAAACQKYAgE/d=1/rs=AF0KOtW4JadyQ5Q3V7MeOSxk2qZ0ZDH28A/m=credential_button_library:85:88"
+        }
+      ],
+      "pageErrors": [],
+      "requestFailures": [
+        {
+          "method": "GET",
+          "url": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listene...",
+          "failure": "net::ERR_ABORTED"
+        }
+      ]
+    },
+    {
+      "route": "/payment/invalid-id",
+      "target": "http://localhost:5173/payment/invalid-id",
+      "finalUrl": "http://localhost:5173/login",
+      "title": "InsureAI — AI-Powered Insurance Recommendations",
+      "status": 200,
+      "redirected": true,
+      "durationMs": 2716,
+      "navigationError": null,
+      "counts": {
+        "consoleIssues": 4,
+        "pageErrors": 0,
+        "requestFailures": 1
+      },
+      "consoleIssues": [
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: Provided button width is invalid: 100%",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: google.accounts.id.initialize() is called multiple times. This could cause unexpected behavior and only the last initialized instance will be used.",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()",
+          "location": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listener=undefined&is_fedcm_supported=true&client_id=188307028748-3tqa78svkjn6erf1mnjvbs8rv4s6jgia.apps.googleusercontent.com&iframe_id=gsi_145690_301423&cas=vtEDMBt%2FC4aG6%2BUGYDY9Y9Vbe4xFw3Pa7kM3XNAlrrQ:0:0"
+        },
+        {
+          "type": "error",
+          "text": "[GSI_LOGGER]: The given origin is not allowed for the given client ID.",
+          "location": "https://ssl.gstatic.com/_/gsi/_/js/k=gsi.gsi.en_GB.LzxwsWuIvI8.O/am=AAAACQKYAgE/d=1/rs=AF0KOtW4JadyQ5Q3V7MeOSxk2qZ0ZDH28A/m=credential_button_library:85:88"
+        }
+      ],
+      "pageErrors": [],
+      "requestFailures": [
+        {
+          "method": "GET",
+          "url": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listene...",
+          "failure": "net::ERR_ABORTED"
+        }
+      ]
+    },
+    {
+      "route": "/admin",
+      "target": "http://localhost:5173/admin",
+      "finalUrl": "http://localhost:5173/login",
+      "title": "InsureAI — AI-Powered Insurance Recommendations",
+      "status": 200,
+      "redirected": true,
+      "durationMs": 2701,
+      "navigationError": null,
+      "counts": {
+        "consoleIssues": 4,
+        "pageErrors": 0,
+        "requestFailures": 1
+      },
+      "consoleIssues": [
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: Provided button width is invalid: 100%",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: google.accounts.id.initialize() is called multiple times. This could cause unexpected behavior and only the last initialized instance will be used.",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()",
+          "location": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listener=undefined&is_fedcm_supported=true&client_id=188307028748-3tqa78svkjn6erf1mnjvbs8rv4s6jgia.apps.googleusercontent.com&iframe_id=gsi_148460_952954&cas=aspe3Nn5Y2n3YiY1YjZefa1%2BKCs3Z2omH7wxN1LLocA:0:0"
+        },
+        {
+          "type": "error",
+          "text": "[GSI_LOGGER]: The given origin is not allowed for the given client ID.",
+          "location": "https://ssl.gstatic.com/_/gsi/_/js/k=gsi.gsi.en_GB.LzxwsWuIvI8.O/am=AAAACQLYAgE/d=1/rs=AF0KOtUMm3lMiEIOqT27AF_jTv92zFsAoQ/m=credential_button_library:85:88"
+        }
+      ],
+      "pageErrors": [],
+      "requestFailures": [
+        {
+          "method": "GET",
+          "url": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listene...",
+          "failure": "net::ERR_ABORTED"
+        }
+      ]
+    },
+    {
+      "route": "/admin/dashboard",
+      "target": "http://localhost:5173/admin/dashboard",
+      "finalUrl": "http://localhost:5173/login",
+      "title": "InsureAI — AI-Powered Insurance Recommendations",
+      "status": 200,
+      "redirected": true,
+      "durationMs": 2703,
+      "navigationError": null,
+      "counts": {
+        "consoleIssues": 4,
+        "pageErrors": 0,
+        "requestFailures": 1
+      },
+      "consoleIssues": [
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: Provided button width is invalid: 100%",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: google.accounts.id.initialize() is called multiple times. This could cause unexpected behavior and only the last initialized instance will be used.",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()",
+          "location": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listener=undefined&is_fedcm_supported=true&client_id=188307028748-3tqa78svkjn6erf1mnjvbs8rv4s6jgia.apps.googleusercontent.com&iframe_id=gsi_151229_175398&cas=SZw2V7Yo13l8MMfsHAUiUcE9R5dks6GU%2FVXLbpneR2U:0:0"
+        },
+        {
+          "type": "error",
+          "text": "[GSI_LOGGER]: The given origin is not allowed for the given client ID.",
+          "location": "https://ssl.gstatic.com/_/gsi/_/js/k=gsi.gsi.en_GB.LzxwsWuIvI8.O/am=AAAACQKYAgE/d=1/rs=AF0KOtW4JadyQ5Q3V7MeOSxk2qZ0ZDH28A/m=credential_button_library:85:88"
+        }
+      ],
+      "pageErrors": [],
+      "requestFailures": [
+        {
+          "method": "GET",
+          "url": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listene...",
+          "failure": "net::ERR_ABORTED"
+        }
+      ]
+    },
+    {
+      "route": "/admin/users",
+      "target": "http://localhost:5173/admin/users",
+      "finalUrl": "http://localhost:5173/login",
+      "title": "InsureAI — AI-Powered Insurance Recommendations",
+      "status": 200,
+      "redirected": true,
+      "durationMs": 2710,
+      "navigationError": null,
+      "counts": {
+        "consoleIssues": 4,
+        "pageErrors": 0,
+        "requestFailures": 1
+      },
+      "consoleIssues": [
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: Provided button width is invalid: 100%",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: google.accounts.id.initialize() is called multiple times. This could cause unexpected behavior and only the last initialized instance will be used.",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()",
+          "location": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listener=undefined&is_fedcm_supported=true&client_id=188307028748-3tqa78svkjn6erf1mnjvbs8rv4s6jgia.apps.googleusercontent.com&iframe_id=gsi_154028_900619&cas=R7J5KabWxfLJh1b49EEhNZ9U%2Bgbu3HTEmu6ClkeQzfc:0:0"
+        },
+        {
+          "type": "error",
+          "text": "[GSI_LOGGER]: The given origin is not allowed for the given client ID.",
+          "location": "https://ssl.gstatic.com/_/gsi/_/js/k=gsi.gsi.en_GB.LzxwsWuIvI8.O/am=AAAACQLYAgEI/d=1/rs=AF0KOtU1E2ql_Q48KtNxea-R3XaxRDuDaQ/m=credential_button_library:85:88"
+        }
+      ],
+      "pageErrors": [],
+      "requestFailures": [
+        {
+          "method": "GET",
+          "url": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listene...",
+          "failure": "net::ERR_ABORTED"
+        }
+      ]
+    },
+    {
+      "route": "/admin/policies",
+      "target": "http://localhost:5173/admin/policies",
+      "finalUrl": "http://localhost:5173/login",
+      "title": "InsureAI — AI-Powered Insurance Recommendations",
+      "status": 200,
+      "redirected": true,
+      "durationMs": 2774,
+      "navigationError": null,
+      "counts": {
+        "consoleIssues": 4,
+        "pageErrors": 0,
+        "requestFailures": 1
+      },
+      "consoleIssues": [
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: Provided button width is invalid: 100%",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: google.accounts.id.initialize() is called multiple times. This could cause unexpected behavior and only the last initialized instance will be used.",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()",
+          "location": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listener=undefined&is_fedcm_supported=true&client_id=188307028748-3tqa78svkjn6erf1mnjvbs8rv4s6jgia.apps.googleusercontent.com&iframe_id=gsi_156842_84344&cas=4E1aivx4LP14vRTb6HcLbca8jZTL0z3CiNuOT1t7CSo:0:0"
+        },
+        {
+          "type": "error",
+          "text": "[GSI_LOGGER]: The given origin is not allowed for the given client ID.",
+          "location": "https://ssl.gstatic.com/_/gsi/_/js/k=gsi.gsi.en_GB.LzxwsWuIvI8.O/am=AAAACQKYAgEI/d=1/rs=AF0KOtUcwp8LDL-ODDsADDCn9Yw3WlSGTA/m=credential_button_library:85:88"
+        }
+      ],
+      "pageErrors": [],
+      "requestFailures": [
+        {
+          "method": "GET",
+          "url": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listene...",
+          "failure": "net::ERR_ABORTED"
+        }
+      ]
+    },
+    {
+      "route": "/admin/policies/new",
+      "target": "http://localhost:5173/admin/policies/new",
+      "finalUrl": "http://localhost:5173/login",
+      "title": "InsureAI — AI-Powered Insurance Recommendations",
+      "status": 200,
+      "redirected": true,
+      "durationMs": 2724,
+      "navigationError": null,
+      "counts": {
+        "consoleIssues": 4,
+        "pageErrors": 0,
+        "requestFailures": 1
+      },
+      "consoleIssues": [
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: Provided button width is invalid: 100%",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: google.accounts.id.initialize() is called multiple times. This could cause unexpected behavior and only the last initialized instance will be used.",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()",
+          "location": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listener=undefined&is_fedcm_supported=true&client_id=188307028748-3tqa78svkjn6erf1mnjvbs8rv4s6jgia.apps.googleusercontent.com&iframe_id=gsi_159610_346634&cas=yIcI%2F4A0y8rsZWTmAjohFvFMaO%2BtDCpMd3jA66Po5C8:0:0"
+        },
+        {
+          "type": "error",
+          "text": "[GSI_LOGGER]: The given origin is not allowed for the given client ID.",
+          "location": "https://ssl.gstatic.com/_/gsi/_/js/k=gsi.gsi.en_GB.LzxwsWuIvI8.O/am=AAAACQLYAgE/d=1/rs=AF0KOtUMm3lMiEIOqT27AF_jTv92zFsAoQ/m=credential_button_library:85:88"
+        }
+      ],
+      "pageErrors": [],
+      "requestFailures": [
+        {
+          "method": "GET",
+          "url": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listene...",
+          "failure": "net::ERR_ABORTED"
+        }
+      ]
+    },
+    {
+      "route": "/admin/claims",
+      "target": "http://localhost:5173/admin/claims",
+      "finalUrl": "http://localhost:5173/login",
+      "title": "InsureAI — AI-Powered Insurance Recommendations",
+      "status": 200,
+      "redirected": true,
+      "durationMs": 2705,
+      "navigationError": null,
+      "counts": {
+        "consoleIssues": 4,
+        "pageErrors": 0,
+        "requestFailures": 1
+      },
+      "consoleIssues": [
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: Provided button width is invalid: 100%",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: google.accounts.id.initialize() is called multiple times. This could cause unexpected behavior and only the last initialized instance will be used.",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()",
+          "location": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listener=undefined&is_fedcm_supported=true&client_id=188307028748-3tqa78svkjn6erf1mnjvbs8rv4s6jgia.apps.googleusercontent.com&iframe_id=gsi_162415_313457&cas=qBSVvghY4GaSoHBzxi%2F216P5hCTYQmWIXvuTcerNXJM:0:0"
+        },
+        {
+          "type": "error",
+          "text": "[GSI_LOGGER]: The given origin is not allowed for the given client ID.",
+          "location": "https://ssl.gstatic.com/_/gsi/_/js/k=gsi.gsi.en_GB.LzxwsWuIvI8.O/am=AAAACQKYAgE/d=1/rs=AF0KOtW4JadyQ5Q3V7MeOSxk2qZ0ZDH28A/m=credential_button_library:85:88"
+        }
+      ],
+      "pageErrors": [],
+      "requestFailures": [
+        {
+          "method": "GET",
+          "url": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listene...",
+          "failure": "net::ERR_ABORTED"
+        }
+      ]
+    },
+    {
+      "route": "/admin/payments",
+      "target": "http://localhost:5173/admin/payments",
+      "finalUrl": "http://localhost:5173/login",
+      "title": "InsureAI — AI-Powered Insurance Recommendations",
+      "status": 200,
+      "redirected": true,
+      "durationMs": 2706,
+      "navigationError": null,
+      "counts": {
+        "consoleIssues": 4,
+        "pageErrors": 0,
+        "requestFailures": 1
+      },
+      "consoleIssues": [
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: Provided button width is invalid: 100%",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: google.accounts.id.initialize() is called multiple times. This could cause unexpected behavior and only the last initialized instance will be used.",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()",
+          "location": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listener=undefined&is_fedcm_supported=true&client_id=188307028748-3tqa78svkjn6erf1mnjvbs8rv4s6jgia.apps.googleusercontent.com&iframe_id=gsi_165180_535731&cas=8pvqdbU0uzIBHsv3wKRXI2pwkDrEJTEPR9e77EPqeuo:0:0"
+        },
+        {
+          "type": "error",
+          "text": "[GSI_LOGGER]: The given origin is not allowed for the given client ID.",
+          "location": "https://ssl.gstatic.com/_/gsi/_/js/k=gsi.gsi.en_GB.LzxwsWuIvI8.O/am=AAAACQLYAgE/d=1/rs=AF0KOtUMm3lMiEIOqT27AF_jTv92zFsAoQ/m=credential_button_library:85:88"
+        }
+      ],
+      "pageErrors": [],
+      "requestFailures": [
+        {
+          "method": "GET",
+          "url": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listene...",
+          "failure": "net::ERR_ABORTED"
+        }
+      ]
+    },
+    {
+      "route": "/admin/analytics",
+      "target": "http://localhost:5173/admin/analytics",
+      "finalUrl": "http://localhost:5173/login",
+      "title": "InsureAI — AI-Powered Insurance Recommendations",
+      "status": 200,
+      "redirected": true,
+      "durationMs": 2732,
+      "navigationError": null,
+      "counts": {
+        "consoleIssues": 4,
+        "pageErrors": 0,
+        "requestFailures": 1
+      },
+      "consoleIssues": [
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: Provided button width is invalid: 100%",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: google.accounts.id.initialize() is called multiple times. This could cause unexpected behavior and only the last initialized instance will be used.",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()",
+          "location": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listener=undefined&is_fedcm_supported=true&client_id=188307028748-3tqa78svkjn6erf1mnjvbs8rv4s6jgia.apps.googleusercontent.com&iframe_id=gsi_167997_389928&cas=sb0vJQVR0e5OsfKiS1CYpW9sVRjpg1wTPc5nKp14UI0:0:0"
+        },
+        {
+          "type": "error",
+          "text": "[GSI_LOGGER]: The given origin is not allowed for the given client ID.",
+          "location": "https://ssl.gstatic.com/_/gsi/_/js/k=gsi.gsi.en_GB.LzxwsWuIvI8.O/am=AAAACQLYAgE/d=1/rs=AF0KOtUMm3lMiEIOqT27AF_jTv92zFsAoQ/m=credential_button_library:85:88"
+        }
+      ],
+      "pageErrors": [],
+      "requestFailures": [
+        {
+          "method": "GET",
+          "url": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listene...",
+          "failure": "net::ERR_ABORTED"
+        }
+      ]
+    },
+    {
+      "route": "/admin/reports",
+      "target": "http://localhost:5173/admin/reports",
+      "finalUrl": "http://localhost:5173/login",
+      "title": "InsureAI — AI-Powered Insurance Recommendations",
+      "status": 200,
+      "redirected": true,
+      "durationMs": 2704,
+      "navigationError": null,
+      "counts": {
+        "consoleIssues": 4,
+        "pageErrors": 0,
+        "requestFailures": 1
+      },
+      "consoleIssues": [
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: Provided button width is invalid: 100%",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: google.accounts.id.initialize() is called multiple times. This could cause unexpected behavior and only the last initialized instance will be used.",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()",
+          "location": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listener=undefined&is_fedcm_supported=true&client_id=188307028748-3tqa78svkjn6erf1mnjvbs8rv4s6jgia.apps.googleusercontent.com&iframe_id=gsi_170741_60390&cas=vFoVl6o9kt7cveDhw6bezbp6p6iCbzpXzfMPsToctpI:0:0"
+        },
+        {
+          "type": "error",
+          "text": "[GSI_LOGGER]: The given origin is not allowed for the given client ID.",
+          "location": "https://ssl.gstatic.com/_/gsi/_/js/k=gsi.gsi.en_GB.LzxwsWuIvI8.O/am=AAAACQLYAgE/d=1/rs=AF0KOtUMm3lMiEIOqT27AF_jTv92zFsAoQ/m=credential_button_library:85:88"
+        }
+      ],
+      "pageErrors": [],
+      "requestFailures": [
+        {
+          "method": "GET",
+          "url": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listene...",
+          "failure": "net::ERR_ABORTED"
+        }
+      ]
+    },
+    {
+      "route": "/admin/settings",
+      "target": "http://localhost:5173/admin/settings",
+      "finalUrl": "http://localhost:5173/login",
+      "title": "InsureAI — AI-Powered Insurance Recommendations",
+      "status": 200,
+      "redirected": true,
+      "durationMs": 2713,
+      "navigationError": null,
+      "counts": {
+        "consoleIssues": 4,
+        "pageErrors": 0,
+        "requestFailures": 1
+      },
+      "consoleIssues": [
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: Provided button width is invalid: 100%",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "warning",
+          "text": "[GSI_LOGGER]: google.accounts.id.initialize() is called multiple times. This could cause unexpected behavior and only the last initialized instance will be used.",
+          "location": "https://accounts.google.com/gsi/client:84:459"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()",
+          "location": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listener=undefined&is_fedcm_supported=true&client_id=188307028748-3tqa78svkjn6erf1mnjvbs8rv4s6jgia.apps.googleusercontent.com&iframe_id=gsi_173534_61935&cas=zcKDTT4I84akSOveUFSOklUWNG3Hi2BL2U4QP7PrudA:0:0"
+        },
+        {
+          "type": "error",
+          "text": "[GSI_LOGGER]: The given origin is not allowed for the given client ID.",
+          "location": "https://ssl.gstatic.com/_/gsi/_/js/k=gsi.gsi.en_GB.LzxwsWuIvI8.O/am=AAAACQLYAoE/d=1/rs=AF0KOtUycBi1GSi8jL10_KwXr_h2Ebvagg/m=credential_button_library:85:88"
+        }
+      ],
+      "pageErrors": [],
+      "requestFailures": [
+        {
+          "method": "GET",
+          "url": "https://accounts.google.com/gsi/button?type=standard&theme=outline&size=large&text=undefined&shape=undefined&logo_alignment=undefined&width=100%25&locale=undefined&click_listene...",
+          "failure": "net::ERR_ABORTED"
+        }
+      ]
+    },
+    {
+      "route": "/contact",
+      "target": "http://localhost:5173/contact",
+      "finalUrl": "http://localhost:5173/contact",
+      "title": "InsureAI — AI-Powered Insurance Recommendations",
+      "status": 200,
+      "redirected": false,
+      "durationMs": 2715,
+      "navigationError": null,
+      "counts": {
+        "consoleIssues": 0,
+        "pageErrors": 0,
+        "requestFailures": 0
+      },
+      "consoleIssues": [],
+      "pageErrors": [],
+      "requestFailures": []
+    },
+    {
+      "route": "/this-route-should-404",
+      "target": "http://localhost:5173/this-route-should-404",
+      "finalUrl": "http://localhost:5173/this-route-should-404",
+      "title": "InsureAI — AI-Powered Insurance Recommendations",
+      "status": 200,
+      "redirected": false,
+      "durationMs": 2701,
+      "navigationError": null,
+      "counts": {
+        "consoleIssues": 0,
+        "pageErrors": 0,
+        "requestFailures": 0
+      },
+      "consoleIssues": [],
+      "pageErrors": [],
+      "requestFailures": []
+    }
+  ]
+}
