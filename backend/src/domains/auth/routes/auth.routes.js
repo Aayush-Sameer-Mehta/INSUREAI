@@ -89,7 +89,7 @@ router.post("/login", validate(loginSchema), async (req, res, next) => {
             return next(new AppError("Your account is inactive. Please contact support.", 403));
         }
 
-        if (normalizeRole(user.role) !== login_role) {
+        if (normalizeRole(user.role) !== normalizeRole(login_role)) {
             return next(new AppError("Invalid role login", 403));
         }
 
