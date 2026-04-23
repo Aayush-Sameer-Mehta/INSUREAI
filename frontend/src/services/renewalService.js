@@ -1,6 +1,6 @@
 import api from "./api";
 import { fetchPolicies as fetchPoliciesApi } from "./policyService";
-import { createPaymentOrder, verifyPayment } from "./paymentService";
+import { createPaymentOrder, openRazorpayCheckout, verifyPayment } from "./paymentService";
 
 export const INSURANCE_TYPES = [
  { key: "car", label: "Car Insurance", shortLabel: "Car" },
@@ -202,21 +202,63 @@ export async function fetchRenewalPolicyDetails({ lookupValue, insuranceType }) 
  return getFallbackPolicyDetails({ lookupValue: normalized, insuranceType });
 }
 
+export async function fetchRenewalPolicyDetailsForUser({ insuranceType }) {
+ return getFallbackPolicyDetails({ lookupValue: "", insuranceType });
+}
+
 export async function payRenewal(payload) {
  const purchaseId = payload?.purchaseId;
  const policyId = payload?.policyId;
+ const paymentMethod = payload?.paymentMethod || "upi";
+ const amount = payload?.amount;
 
  if (!purchaseId && !policyId) {
   throw new Error("Purchase ID is required for renewal payment.");
  }
 
  try {
+  let paymentMeta = {};
+
+  if (policyId) {
+   const orderResponse = await createPaymentOrder(policyId, amount);
+   const gateway = orderResponse?.gateway || {};
+   const order = orderResponse?.order || orderResponse;
+   const provider = gateway?.provider || order?.provider || "mock";
+
+   if (provider === "razorpay") {
+    if (!order?.id) {
+     throw new Error("Unable to create Razorpay order for renewal.");
+    }
+
+    const razorpayResponse = await openRazorpayCheckout({
+     order,
+     keyId: gateway?.keyId || "",
+     selectedMethod: paymentMethod,
+     customer: orderResponse?.customer || {},
+     policy: orderResponse?.policy || { id: policyId, name: payload?.policyName || "Policy Renewal" },
+    });
+
+    paymentMeta = {
+     orderId: razorpayResponse?.razorpay_order_id,
+     paymentId: razorpayResponse?.razorpay_payment_id,
+     signature: razorpayResponse?.razorpay_signature,
+    };
+   } else {
+    paymentMeta = {
+     orderId: order?.id || `order_${Date.now()}`,
+     paymentId: payload?.paymentId || `pay_${Date.now()}`,
+     signature: payload?.signature || "mock_signature",
+    };
+   }
+  }
+
   const { data } = await api.post("/payments/renew", {
    purchaseId,
    policyId,
-   amount: payload?.amount,
-   paymentMethod: payload?.paymentMethod || "upi",
+   amount,
+   paymentMethod,
    autoRenewalFlag: payload?.autoRenewalFlag,
+   ...paymentMeta,
   });
   return data;
  } catch (error) {

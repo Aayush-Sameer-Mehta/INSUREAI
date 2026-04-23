@@ -475,6 +475,23 @@ body {
   animation: float 6s ease-in-out infinite;
 }
 
+/* ─── 3D Motion Utilities ───────────────────────── */
+.scene-3d {
+  perspective: 1200px;
+  transform-style: preserve-3d;
+}
+
+.card-3d {
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.card-3d-layer {
+  transform: translateZ(28px);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
 /* ─── Chart container responsiveness ─────────────── */
 .recharts-responsive-container {
   min-height: 250px;
@@ -575,6 +592,14 @@ html, body {
 
   .data-table {
     min-width: 720px;
+  }
+
+  .scene-3d {
+    perspective: none;
+  }
+
+  .card-3d-layer {
+    transform: none;
   }
 }
 

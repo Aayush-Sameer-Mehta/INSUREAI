@@ -14,7 +14,13 @@ import {
 } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import CountUp from "react-countup";
-import { motion } from "framer-motion";
+import {
+ motion,
+ useMotionValue,
+ useReducedMotion,
+ useSpring,
+ useTransform,
+} from "framer-motion";
 import { CATEGORY_ICONS, CATEGORY_GRADIENTS } from "../utils/categoryConfig";
 
 import heroPerson from "../assets/image/hero-person.png";
@@ -43,6 +49,37 @@ function useInView(threshold = 0.2) {
 /* ═══════════════════════════════════════════════════════ */
 export default function Home() {
  const [statsRef, statsInView] = useInView(0.3);
+ const prefersReducedMotion = useReducedMotion();
+ const heroRotateX = useMotionValue(0);
+ const heroRotateY = useMotionValue(0);
+ const heroRotateXSmooth = useSpring(heroRotateX, {
+ stiffness: 160,
+ damping: 22,
+ mass: 0.7,
+ });
+ const heroRotateYSmooth = useSpring(heroRotateY, {
+ stiffness: 160,
+ damping: 22,
+ mass: 0.7,
+ });
+ const heroOrbX = useTransform(heroRotateYSmooth, [-10, 10], [-12, 12]);
+ const heroOrbY = useTransform(heroRotateXSmooth, [-10, 10], [12, -12]);
+
+ const handleHeroMouseMove = (event) => {
+ if (prefersReducedMotion) return;
+ const bounds = event.currentTarget.getBoundingClientRect();
+ const mouseX = event.clientX - bounds.left;
+ const mouseY = event.clientY - bounds.top;
+ const normalizedX = mouseX / bounds.width - 0.5;
+ const normalizedY = mouseY / bounds.height - 0.5;
+ heroRotateY.set(normalizedX * 12);
+ heroRotateX.set(normalizedY * -10);
+ };
+
+ const handleHeroMouseLeave = () => {
+ heroRotateX.set(0);
+ heroRotateY.set(0);
+ };
 
  const categories = [
  {
@@ -178,9 +215,25 @@ export default function Home() {
  <div className="overflow-hidden">
  {/* ─── HERO ─────────────────────────────────────── */}
  <section className="relative min-h-[80vh] sm:min-h-[92vh] flex items-center overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 ">
- {/* decorative blobs — static, no animation */}
- <div className="absolute -top-32 -left-32 h-64 sm:h-96 w-64 sm:w-96 rounded-full bg-indigo-300/20 blur-3xl " />
- <div className="absolute -bottom-40 right-0 h-64 sm:h-[30rem] w-64 sm:w-[30rem] rounded-full bg-blue-300/20 blur-3xl " />
+ {/* decorative depth layers */}
+ <motion.div
+ animate={
+ prefersReducedMotion
+ ? undefined
+ : { x: [0, 24, 0], y: [0, -18, 0], rotate: [0, 4, 0] }
+ }
+ transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
+ className="absolute -top-32 -left-32 h-64 sm:h-96 w-64 sm:w-96 rounded-full bg-indigo-300/20 blur-3xl "
+ />
+ <motion.div
+ animate={
+ prefersReducedMotion
+ ? undefined
+ : { x: [0, -20, 0], y: [0, 16, 0], rotate: [0, -3, 0] }
+ }
+ transition={{ duration: 14, repeat: Infinity, ease: "easeInOut" }}
+ className="absolute -bottom-40 right-0 h-64 sm:h-[30rem] w-64 sm:w-[30rem] rounded-full bg-blue-300/20 blur-3xl "
+ />
 
  <div className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-6 sm:gap-8 lg:gap-16 px-4 sm:px-6 py-12 sm:py-20 lg:grid-cols-2 lg:px-8">
  {/* text */}
@@ -243,20 +296,39 @@ export default function Home() {
  initial={{ opacity: 0, scale: 0.95 }}
  animate={{ opacity: 1, scale: 1 }}
  transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
- className="relative flex justify-center lg:justify-end"
+ className="relative flex justify-center lg:justify-end scene-3d"
+ onMouseMove={handleHeroMouseMove}
+ onMouseLeave={handleHeroMouseLeave}
+ style={
+ prefersReducedMotion
+ ? undefined
+ : {
+ rotateX: heroRotateXSmooth,
+ rotateY: heroRotateYSmooth,
+ transformPerspective: 1200,
+ }
+ }
  >
- <div className="relative">
+ <div className="relative card-3d">
+ <motion.div
+ style={prefersReducedMotion ? undefined : { x: heroOrbX, y: heroOrbY }}
+ className="pointer-events-none absolute -top-8 -right-8 z-0 h-24 w-24 rounded-full bg-sky-300/30 blur-2xl"
+ />
+ <motion.div
+ style={prefersReducedMotion ? undefined : { x: heroOrbY, y: heroOrbX }}
+ className="pointer-events-none absolute -bottom-8 -left-8 z-0 h-24 w-24 rounded-full bg-indigo-400/25 blur-2xl"
+ />
  <div className="absolute -inset-4 rounded-3xl bg-gradient-to-tr from-indigo-400/20 to-blue-300/20 blur-2xl " />
  <img
  src={heroPerson}
  alt="Insurance professional"
- className="relative z-10 h-auto w-full max-w-md rounded-3xl object-cover shadow-2xl lg:max-w-lg"
+ className="relative z-10 h-auto w-full max-w-md rounded-3xl object-cover shadow-2xl lg:max-w-lg card-3d-layer"
  />
  <motion.div
  initial={{ opacity: 0, x: -20 }}
  animate={{ opacity: 1, x: 0 }}
  transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
- className="absolute -bottom-4 -left-4 z-20 rounded-2xl border border-white/50 bg-white/70 px-5 py-3 shadow-[0_8px_32px_rgba(0,0,0,0.08)] backdrop-blur-xl sm:-left-8"
+ className="absolute -bottom-4 -left-4 z-20 rounded-2xl border border-white/50 bg-white/70 px-5 py-3 shadow-[0_8px_32px_rgba(0,0,0,0.08)] backdrop-blur-xl sm:-left-8 card-3d-layer"
  >
  <p className="text-xs font-medium text-slate-500 ">
  Policies Compared
@@ -270,7 +342,7 @@ export default function Home() {
  initial={{ opacity: 0, x: 20 }}
  animate={{ opacity: 1, x: 0 }}
  transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
- className="absolute -right-4 top-8 z-20 rounded-2xl border border-white/50 bg-white/70 px-5 py-3 shadow-[0_8px_32px_rgba(0,0,0,0.08)] backdrop-blur-xl sm:-right-8"
+ className="absolute -right-4 top-8 z-20 rounded-2xl border border-white/50 bg-white/70 px-5 py-3 shadow-[0_8px_32px_rgba(0,0,0,0.08)] backdrop-blur-xl sm:-right-8 card-3d-layer"
  >
  <p className="text-xs font-medium text-slate-500 ">
  Avg. Savings
@@ -323,17 +395,23 @@ export default function Home() {
  transition: { type: "spring", stiffness: 300, damping: 24 },
  },
  }}
+ whileHover={
+ prefersReducedMotion
+ ? undefined
+ : { rotateX: 6, rotateY: -8, y: -10, z: 20 }
+ }
+ className="scene-3d"
  >
  <Link
  to={`/policies?category=${cat.slug}`}
- className="group relative flex items-center gap-5 rounded-2xl border border-slate-200/60 bg-white/50 p-6 shadow-sm transition hover:shadow-lg hover:-translate-y-1 backdrop-blur-sm"
+ className="group relative flex items-center gap-5 rounded-2xl border border-slate-200/60 bg-white/50 p-6 shadow-sm transition hover:shadow-lg hover:-translate-y-1 backdrop-blur-sm card-3d"
  >
  <div
- className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br ${cat.color} text-white shadow-md`}
+ className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br ${cat.color} text-white shadow-md card-3d-layer`}
  >
  <cat.icon className="h-8 w-8 drop-shadow-sm" />
  </div>
- <div className="flex-1">
+ <div className="flex-1 card-3d-layer">
  <h3 className="font-semibold text-slate-900 ">
  {cat.name}
  </h3>
@@ -341,7 +419,7 @@ export default function Home() {
  {cat.desc}
  </p>
  </div>
- <ChevronRight className="h-5 w-5 text-slate-300 transition group-hover:text-indigo-500 " />
+ <ChevronRight className="h-5 w-5 text-slate-300 transition group-hover:text-indigo-500 card-3d-layer" />
  </Link>
  </motion.div>
  ))}
@@ -354,17 +432,23 @@ export default function Home() {
  initial={{ opacity: 0, y: 20 }}
  animate={{ opacity: 1, y: 0 }}
  transition={{ type: "spring", stiffness: 300, damping: 24 }}
+ whileHover={
+ prefersReducedMotion
+ ? undefined
+ : { rotateX: 6, rotateY: -8, y: -10, z: 20 }
+ }
+ className="scene-3d"
  >
  <Link
  to={`/policies?category=${cat.slug}`}
- className="group relative flex items-center gap-5 rounded-2xl border border-slate-200/60 bg-white/50 p-6 shadow-sm transition hover:shadow-lg hover:-translate-y-1 backdrop-blur-sm"
+ className="group relative flex items-center gap-5 rounded-2xl border border-slate-200/60 bg-white/50 p-6 shadow-sm transition hover:shadow-lg hover:-translate-y-1 backdrop-blur-sm card-3d"
  >
  <div
- className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br ${cat.color} text-white shadow-md`}
+ className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br ${cat.color} text-white shadow-md card-3d-layer`}
  >
  <cat.icon className="h-8 w-8 drop-shadow-sm" />
  </div>
- <div className="flex-1">
+ <div className="flex-1 card-3d-layer">
  <h3 className="font-semibold text-slate-900 ">
  {cat.name}
  </h3>
@@ -372,7 +456,7 @@ export default function Home() {
  {cat.desc}
  </p>
  </div>
- <ChevronRight className="h-5 w-5 text-slate-300 transition group-hover:text-indigo-500 " />
+ <ChevronRight className="h-5 w-5 text-slate-300 transition group-hover:text-indigo-500 card-3d-layer" />
  </Link>
  </motion.div>
  ))}
@@ -543,17 +627,22 @@ export default function Home() {
  transition: { type: "spring", stiffness: 300, damping: 24 },
  },
  }}
- className="group rounded-2xl border border-white/60 bg-white/70 p-7 text-center shadow-[0_4px_24px_rgba(0,0,0,0.04)] backdrop-blur-xl transition hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 "
+ whileHover={
+ prefersReducedMotion
+ ? undefined
+ : { rotateX: 7, rotateY: 7, y: -8, z: 22 }
+ }
+ className="group rounded-2xl border border-white/60 bg-white/70 p-7 text-center shadow-[0_4px_24px_rgba(0,0,0,0.04)] backdrop-blur-xl transition hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 scene-3d card-3d "
  >
  <div
- className={`mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-xl ${feat.bg}`}
+ className={`mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-xl ${feat.bg} card-3d-layer`}
  >
  <feat.icon className={`h-6 w-6 ${feat.color}`} />
  </div>
- <h3 className="font-semibold text-slate-900 ">
+ <h3 className="font-semibold text-slate-900 card-3d-layer">
  {feat.title}
  </h3>
- <p className="mt-2 text-sm leading-relaxed text-slate-500 ">
+ <p className="mt-2 text-sm leading-relaxed text-slate-500 card-3d-layer">
  {feat.desc}
  </p>
  </motion.div>

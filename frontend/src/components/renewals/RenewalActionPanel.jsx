@@ -59,7 +59,7 @@ export default function RenewalActionPanel({
  <CreditCard className="h-4 w-4 text-primary-500" />
  Payment & Confirmation
  </h3>
- <p className="mt-1 text-xs text-slate-500">This is ready to connect to the live renewal payment API.</p>
+ <p className="mt-1 text-xs text-slate-500">Razorpay secure checkout opens before renewal is confirmed.</p>
  </div>
  }
  >
@@ -81,8 +81,8 @@ export default function RenewalActionPanel({
  <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4 ">
  <p className="text-sm font-semibold text-slate-900 ">What happens next</p>
  <div className="mt-3 space-y-2 text-sm text-slate-600 ">
- <p>1. We submit your renewal payment request.</p>
- <p>2. The insurer confirms your updated policy record.</p>
+ <p>1. We open Razorpay checkout to collect your payment.</p>
+ <p>2. The payment signature is verified before renewal update.</p>
  <p>3. Your renewal receipt and updated policy document become available.</p>
  </div>
  </div>

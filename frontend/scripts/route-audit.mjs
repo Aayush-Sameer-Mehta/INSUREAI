@@ -174,7 +174,6 @@ async function main() {
 
   const results = [];
   for (const route of routes) {
-    // eslint-disable-next-line no-await-in-loop
     const result = await auditRoute(context, route);
     results.push(result);
     const hasIssues =

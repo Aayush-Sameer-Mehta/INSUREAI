@@ -26,7 +26,7 @@ import {
 import Loader from "../../components/Loader";
 import api from "../../services/api";
 import { fetchPolicyById } from "../../services/policyService";
-import { confirmPayment, createPaymentOrder, verifyPayment } from "../../services/paymentService";
+import { createPaymentOrder, openRazorpayCheckout, verifyPayment } from "../../services/paymentService";
 import { formatCurrency, toTitleCase } from "../../utils/formatters";
 
 /* ─── category maps ──────────────────────────────────── */
@@ -136,27 +136,56 @@ export default function Payment() {
  }
  setProcessing(true);
  try {
- const order = await createPaymentOrder(policyId, policy.price);
- await verifyPayment({
+ const orderResponse = await createPaymentOrder(policyId, policy.price);
+ const gateway = orderResponse?.gateway || {};
+ const order = orderResponse?.order || orderResponse;
+ const provider = gateway?.provider || order?.provider || "mock";
+
+ let verificationPayload = null;
+
+ if (provider === "razorpay") {
+ if (!order?.id) {
+ throw new Error("Razorpay order could not be created.");
+ }
+
+ const razorpayResponse = await openRazorpayCheckout({
+ order,
+ keyId: gateway?.keyId || "",
+ selectedMethod,
+ customer: {
+ fullName: profile?.fullName,
+ email: profile?.email,
+ mobileNumber: profile?.mobileNumber || profile?.phoneNumber,
+ },
+ policy: {
+ id: policyId,
+ name: policy?.name,
+ },
+ });
+
+ verificationPayload = {
  policyId,
- orderId: order?.order?.id || `order_${Date.now()}`,
+ orderId: razorpayResponse?.razorpay_order_id,
+ paymentId: razorpayResponse?.razorpay_payment_id,
+ signature: razorpayResponse?.razorpay_signature,
+ paymentMethod: selectedMethod,
+ };
+ } else {
+ verificationPayload = {
+ policyId,
+ orderId: order?.id || `order_${Date.now()}`,
  paymentId: `pay_${Date.now()}`,
  signature: "mock_signature",
  paymentMethod: selectedMethod,
- });
- setSuccess(true);
- toast.success("Policy purchased successfully!");
- setTimeout(() => navigate("/dashboard"), 3000);
- } catch {
- // Fallback to legacy endpoint for backward compatibility.
- try {
- await confirmPayment(policyId, selectedMethod);
- setSuccess(true);
- toast.success("Policy purchased successfully!");
- setTimeout(() => navigate("/dashboard"), 3000);
- } catch (legacyErr) {
- toast.error(legacyErr?.response?.data?.message || "Payment failed. Please try again.");
+ };
  }
+
+ await verifyPayment(verificationPayload);
+ setSuccess(true);
+ toast.success("Policy purchased successfully!");
+ setTimeout(() => navigate("/dashboard"), 3000);
+ } catch (error) {
+ toast.error(error?.response?.data?.message || error?.message || "Payment failed. Please try again.");
  } finally {
  setProcessing(false);
  }

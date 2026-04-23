@@ -8,7 +8,7 @@ import Payment from "../models/Payment.js";
 import validate from "../../../middleware/validate.js";
 import AppError from "../../../utils/AppError.js";
 import { paymentCreateOrderSchema, paymentVerifySchema } from "../../../validators/advanced.validators.js";
-import { createOrder, verifyPayment } from "../services/razorpay.adapter.js";
+import { createOrder, getPaymentGatewayConfig, verifyPayment } from "../services/razorpay.adapter.js";
 import { createNotification } from "../../notifications/services/notification.service.js";
 import { generatePolicyDocument } from "../../reports/services/policy-document.service.js";
 import { scheduleRenewalRemindersForUser } from "../../notifications/services/reminder.service.js";
@@ -77,9 +77,11 @@ router.post("/create-order", auth, authorize(["USER", "AGENT", "ADMIN"]), valida
             currency: "INR",
             receipt: `rcpt_${Date.now()}`,
         });
+        const gateway = getPaymentGatewayConfig();
 
         return ok(res, {
             order,
+            gateway,
             customer: { id: customer._id, email: customer.email, fullName: customer.fullName },
             policy: { id: policy.policyId || policy._id, name: policy.name, amount: policy.price },
         });
@@ -166,6 +168,9 @@ router.post("/renew", auth, authorize(["USER", "AGENT", "ADMIN"]), async (req, r
             paymentMethod = "upi",
             userId,
             autoRenewalFlag,
+            orderId,
+            paymentId,
+            signature,
         } = req.body;
 
         const customer = await resolveCustomerActor(req, userId);
@@ -190,13 +195,28 @@ router.post("/renew", auth, authorize(["USER", "AGENT", "ADMIN"]), async (req, r
             return fail(res, "Policy not found", ERROR_CODES.NOT_FOUND, 404);
         }
 
+        const hasPaymentVerificationPayload = Boolean(orderId || paymentId || signature);
+        let paymentReference = `RENEW-${crypto.randomBytes(6).toString("hex").toUpperCase()}`;
+
+        if (hasPaymentVerificationPayload) {
+            if (!orderId || !paymentId) {
+                return fail(res, "orderId and paymentId are required for renewal verification", ERROR_CODES.VALIDATION_FAILED, 400);
+            }
+
+            const verification = await verifyPayment({ orderId, paymentId, signature });
+            if (!verification.verified) {
+                return fail(res, "Payment verification failed", ERROR_CODES.PAYMENT_FAILED, 400);
+            }
+
+            paymentReference = paymentId;
+        }
+
         const renewalAmount = Number(amount || policy.price || purchase.amount || 0);
         const now = new Date();
         const currentValidTo = purchase.validTo ? new Date(purchase.validTo) : null;
         const nextValidFrom = currentValidTo && currentValidTo > now ? currentValidTo : now;
         const nextValidTo = new Date(nextValidFrom);
         nextValidTo.setFullYear(nextValidTo.getFullYear() + 1);
-        const paymentReference = `RENEW-${crypto.randomBytes(6).toString("hex").toUpperCase()}`;
 
         purchase.amount = renewalAmount;
         purchase.purchasedAt = now;

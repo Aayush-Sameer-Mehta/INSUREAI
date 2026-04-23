@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import toast from "react-hot-toast";
 import { ArrowRight, Car, CheckCircle2, CreditCard, FileSearch, ShieldCheck } from "lucide-react";
@@ -14,6 +14,7 @@ import {
  cleanLookupInput,
  detectLookupKind,
  fetchRenewalPolicyDetails,
+ fetchRenewalPolicyDetailsForUser,
  formatLookupDisplay,
  INSURANCE_TYPES,
  payRenewal,
@@ -55,6 +56,7 @@ export default function Renewals() {
  const [paymentLoading, setPaymentLoading] = useState(false);
  const [paymentError, setPaymentError] = useState("");
  const [paymentSuccess, setPaymentSuccess] = useState("");
+ const [autoFetchAttempted, setAutoFetchAttempted] = useState(false);
 
  const detectedKind = useMemo(() => detectLookupKind(lookupValue), [lookupValue]);
  const insuranceTypeLabel = INSURANCE_TYPES.find((option) => option.key === insuranceType)?.label || "Insurance";
@@ -76,11 +78,51 @@ export default function Renewals() {
  return false;
  };
 
+ const autoLoadPolicyForType = useCallback(
+ async (selectedType, { silent = true, preserveStep = false } = {}) => {
+ setLookupLoading(true);
+ setLookupError("");
+ setPaymentError("");
+ setPaymentSuccess("");
+
+ try {
+ const result = await fetchRenewalPolicyDetailsForUser({
+ insuranceType: selectedType,
+ });
+
+ setPolicyResult(result);
+ setLookupValue(result?.policy?.policyNumber || result?.policy?.vehicleNumber || "");
+ if (!preserveStep) setCurrentStep("details");
+ if (!silent) toast.success("Policy details auto-loaded from your account.");
+ return true;
+ } catch {
+ // Keep manual lookup available without noisy errors.
+ setPolicyResult(null);
+ if (!preserveStep) setCurrentStep("lookup");
+ if (!silent) {
+ toast.error("No matching policy found for this insurance type. Please search manually.");
+ }
+ return false;
+ } finally {
+ setLookupLoading(false);
+ }
+ },
+ [],
+ );
+
  const handleSelectType = (value) => {
  setInsuranceType(value);
  setCurrentStep("lookup");
  setLookupError("");
+ setAutoFetchAttempted(true);
+ autoLoadPolicyForType(value, { silent: false });
  };
+
+ useEffect(() => {
+ if (autoFetchAttempted) return;
+ setAutoFetchAttempted(true);
+ autoLoadPolicyForType(insuranceType, { silent: true, preserveStep: false });
+ }, [autoFetchAttempted, autoLoadPolicyForType, insuranceType]);
 
  const handleLookupSubmit = async (event) => {
  event.preventDefault();
