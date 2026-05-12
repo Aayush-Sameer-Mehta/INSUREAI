@@ -5,6 +5,7 @@ export default function PageHeader({
  subtitle,
  icon: Icon,
  actions,
+ contextBar,
  className = "",
 }) {
  return (
@@ -12,8 +13,10 @@ export default function PageHeader({
  initial={{ opacity: 0, y: -16 }}
  animate={{ opacity: 1, y: 0 }}
  transition={{ duration: 0.4 }}
- className={`flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between ${className}`}
+ className={`space-y-3 ${className}`}
  >
+ {contextBar}
+ <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
  <div className="flex items-start gap-3">
  {Icon && (
  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary-50 ">
@@ -26,6 +29,7 @@ export default function PageHeader({
  </div>
  </div>
  {actions && <div className="flex items-center gap-3">{actions}</div>}
+ </div>
  </motion.div>
  );
 }

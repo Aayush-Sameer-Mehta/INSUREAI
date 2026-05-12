@@ -6,7 +6,7 @@ import validate from "../../../middleware/validate.js";
 import AppError from "../../../utils/AppError.js";
 import { verifyToken } from "../../../utils/token.js";
 import { issueAuthTokens } from "../services/auth.service.js";
-import { getDashboardRoute, normalizeRole, ROLES } from "../../../utils/roles.js";
+import { getDashboardRoute, ROLES } from "../../../utils/roles.js";
 import { sendPasswordResetEmail } from "../../../services/emailService.js";
 import { verifyGoogleToken } from "../../../services/googleOAuthService.js";
 import {
@@ -80,7 +80,7 @@ router.post("/register", validate(registerSchema), async (req, res, next) => {
 /* ─── Login ──────────────────────────────────────────── */
 router.post("/login", validate(loginSchema), async (req, res, next) => {
     try {
-        const { email, password, login_role = ROLES.USER } = req.body;
+        const { email, password } = req.body;
 
         const user = await User.findOne({ email }).select("+password");
         if (!user || !(await user.comparePassword(password))) {
@@ -89,10 +89,6 @@ router.post("/login", validate(loginSchema), async (req, res, next) => {
 
         if (!user.is_active || user.isBlocked) {
             return next(new AppError("Your account is inactive. Please contact support.", 403));
-        }
-
-        if (normalizeRole(user.role) !== normalizeRole(login_role)) {
-            return next(new AppError("Invalid role login", 403));
         }
 
         const tokens = await issueAuthTokens(user);

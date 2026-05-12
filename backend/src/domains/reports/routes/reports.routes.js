@@ -1,4 +1,5 @@
 import fs from "fs/promises";
+import path from "path";
 import { Router } from "express";
 import auth from "../../../middleware/auth.js";
 import roleGuard from "../../../middleware/roleGuard.js";
@@ -10,6 +11,7 @@ import { ok, fail } from "../../shared/services/response.js";
 import { ERROR_CODES } from "../../shared/services/error-codes.js";
 
 const router = Router();
+const REPORT_DIR = path.join(process.cwd(), "reports");
 
 router.use(auth);
 
@@ -41,6 +43,9 @@ router.get("/:id/download", async (req, res, next) => {
     if (!job) {
       return fail(res, "Report not found", ERROR_CODES.NOT_FOUND, 404);
     }
+    if (job.scope === "admin" && req.user.role !== "ADMIN") {
+      return fail(res, "Forbidden", ERROR_CODES.FORBIDDEN, 403);
+    }
     if (job.scope === "user" && String(job.requestedBy) !== String(req.user._id) && req.user.role !== "ADMIN") {
       return fail(res, "Forbidden", ERROR_CODES.FORBIDDEN, 403);
     }
@@ -48,8 +53,22 @@ router.get("/:id/download", async (req, res, next) => {
       return fail(res, "Report is not ready", ERROR_CODES.CONFLICT, 409);
     }
 
-    const content = await fs.readFile(job.filePath);
-    const filename = job.filePath.split(/[\\/]/).pop();
+    const resolvedPath = path.resolve(String(job.filePath || ""));
+    const resolvedReportDir = path.resolve(REPORT_DIR);
+    if (!resolvedPath || !resolvedPath.startsWith(resolvedReportDir + path.sep)) {
+      return fail(res, "Invalid report path", ERROR_CODES.VALIDATION_FAILED, 400);
+    }
+
+    const content = await fs.readFile(resolvedPath);
+    const filename = resolvedPath.split(/[\\/]/).pop();
+    const ext = String(path.extname(filename || "")).toLowerCase();
+    if (ext === ".csv") res.setHeader("Content-Type", "text/csv; charset=utf-8");
+    else if (ext === ".pdf") res.setHeader("Content-Type", "application/pdf");
+    else if (ext === ".xlsx") {
+      res.setHeader("Content-Type", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
+    } else {
+      res.setHeader("Content-Type", "application/octet-stream");
+    }
     res.setHeader("Content-Disposition", `attachment; filename=\"${filename}\"`);
     return res.send(content);
   } catch (err) {

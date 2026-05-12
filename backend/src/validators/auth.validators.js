@@ -133,7 +133,9 @@ export const loginSchema = z
     })
     .transform((data) => ({
         ...data,
-        login_role: String(data.login_role || data.role || "USER").toUpperCase(),
+        login_role: data.login_role || data.role
+            ? String(data.login_role || data.role).toUpperCase()
+            : undefined,
     }));
 
 /* ─── Forgot Password ───────────────────────────────── */

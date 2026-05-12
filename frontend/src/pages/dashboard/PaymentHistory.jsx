@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
  CreditCard,
  IndianRupee,
@@ -9,6 +9,9 @@ import { Card, Badge } from "../../components/common";
 import { formatCurrency } from "../../utils/formatters";
 
 export default function PaymentHistory({ purchasedPolicies, nextPayment }) {
+ const location = useLocation();
+ const linkState = { from: { pathname: location.pathname } };
+
  return (
  <Card
  padding={false}
@@ -23,7 +26,7 @@ export default function PaymentHistory({ purchasedPolicies, nextPayment }) {
  <p className="text-xs text-slate-500 ">{purchasedPolicies.length} payment(s)</p>
  </div>
  </div>
- <Link to="/my-policies" className="flex items-center gap-1 text-xs font-semibold text-primary-600 hover:text-primary-700 ">
+ <Link to="/my-policies" state={linkState} className="flex items-center gap-1 text-xs font-semibold text-primary-600 hover:text-primary-700 ">
  View All <ChevronRight className="h-3.5 w-3.5" />
  </Link>
  </div>
@@ -69,7 +72,7 @@ export default function PaymentHistory({ purchasedPolicies, nextPayment }) {
  <p className="text-xs font-semibold text-amber-700 ">Next Payment Due</p>
  <p className="text-sm font-bold text-slate-900 ">{nextPayment.policy?.name || "Policy"} — {nextPayment.daysLeft} day(s)</p>
  </div>
- <Link to={`/renewals?purchaseId=${nextPayment._id}`} className="rounded-xl bg-gradient-to-r from-primary-600 to-primary-700 px-4 py-2 text-xs font-bold text-white shadow-lg shadow-primary-500/25 transition-all hover:shadow-xl hover:-translate-y-0.5">Pay Now</Link>
+ <Link to={`/renewals?purchaseId=${nextPayment._id}`} state={linkState} className="rounded-xl bg-gradient-to-r from-primary-600 to-primary-700 px-4 py-2 text-xs font-bold text-white shadow-lg shadow-primary-500/25 transition-all hover:shadow-xl hover:-translate-y-0.5">Pay Now</Link>
  </div>
  </div>
  )}

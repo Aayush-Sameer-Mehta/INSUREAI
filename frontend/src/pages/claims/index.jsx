@@ -10,7 +10,13 @@ import { getMyClaims } from "../../services/claimService";
 import api from "../../services/api";
 import Loader from "../../components/Loader";
 import { useDebounce } from "../../hooks/useDebounce";
-import { Button, Card, Input, EmptyState, PageHeader } from "../../components/common";
+import {
+ Button,
+ Card,
+ Input,
+ EmptyState,
+ PageHeader,
+} from "../../components/common";
 import ClaimCard from "./ClaimCard";
 import FileClaimModal from "./FileClaimModal";
 

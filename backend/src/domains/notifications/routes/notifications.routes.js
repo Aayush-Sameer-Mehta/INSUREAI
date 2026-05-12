@@ -31,5 +31,18 @@ router.patch("/:id/read", async (req, res, next) => {
   }
 });
 
+router.patch("/read-all", async (req, res, next) => {
+  try {
+    const now = new Date();
+    const result = await Notification.updateMany(
+      { user: req.user._id, readAt: null },
+      { $set: { readAt: now } },
+    );
+    return ok(res, { updated: result.modifiedCount ?? result.nModified ?? 0 });
+  } catch (err) {
+    return next(err);
+  }
+});
+
 export default router;
 

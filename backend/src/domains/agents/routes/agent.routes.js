@@ -6,6 +6,14 @@ import User from "../../users/models/User.js";
 import Claim from "../../claims/models/Claim.js";
 import Payment from "../../payments/models/Payment.js";
 import { buildAgentDashboard } from "../../analytics/services/dashboard.service.js";
+import validate from "../../../middleware/validate.js";
+import {
+  agentCreateCustomerSchema,
+  agentFollowUpCreateSchema,
+  agentFollowUpUpdateSchema,
+  agentUpdateCustomerSchema,
+  agentWorkflowUpdateSchema,
+} from "../../../validators/advanced.validators.js";
 
 const router = Router();
 
@@ -111,12 +119,9 @@ router.get("/customers/:id", async (req, res, next) => {
   }
 });
 
-router.post("/customers", async (req, res, next) => {
+router.post("/customers", validate(agentCreateCustomerSchema), async (req, res, next) => {
   try {
     const { fullName, email, password, mobileNumber, city, state, user_profile = {} } = req.body;
-    if (!fullName || !email || !password || !mobileNumber) {
-      return next(new AppError("fullName, email, password, and mobileNumber are required", 400));
-    }
 
     const existing = await User.findOne({ email });
     if (existing) {
@@ -143,7 +148,7 @@ router.post("/customers", async (req, res, next) => {
   }
 });
 
-router.patch("/customers/:id", async (req, res, next) => {
+router.patch("/customers/:id", validate(agentUpdateCustomerSchema), async (req, res, next) => {
   try {
     const customer = await User.findOne({
       _id: req.params.id,
@@ -177,7 +182,7 @@ router.patch("/customers/:id", async (req, res, next) => {
   }
 });
 
-router.patch("/customers/:id/workflow", async (req, res, next) => {
+router.patch("/customers/:id/workflow", validate(agentWorkflowUpdateSchema), async (req, res, next) => {
   try {
     const customer = await User.findOne({
       _id: req.params.id,
@@ -221,7 +226,7 @@ router.patch("/customers/:id/workflow", async (req, res, next) => {
   }
 });
 
-router.post("/customers/:id/follow-ups", async (req, res, next) => {
+router.post("/customers/:id/follow-ups", validate(agentFollowUpCreateSchema), async (req, res, next) => {
   try {
     const customer = await User.findOne({
       _id: req.params.id,
@@ -234,10 +239,6 @@ router.post("/customers/:id/follow-ups", async (req, res, next) => {
     }
 
     const { dueAt, type, notes, outcome, status } = req.body;
-
-    if (!dueAt) {
-      return next(new AppError("dueAt is required", 400));
-    }
 
     const workflow = customer.agent_workflow?.toObject?.() || {};
     const followUps = Array.isArray(workflow.followUps) ? workflow.followUps : [];
@@ -278,7 +279,7 @@ router.post("/customers/:id/follow-ups", async (req, res, next) => {
   }
 });
 
-router.patch("/customers/:id/follow-ups/:followUpId", async (req, res, next) => {
+router.patch("/customers/:id/follow-ups/:followUpId", validate(agentFollowUpUpdateSchema), async (req, res, next) => {
   try {
     const customer = await User.findOne({
       _id: req.params.id,

@@ -12,6 +12,20 @@ function canUseRazorpay() {
   return true;
 }
 
+async function razorpayRequest(method, path, payload) {
+  const url = `${RAZORPAY_API_BASE}${path.startsWith("/") ? "" : "/"}${path}`;
+  return axios.request({
+    method,
+    url,
+    data: payload,
+    auth: {
+      username: RAZORPAY_KEY_ID,
+      password: RAZORPAY_KEY_SECRET,
+    },
+    timeout: 10000,
+  });
+}
+
 function toPaise(amount) {
   const numeric = Number(amount);
   if (!Number.isFinite(numeric) || numeric <= 0) {
@@ -85,22 +99,12 @@ export async function createOrder({ amount, currency = "INR", receipt }) {
 
   let response;
   try {
-    response = await axios.post(
-      `${RAZORPAY_API_BASE}/orders`,
-      {
-        amount: amountInPaise,
-        currency,
-        receipt,
-        payment_capture: 1,
-      },
-      {
-        auth: {
-          username: RAZORPAY_KEY_ID,
-          password: RAZORPAY_KEY_SECRET,
-        },
-        timeout: 10000,
-      },
-    );
+    response = await razorpayRequest("post", "/orders", {
+      amount: amountInPaise,
+      currency,
+      receipt,
+      payment_capture: 1,
+    });
   } catch (error) {
     throw new Error(parseGatewayError(error));
   }
@@ -138,4 +142,30 @@ export async function verifyPayment({ orderId, paymentId, signature }) {
     reference: paymentId,
     signature,
   };
+}
+
+export async function fetchOrder(orderId) {
+  if (!canUseRazorpay()) {
+    return null;
+  }
+
+  try {
+    const response = await razorpayRequest("get", `/orders/${encodeURIComponent(orderId)}`);
+    return response.data || null;
+  } catch (error) {
+    throw new Error(parseGatewayError(error));
+  }
+}
+
+export async function fetchPayment(paymentId) {
+  if (!canUseRazorpay()) {
+    return null;
+  }
+
+  try {
+    const response = await razorpayRequest("get", `/payments/${encodeURIComponent(paymentId)}`);
+    return response.data || null;
+  } catch (error) {
+    throw new Error(parseGatewayError(error));
+  }
 }

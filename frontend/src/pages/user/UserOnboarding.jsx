@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import { 
   Button, Input, Select, ProgressStepper, FormSection, 
-  ToggleSwitch, CheckboxGroup, Textarea 
+  ToggleSwitch, CheckboxGroup, Textarea
 } from "../../components/common";
 import {
   onboardingDefaults,
@@ -80,7 +80,7 @@ export default function UserOnboarding() {
       await new Promise((resolve) => setTimeout(resolve, 1500));
       console.log("Onboarding Data:", data);
       toast.success("Profile creation complete!");
-      navigate("/dashboard");
+      navigate("/user/dashboard");
     } catch {
       setSubmissionError("Failed to complete onboarding. Please try again.");
       toast.error("Failed to complete onboarding.");
@@ -90,8 +90,8 @@ export default function UserOnboarding() {
   const currentStep = STEPS[currentStepIndex];
 
   return (
-    <div className="min-h-screen bg-slate-50 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-4xl">
+    <div className="py-4 sm:py-6">
+      <div className="mx-auto max-w-4xl space-y-6">
         <div className="mb-8 text-center">
           <h1 className="text-3xl font-bold tracking-tight text-slate-900">Configure Your Profile</h1>
           <p className="mt-2 text-slate-500">Provide details so our AI can accurately tailor recommendations.</p>

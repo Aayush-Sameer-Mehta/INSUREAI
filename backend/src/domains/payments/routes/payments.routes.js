@@ -8,7 +8,7 @@ import Payment from "../models/Payment.js";
 import validate from "../../../middleware/validate.js";
 import AppError from "../../../utils/AppError.js";
 import { paymentCreateOrderSchema, paymentVerifySchema } from "../../../validators/advanced.validators.js";
-import { createOrder, getPaymentGatewayConfig, verifyPayment } from "../services/razorpay.adapter.js";
+import { createOrder, fetchOrder, fetchPayment, getPaymentGatewayConfig, verifyPayment } from "../services/razorpay.adapter.js";
 import { createNotification } from "../../notifications/services/notification.service.js";
 import { generatePolicyDocument } from "../../reports/services/policy-document.service.js";
 import { scheduleRenewalRemindersForUser } from "../../notifications/services/reminder.service.js";
@@ -17,6 +17,7 @@ import { ERROR_CODES } from "../../shared/services/error-codes.js";
 import { recordPolicyPurchase } from "../services/purchase.service.js";
 
 const router = Router();
+const PAYMENT_MODE = String(process.env.PAYMENT_PROVIDER_MODE || "auto").toLowerCase();
 
 async function resolveCustomerActor(req, userId) {
     if (req.user.role === "USER" || !userId) {
@@ -62,7 +63,7 @@ router.post("/create-intent", auth, authorize(["USER", "AGENT", "ADMIN"]), async
 /* ─── Create payment order (adapter-first) ───────────── */
 router.post("/create-order", auth, authorize(["USER", "AGENT", "ADMIN"]), validate(paymentCreateOrderSchema), async (req, res, next) => {
     try {
-        const { policyId, amount, userId } = req.body;
+        const { policyId, userId } = req.body;
         const policy =
             (await Policy.findOne({ policyId })) ||
             (await Policy.findById(policyId).catch(() => null));
@@ -73,7 +74,8 @@ router.post("/create-order", auth, authorize(["USER", "AGENT", "ADMIN"]), valida
         const customer = await resolveCustomerActor(req, userId);
 
         const order = await createOrder({
-            amount: Number(amount || policy.price),
+            // Always charge server-trusted policy price (never trust client amounts)
+            amount: Number(policy.price),
             currency: "INR",
             receipt: `rcpt_${Date.now()}`,
         });
@@ -93,6 +95,15 @@ router.post("/create-order", auth, authorize(["USER", "AGENT", "ADMIN"]), valida
 /* ─── Confirm payment & purchase policy ──────────────── */
 router.post("/confirm", auth, authorize(["USER", "AGENT", "ADMIN"]), async (req, res, next) => {
     try {
+        if (PAYMENT_MODE !== "mock") {
+            return fail(
+                res,
+                "Direct confirmation is disabled. Use /api/payments/verify with Razorpay payment verification payload.",
+                ERROR_CODES.VALIDATION_FAILED,
+                400,
+            );
+        }
+
         const {
             policyId,
             paymentMethod,
@@ -320,6 +331,33 @@ router.post("/verify", auth, authorize(["USER", "AGENT", "ADMIN"]), validate(pay
         const verification = await verifyPayment({ orderId, paymentId, signature });
         if (!verification.verified) {
             return fail(res, "Payment verification failed", ERROR_CODES.PAYMENT_FAILED, 400);
+        }
+
+        // In Razorpay mode, additionally verify server-side order/payment details
+        // to prevent replay/tampering and ensure amount matches policy price.
+        if (PAYMENT_MODE !== "mock") {
+            const [order, payment] = await Promise.all([
+                fetchOrder(orderId),
+                fetchPayment(paymentId),
+            ]);
+
+            if (!order || !payment) {
+                return fail(res, "Unable to verify payment with gateway", ERROR_CODES.PAYMENT_FAILED, 400);
+            }
+
+            const expectedAmountPaise = Math.round(Number(policy.price) * 100);
+            if (Number(order.amount) !== expectedAmountPaise) {
+                return fail(res, "Order amount mismatch", ERROR_CODES.PAYMENT_FAILED, 400);
+            }
+
+            if (String(payment.order_id || "") !== String(orderId)) {
+                return fail(res, "Payment is not linked to this order", ERROR_CODES.PAYMENT_FAILED, 400);
+            }
+
+            const status = String(payment.status || "").toLowerCase();
+            if (status && !["captured", "authorized"].includes(status)) {
+                return fail(res, "Payment not completed", ERROR_CODES.PAYMENT_FAILED, 400);
+            }
         }
 
         const validFrom = new Date();

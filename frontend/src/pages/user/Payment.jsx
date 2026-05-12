@@ -183,7 +183,7 @@ export default function Payment() {
  await verifyPayment(verificationPayload);
  setSuccess(true);
  toast.success("Policy purchased successfully!");
- setTimeout(() => navigate("/dashboard"), 3000);
+ setTimeout(() => navigate("/user/dashboard"), 3000);
  } catch (error) {
  toast.error(error?.response?.data?.message || error?.message || "Payment failed. Please try again.");
  } finally {
@@ -217,7 +217,7 @@ export default function Payment() {
  </p>
  <div className="mt-6">
  <Link
- to="/dashboard"
+ to="/user/dashboard"
  className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-emerald-600 to-green-600 px-6 py-3 text-sm font-bold text-white shadow-lg shadow-emerald-500/25"
  >
  Go to Dashboard

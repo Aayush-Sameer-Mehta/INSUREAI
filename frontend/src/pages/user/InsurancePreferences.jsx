@@ -5,7 +5,7 @@ import { PlusCircle, ShieldCheck, Heart, Home, Car, SlidersHorizontal, Check } f
 import { motion, AnimatePresence } from "framer-motion";
 import toast from "react-hot-toast";
 import { 
-  Button, FormSection, OptionCardSelector, ToggleSwitch, RadioGroup 
+  Button, FormSection, OptionCardSelector, ToggleSwitch, RadioGroup, PageHeader,
 } from "../../components/common";
 import {
   insurancePreferencesDefaults,
@@ -55,10 +55,11 @@ export default function InsurancePreferences() {
 
   return (
     <div className="page-shell max-w-5xl mx-auto space-y-8">
-      <div className="text-center max-w-2xl mx-auto">
-        <h1 className="text-3xl font-display font-bold text-slate-900 tracking-tight">Recommendation Engine Preferences</h1>
-        <p className="mt-2 text-slate-500">Fine-tune the weights our AI uses when scoring and sorting policies for your personalized dashboard.</p>
-      </div>
+      <PageHeader
+        title="Recommendation Engine Preferences"
+        subtitle="Fine-tune how AI scores and ranks policies for your workspace."
+        icon={SlidersHorizontal}
+      />
 
       <FormSection title="Primary Category" description="Which insurance product are you actively looking for?" icon={ShieldCheck}>
         <Controller

@@ -30,6 +30,9 @@ const Contact = lazy(() => import("./pages/Contact"));
 const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
 const UserOnboarding = lazy(() => import("./pages/user/UserOnboarding"));
 const InsurancePreferences = lazy(() => import("./pages/user/InsurancePreferences"));
+const UserWorkspaceLayout = lazy(
+  () => import("./components/layout/UserWorkspaceLayout"),
+);
 
 /* ─── Admin Pages ────────────────────────────────── */
 const AdminLayout = lazy(() => import("./components/AdminLayout"));
@@ -63,13 +66,25 @@ export default function App() {
  const isHome = location.pathname === "/";
  const isAdmin = location.pathname.startsWith("/admin");
  const isPolicies = location.pathname === "/policies";
+ const isLogin = location.pathname === "/login";
+ const isUserWorkspace =
+  location.pathname === "/user/dashboard" ||
+  location.pathname === "/my-policies" ||
+  location.pathname === "/renewals" ||
+  location.pathname === "/profile" ||
+  location.pathname === "/onboarding" ||
+  location.pathname === "/preferences" ||
+  location.pathname === "/claims" ||
+  location.pathname.startsWith("/payment/");
 
  return (
  <div className="min-h-screen overflow-x-hidden text-slate-900 ">
- <Navbar />
+ {!isLogin && <Navbar />}
  <main
  className={
- isHome || isAdmin
+ isLogin
+ ? "w-full"
+ : isHome || isAdmin || isUserWorkspace
  ? "w-full"
  : isPolicies
  ? "mx-auto w-full max-w-[1600px] px-4 sm:px-6 lg:px-8 py-6 sm:py-8"
@@ -170,6 +185,7 @@ export default function App() {
  />
  </Route>
  <Route element={<ProtectedRoute allowedRoles={["USER"]} />}>
+ <Route element={<UserWorkspaceLayout />}>
  <Route
  path="/user/dashboard"
  element={
@@ -235,6 +251,7 @@ export default function App() {
  }
  />
  </Route>
+ </Route>
  {/* ─── Admin Routes (Admin only) ─── */}
  <Route element={<ProtectedRoute allowedRoles={["ADMIN"]} />}>
  <Route path="/admin" element={<AdminLayout />}>
@@ -275,10 +292,12 @@ export default function App() {
  </AnimatePresence>
  </Suspense>
  </main>
- <Footer />
+ {!isLogin && <Footer />}
+ {!isLogin && (
  <Suspense fallback={null}>
  <Chatbot />
  </Suspense>
+ )}
  <Toaster
  position="top-right"
  toastOptions={{

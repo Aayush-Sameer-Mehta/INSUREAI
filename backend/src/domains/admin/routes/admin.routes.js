@@ -11,6 +11,8 @@ import { getAnalyticsV2, getPremiumAnalytics } from "../../analytics/services/an
 import { createNotification } from "../../notifications/services/notification.service.js";
 import { buildAdminDashboard } from "../../analytics/services/dashboard.service.js";
 import { isValidRole, normalizeRole, ROLES } from "../../../utils/roles.js";
+import validate from "../../../middleware/validate.js";
+import { policyUpsertSchema, policyUpdateSchema } from "../../../validators/advanced.validators.js";
 
 const router = Router();
 
@@ -33,7 +35,7 @@ router.get("/policies", async (_req, res, next) => {
     }
 });
 
-router.post("/policies", async (req, res, next) => {
+router.post("/policies", validate(policyUpsertSchema), async (req, res, next) => {
     try {
         const policy = await Policy.create(req.body);
         res.status(201).json(policy);
@@ -42,7 +44,7 @@ router.post("/policies", async (req, res, next) => {
     }
 });
 
-router.put("/policies/:id", async (req, res, next) => {
+router.put("/policies/:id", validate(policyUpdateSchema), async (req, res, next) => {
     try {
         const policy = await resolvePolicy(req.params.id);
         if (!policy) {

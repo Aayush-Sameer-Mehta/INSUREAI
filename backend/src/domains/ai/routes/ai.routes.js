@@ -3,18 +3,18 @@ import { processMessage } from "../services/chatbot.service.js";
 import auth from "../../../middleware/auth.js";
 import Policy from "../../policies/models/Policy.js";
 import { analyzeClaimAI } from "../../claims/services/ai-claims.engine.js";
+import validate from "../../../middleware/validate.js";
+import { aiAnalyzeClaimSchema, aiChatSchema } from "../../../validators/advanced.validators.js";
 
 const router = Router();
 
 /* ─── AI Chat (Insurance-only chatbot) ───────────────── */
-router.post("/chat", async (req, res, next) => {
+router.post("/chat", auth, validate(aiChatSchema), async (req, res, next) => {
     try {
         const { message, history } = req.body;
-        if (!message) {
-            return res.status(400).json({ message: "message is required" });
-        }
-
-        const result = await processMessage(message, history || []);
+        // Bound history to reduce cost/abuse.
+        const boundedHistory = Array.isArray(history) ? history.slice(-20) : [];
+        const result = await processMessage(message, boundedHistory);
         res.json(result);
     } catch (err) {
         next(err);
@@ -22,13 +22,9 @@ router.post("/chat", async (req, res, next) => {
 });
 
 /* ─── AI Claim Analysis ──────────────────────────────── */
-router.post("/analyze-claim", auth, async (req, res, next) => {
+router.post("/analyze-claim", auth, validate(aiAnalyzeClaimSchema), async (req, res, next) => {
     try {
         const { claimAmount, incidentDate, description, policyId, documents } = req.body;
-
-        if (!policyId) {
-            return res.status(400).json({ message: "policyId is required" });
-        }
 
         const policy =
             (await Policy.findOne({ policyId })) ||

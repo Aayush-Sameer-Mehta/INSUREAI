@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState, useMemo } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { 
  FileText, 
  Search, 
@@ -28,11 +28,17 @@ import {
 } from "../../components/common";
 
 export default function MyPolicies() {
+ const location = useLocation();
+ const navigate = useNavigate();
  const [policies, setPolicies] = useState([]);
  const [loading, setLoading] = useState(true);
  const [searchQuery, setSearchQuery] = useState("");
  const [viewMode, setViewMode] = useState("grid"); // "grid" | "table"
  const debouncedSearch = useDebounce(searchQuery, 300);
+ const linkState = useMemo(
+ () => ({ from: { pathname: location.pathname } }),
+ [location.pathname],
+ );
 
  const fetchPolicies = useCallback(async () => {
  try {
@@ -150,12 +156,14 @@ export default function MyPolicies() {
  <>
  <Link
  to={`/renewals?purchaseId=${row._id}`}
+ state={linkState}
  className="btn-primary btn-sm"
  >
  Renew
  </Link>
  <Link
  to={`/policies/${row.policy._id}`}
+ state={linkState}
  className="btn-ghost btn-sm"
  >
  Details
@@ -220,7 +228,7 @@ export default function MyPolicies() {
  description={searchQuery ? "Try a different search term" : "You haven't purchased any policies yet."}
  actionLabel={!searchQuery ? "Explore Coverage" : ""}
  actionIcon={ShieldCheck}
- onAction={!searchQuery ? () => window.location.href = "/policies" : undefined}
+ onAction={!searchQuery ? () => navigate("/policies", { state: linkState }) : undefined}
  />
  </Card>
  ) : (
@@ -331,6 +339,7 @@ export default function MyPolicies() {
  {item.policy?._id && (
  <Link 
  to={`/renewals?purchaseId=${item._id}`}
+ state={linkState}
  className="btn-primary btn-sm flex-1"
  onClick={(e) => e.stopPropagation()}
  >
@@ -340,6 +349,7 @@ export default function MyPolicies() {
  {item.policy?._id && (
  <Link 
  to={`/policies/${item.policy._id}`}
+ state={linkState}
  className="btn-ghost btn-sm flex-1"
  onClick={(e) => e.stopPropagation()}
  >

@@ -5,6 +5,7 @@ import auth from "../../../middleware/auth.js";
 import authorize from "../../../middleware/authorize.js";
 import validate from "../../../middleware/validate.js";
 import { compareSchema } from "../../../validators/recommendation.validators.js";
+import { policyUpsertSchema, policyUpdateSchema } from "../../../validators/advanced.validators.js";
 import { calculateCustomerRiskScore } from "../../recommendations/services/risk.engine.js";
 import { calculatePremiumBreakdown } from "../../recommendations/services/premium.engine.js";
 import { ok, fail } from "../../shared/services/response.js";
@@ -75,7 +76,7 @@ router.get("/:id", async (req, res, next) => {
 });
 
 /* ─── Policy management for agents/admins ───────────── */
-router.post("/", auth, authorize(["AGENT", "ADMIN"]), async (req, res, next) => {
+router.post("/", auth, authorize(["AGENT", "ADMIN"]), validate(policyUpsertSchema), async (req, res, next) => {
     try {
         const policy = await Policy.create(req.body);
         res.status(201).json(policy);
@@ -84,7 +85,7 @@ router.post("/", auth, authorize(["AGENT", "ADMIN"]), async (req, res, next) => 
     }
 });
 
-router.put("/:id", auth, authorize(["AGENT", "ADMIN"]), async (req, res, next) => {
+router.put("/:id", auth, authorize(["AGENT", "ADMIN"]), validate(policyUpdateSchema), async (req, res, next) => {
     try {
         const policy =
             (await Policy.findOne({ policyId: req.params.id })) ||

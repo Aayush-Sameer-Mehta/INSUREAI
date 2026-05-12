@@ -9,7 +9,13 @@ import RenewalLookupStep from "../../components/renewals/RenewalLookupStep";
 import RenewalPolicyCard from "../../components/renewals/RenewalPolicyCard";
 import AISuggestions from "../../components/renewals/AISuggestions";
 import RenewalActionPanel from "../../components/renewals/RenewalActionPanel";
-import { Badge, Card, EmptyState, PageHeader, ProgressStepper } from "../../components/common";
+import {
+ Badge,
+ Card,
+ EmptyState,
+ PageHeader,
+ ProgressStepper,
+} from "../../components/common";
 import {
  cleanLookupInput,
  detectLookupKind,

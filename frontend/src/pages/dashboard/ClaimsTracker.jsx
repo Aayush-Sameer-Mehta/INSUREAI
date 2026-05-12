@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
   Activity,
   Clock,
@@ -47,7 +47,9 @@ const CLAIM_STATUS_CONFIG = {
 };
 
 export default function ClaimsTracker({ claims }) {
+  const location = useLocation();
   const recentClaims = claims.slice(0, 5);
+  const linkState = { from: { pathname: location.pathname } };
 
   return (
     <Card
@@ -69,6 +71,7 @@ export default function ClaimsTracker({ claims }) {
           </div>
           <Link
             to="/claims"
+            state={linkState}
             className="flex items-center gap-1 text-xs font-semibold text-primary-600 hover:text-primary-700 "
           >
             View All <ChevronRight className="h-3.5 w-3.5" />
@@ -120,6 +123,7 @@ export default function ClaimsTracker({ claims }) {
             </p>
             <Link
               to="/claims"
+              state={linkState}
               className="mt-2 text-xs font-semibold text-primary-600 "
             >
               File your first claim →

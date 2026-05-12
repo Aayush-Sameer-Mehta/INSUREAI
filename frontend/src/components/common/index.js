@@ -12,6 +12,7 @@ export { default as Skeleton } from "./Skeleton";
 export { default as StatsCard } from "./StatsCard";
 export { default as Textarea } from "./Textarea";
 export { default as ToggleSwitch } from "./ToggleSwitch";
+export { default as WorkspaceBackNav } from "./WorkspaceBackNav";
 export { default as CheckboxGroup } from "./CheckboxGroup";
 export { default as RadioGroup } from "./RadioGroup";
 export { default as OptionCardSelector } from "./OptionCardSelector";
