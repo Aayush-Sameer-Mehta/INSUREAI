@@ -3,7 +3,7 @@
  * Fails fast if critical env vars are missing in production.
  */
 const env = {
- API_URL: import.meta.env.VITE_API_URL || "http://localhost:5001/api",
+ API_URL: import.meta.env.VITE_API_URL || "/api",
  DEV: import.meta.env.DEV,
  PROD: import.meta.env.PROD,
 };

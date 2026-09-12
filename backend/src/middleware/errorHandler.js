@@ -34,6 +34,21 @@ export default function errorHandler(err, _req, res, _next) {
         err = new AppError("Token expired. Please log in again.", 401);
     }
 
+    /* ─── Database offline / network fallback ───────── */
+    if (
+        err.name === "MongooseError" ||
+        err.name === "MongoNetworkError" ||
+        err.name === "MongoServerSelectionError" ||
+        (err.message && err.message.includes("buffering timed out"))
+    ) {
+        console.warn("[AI Studio] Database offline — returning fallback response");
+        if (_req.method === "GET") {
+            const endsWithS = _req.path.endsWith("s") || _req.path.endsWith("s/");
+            return res.json({ success: true, data: endsWithS ? [] : {}, policies: endsWithS ? [] : [] });
+        }
+        return res.status(503).json({ success: false, message: "Service temporarily unavailable (database offline)" });
+    }
+
     /* ─── Send response ──────────────────────────────── */
     const response = {
         success: false,

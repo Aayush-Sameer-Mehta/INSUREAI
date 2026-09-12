@@ -1,0 +1,6 @@
+{
+  "name": "InsureAI",
+  "description": "AI-Powered Insurance Marketplace and Policy Recommendations",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -4,6 +4,7 @@ import helmet from "helmet";
 import morgan from "morgan";
 import rateLimit from "express-rate-limit";
 import path from "path";
+import fs from "fs";
 
 import authRoutes from "./domains/auth/routes/auth.routes.js";
 import policyRoutes from "./domains/policies/routes/policies.routes.js";
@@ -20,7 +21,14 @@ import errorHandler from "./middleware/errorHandler.js";
 
 const app = express();
 
-app.use(helmet());
+app.use(
+  helmet({
+    contentSecurityPolicy: false,
+    crossOriginEmbedderPolicy: false,
+    crossOriginResourcePolicy: { policy: "cross-origin" },
+    frameguard: false,
+  })
+);
 
 const apiLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
@@ -33,7 +41,7 @@ app.use("/api", apiLimiter);
 
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || "http://localhost:5173",
+    origin: true,
     credentials: true,
   }),
 );
@@ -54,6 +62,26 @@ app.use("/api/notifications", notificationsRoutes);
 app.use("/api/reports", reportsRoutes);
 
 app.get("/api/health", (_req, res) => res.json({ status: "ok" }));
+
+const possibleDistPaths = [
+  path.resolve(process.cwd(), "frontend", "dist"),
+  path.resolve(process.cwd(), "..", "frontend", "dist"),
+  path.resolve(process.cwd(), "dist"),
+];
+const distPath = possibleDistPaths.find((p) => fs.existsSync(p)) || possibleDistPaths[0];
+
+if (fs.existsSync(distPath)) {
+  app.use(express.static(distPath));
+  app.get("*", (req, res, next) => {
+    if (req.path.startsWith("/api")) {
+      return next();
+    }
+    res.sendFile(path.join(distPath, "index.html"), (err) => {
+      if (err) next(err);
+    });
+  });
+}
+
 app.use(errorHandler);
 
 export default app;

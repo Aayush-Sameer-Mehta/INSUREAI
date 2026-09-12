@@ -434,13 +434,18 @@ const policies = [
     },
 ];
 
-async function seed() {
+export async function seedPolicies(clearFirst = false) {
     try {
-        await mongoose.connect(process.env.MONGODB_URI);
-        console.log("✅ Connected to MongoDB");
+        const count = await Policy.countDocuments();
+        if (count > 0 && !clearFirst) {
+            console.log(`ℹ️ Policies already seeded (${count} policies exist).`);
+            return;
+        }
 
-        await Policy.deleteMany({});
-        console.log("🗑️  Cleared existing policies");
+        if (clearFirst) {
+            await Policy.deleteMany({});
+            console.log("🗑️  Cleared existing policies");
+        }
 
         /* Add segment & subtype to existing policies */
         const enrichedOld = policies.map(p => ({
@@ -466,7 +471,16 @@ async function seed() {
         }));
         await Policy.insertMany(allPolicies);
         console.log(`✅ Seeded ${allPolicies.length} policies (${enrichedOld.length} existing + ${newPolicies.length} new + ${insurancePlans.length} generated)`);
+    } catch (err) {
+        console.error("❌ Seed error:", err.message);
+    }
+}
 
+async function seed() {
+    try {
+        await mongoose.connect(process.env.MONGODB_URI);
+        console.log("✅ Connected to MongoDB");
+        await seedPolicies(true);
         await mongoose.disconnect();
         console.log("✅ Done — disconnected");
     } catch (err) {
@@ -475,5 +489,9 @@ async function seed() {
     }
 }
 
-seed();
+const isMainModule = process.argv[1] && process.argv[1].endsWith("seed.js");
+if (isMainModule) {
+    seed();
+}
+
 

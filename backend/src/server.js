@@ -4,7 +4,8 @@ import app from "./app.js";
 import { connectDB } from "./config/database.js";
 import { runRenewalReminderProcessor } from "./domains/notifications/services/reminder.service.js";
 
-const PORT = process.env.PORT || 5001;
+const PORT = 3000;
+const HOST = "0.0.0.0";
 
 function maskKeyId(value = "") {
   if (!value) return "(not set)";
@@ -14,7 +15,7 @@ function maskKeyId(value = "") {
 }
 
 await connectDB();
-app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+app.listen(PORT, HOST, () => console.log(`🚀 InsureAI Server running on http://${HOST}:${PORT}`));
 
 const paymentMode = String(process.env.PAYMENT_PROVIDER_MODE || "auto").toLowerCase();
 console.log(`💳 Payment mode: ${paymentMode}`);
