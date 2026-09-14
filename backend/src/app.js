@@ -16,6 +16,7 @@ import claimRoutes from "./domains/claims/routes/claims.routes.js";
 import adminRoutes from "./domains/admin/routes/admin.routes.js";
 import premiumRoutes from "./domains/recommendations/routes/premium.routes.js";
 import notificationsRoutes from "./domains/notifications/routes/notifications.routes.js";
+import agentRoutes from "./domains/agents/routes/agent.routes.js";
 import reportsRoutes from "./domains/reports/routes/reports.routes.js";
 import errorHandler from "./middleware/errorHandler.js";
 
@@ -32,16 +33,30 @@ app.use(
 
 const apiLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
-  max: 150,
+  max: 300,
   standardHeaders: true,
   legacyHeaders: false,
   message: { success: false, message: "Too many requests from this IP, please try again later." },
 });
 app.use("/api", apiLimiter);
 
+const allowedOrigins = [
+  process.env.FRONTEND_URL,
+  "http://localhost:5173",
+  "http://localhost:5001",
+  "http://127.0.0.1:5173",
+  "http://127.0.0.1:5001",
+].filter(Boolean);
+
 app.use(
   cors({
-    origin: true,
+    origin: (origin, callback) => {
+      if (!origin) return callback(null, true);
+      if (allowedOrigins.includes(origin) || process.env.NODE_ENV !== "production") {
+        return callback(null, true);
+      }
+      return callback(new Error("CORS origin not allowed: " + origin), false);
+    },
     credentials: true,
   }),
 );
@@ -56,6 +71,7 @@ app.use("/api/ai", aiRoutes);
 app.use("/api/payments", paymentRoutes);
 app.use("/api/recommendations", recommendationsRoutes);
 app.use("/api/claims", claimRoutes);
+app.use("/api/agents", agentRoutes);
 app.use("/api/admin", adminRoutes);
 app.use("/api/premium", premiumRoutes);
 app.use("/api/notifications", notificationsRoutes);

@@ -424,7 +424,7 @@ export async function getRankedRecommendations(profile, riskProfile) {
   }));
 }
 
-import { GoogleGenAI } from "@google/genai";
+import { getGeminiClient, getGeminiModel } from "../../../config/gemini.js";
 
 export async function buildRecommendationExplanation(profile, riskProfile, topPolicies) {
   const top = topPolicies[0];
@@ -433,9 +433,9 @@ export async function buildRecommendationExplanation(profile, riskProfile, topPo
     return `No direct policy match found ${goal}. Try broadening category or budget filters.`;
   }
 
-  if (process.env.GEMINI_API_KEY) {
+  const ai = getGeminiClient();
+  if (ai) {
     try {
-      const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
       const prompt = `You are an expert Insurance Advisor AI.
 User Profile:
 - Age: ${profile.age || 30}
@@ -452,7 +452,7 @@ Top Recommended Policy:
 Write a highly personalized, empathetic 2-3 sentence explanation directly to the user addressing why this specific policy is their #1 recommendation. Mention their specific life factors (like dependents, age, or health). Do not use markdown formatting.`;
 
       const response = await ai.models.generateContent({
-          model: "gemini-2.5-flash",
+          model: getGeminiModel(),
           contents: prompt,
           config: { temperature: 0.4 }
       });

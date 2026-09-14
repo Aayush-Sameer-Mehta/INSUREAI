@@ -1,11 +1,20 @@
-import "dotenv/config";
+import dotenv from "dotenv";
+import path from "path";
+import { fileURLToPath } from "url";
+import dns from "dns";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+dotenv.config();
+dotenv.config({ path: path.resolve(__dirname, "../.env") });
+
+dns.setServers(["8.8.8.8", "1.1.1.1"]);
 
 import app from "./app.js";
 import { connectDB } from "./config/database.js";
 import { runRenewalReminderProcessor } from "./domains/notifications/services/reminder.service.js";
 
-const PORT = 3000;
-const HOST = "0.0.0.0";
+const PORT = Number(process.env.PORT) || 5001;
+const HOST = process.env.HOST || "0.0.0.0";
 
 function maskKeyId(value = "") {
   if (!value) return "(not set)";

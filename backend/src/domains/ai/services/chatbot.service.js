@@ -1,6 +1,6 @@
 import Policy from "../../policies/models/Policy.js";
 import axios from "axios";
-import { GoogleGenAI, Type } from "@google/genai";
+import { getGeminiClient, getGeminiModel, Type } from "../../../config/gemini.js";
 
 /* ═══════════════════════════════════════════════════════════════
    InsureAI Chatbot Service
@@ -429,10 +429,9 @@ export async function processMessage(message, history = []) {
     }
 
     /* ── Google Gemini LLM Integration ── */
-    if (process.env.GEMINI_API_KEY) {
+    const ai = getGeminiClient();
+    if (ai) {
         try {
-            const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
-            
             const systemPrompt = `You are the "InsureAI Assistant", a helpful, polite, and deeply knowledgeable insurance chatbot exclusive to the InsureAI platform. 
 Your sole purpose is to help users with insurance-related questions. 
 STRICT GUARDRAIL: You MUST forcefully but politely decline to answer ANY question that is not directly related to insurance, policies, claims, premiums, or the InsureAI platform. Do not write code, do not give cooking recipes, do not answer general knowledge questions. If the user asks something off-topic, reply with an apology and guide them back to insurance topics.`;
@@ -450,7 +449,7 @@ STRICT GUARDRAIL: You MUST forcefully but politely decline to answer ANY questio
             contents.push({ role: "user", parts: [{ text }] });
 
             const response = await ai.models.generateContent({
-                model: "gemini-2.5-flash",
+                model: getGeminiModel(),
                 contents: contents,
                 config: {
                     systemInstruction: systemPrompt,

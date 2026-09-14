@@ -1,26 +1,41 @@
 import mongoose from "mongoose";
+import dns from "dns";
 import { seedPolicies } from "../../seed.js";
+
+function maskMongoUri(uri = "") {
+  if (!uri) return "";
+  return uri.replace(/\/\/([^:]+):([^@]+)@/, "//$1:****@");
+}
 
 export async function connectDB() {
   mongoose.set("bufferCommands", false);
-  const uri = process.env.MONGODB_URI;
+  const uri = process.env.MONGODB_URI?.trim();
 
-  // If a real external MongoDB URI is provided, try connecting
-  if (uri && !uri.includes("127.0.0.1") && !uri.includes("localhost")) {
+  // If a MongoDB URI is configured (Atlas or local), attempt connection
+  if (uri) {
     try {
+      if (uri.startsWith("mongodb+srv://")) {
+        try {
+          dns.setServers(["8.8.8.8", "1.1.1.1"]);
+        } catch {
+          // ignore if environment restricts
+        }
+      }
+      console.log(`🔄 Connecting to MongoDB (${maskMongoUri(uri)})...`);
       await mongoose.connect(uri, {
-        serverSelectionTimeoutMS: 5000,
-        connectTimeoutMS: 5000,
+        serverSelectionTimeoutMS: 6000,
+        connectTimeoutMS: 6000,
       });
-      console.log("✅ MongoDB connected →", uri);
+      console.log("✅ MongoDB connected →", maskMongoUri(uri));
       await seedPolicies(false);
       return;
     } catch (err) {
-      console.warn("⚠️ Could not connect to remote MongoDB:", err.message);
+      console.warn("⚠️ Could not connect to configured MongoDB:", err.message);
+      console.warn("ℹ️ Falling back to in-memory MongoDB for local development...");
     }
   }
 
-  // Use fast in-memory MongoDB
+  // Fallback to fast in-memory MongoDB if configured URI failed or not provided
   console.log("🔄 Starting in-memory MongoDB...");
   try {
     const { MongoMemoryServer } = await import("mongodb-memory-server");
@@ -31,7 +46,7 @@ export async function connectDB() {
     console.log("✅ In-memory MongoDB connected →", memUri);
     await seedPolicies(false);
   } catch (memErr) {
-    console.warn("⚠️ MongoDB offline or failed to start memory server:", memErr.message);
+    console.error("❌ MongoDB offline or failed to start memory server:", memErr.message);
   }
 }
 

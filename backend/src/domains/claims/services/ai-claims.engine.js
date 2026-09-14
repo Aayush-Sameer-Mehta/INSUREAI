@@ -1,5 +1,5 @@
 import Claim from "../models/Claim.js";
-import { GoogleGenAI, Type } from "@google/genai";
+import { getGeminiClient, getGeminiModel, Type } from "../../../config/gemini.js";
 
 /**
  * AI Claim Analysis Engine
@@ -30,10 +30,9 @@ export async function analyzeClaimAI({
   }
 
   // ── 2. Call Gemini API ──────────────────────────────────
-  if (process.env.GEMINI_API_KEY) {
+  const ai = getGeminiClient();
+  if (ai) {
     try {
-      const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
-      
       const systemInstruction = `You are the InsureAI Claims Analysis & Fraud Detection Engine.
 You must analyze the provided insurance claim details and calculate an approval probability, a fraud risk score, and provide a settlement recommendation based on the coverage limit.
 Be strict but fair. High claim amounts vs coverage, very old incident dates, missing documents, or vague descriptions should increase fraud risk and lower approval probability.
@@ -52,7 +51,7 @@ Return purely JSON matching the schema.`;
 Evaluate the fraud risk and approval probability. Name any specifically missing documents (e.g. "FIR copy", "Medical bills") based on the category.`;
 
       const response = await ai.models.generateContent({
-          model: "gemini-2.5-flash",
+          model: getGeminiModel(),
           contents: prompt,
           config: {
               systemInstruction,

@@ -36,8 +36,11 @@ router.post("/register", validate(registerSchema), async (req, res, next) => {
             return next(new AppError("Email already registered", 409));
         }
 
-        if (role === ROLES.ADMIN && req.body.adminInviteCode !== process.env.ADMIN_INVITE_CODE) {
-            return next(new AppError("Valid admin invite code is required to register an admin", 403));
+        if (role === ROLES.ADMIN) {
+            const configuredCode = process.env.ADMIN_INVITE_CODE?.trim();
+            if (!configuredCode || req.body.adminInviteCode !== configuredCode) {
+                return next(new AppError("Valid admin invite code is required to register an admin", 403));
+            }
         }
 
         if (role === ROLES.AGENT && !agent_details?.license_number) {
