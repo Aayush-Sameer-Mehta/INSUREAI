@@ -185,7 +185,12 @@ export default function Payment() {
  toast.success("Policy purchased successfully!");
  setTimeout(() => navigate("/user/dashboard"), 3000);
  } catch (error) {
- toast.error(error?.response?.data?.message || error?.message || "Payment failed. Please try again.");
+  toast.error(
+   error?.response?.data?.error?.message ||
+    error?.response?.data?.message ||
+    error?.message ||
+    "Payment failed. Please try again.",
+  );
  } finally {
  setProcessing(false);
  }

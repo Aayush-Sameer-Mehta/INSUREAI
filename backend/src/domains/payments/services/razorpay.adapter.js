@@ -1,26 +1,39 @@
 import crypto from "crypto";
 import axios from "axios";
 
-const PAYMENT_MODE = String(process.env.PAYMENT_PROVIDER_MODE || "auto").toLowerCase();
-const RAZORPAY_KEY_ID = String(process.env.RAZORPAY_KEY_ID || "").trim();
-const RAZORPAY_KEY_SECRET = String(process.env.RAZORPAY_KEY_SECRET || "").trim();
-const RAZORPAY_API_BASE = String(process.env.RAZORPAY_API_BASE || "https://api.razorpay.com/v1").replace(/\/$/, "");
+export function getPaymentMode() {
+  return String(process.env.PAYMENT_PROVIDER_MODE || "auto").toLowerCase();
+}
 
-function canUseRazorpay() {
-  if (PAYMENT_MODE === "mock") return false;
-  if (!RAZORPAY_KEY_ID || !RAZORPAY_KEY_SECRET) return false;
+export function getRazorpayKeyId() {
+  return String(process.env.RAZORPAY_KEY_ID || "").trim();
+}
+
+export function getRazorpayKeySecret() {
+  return String(process.env.RAZORPAY_KEY_SECRET || "").trim();
+}
+
+export function getRazorpayApiBase() {
+  return String(process.env.RAZORPAY_API_BASE || "https://api.razorpay.com/v1").replace(/\/$/, "");
+}
+
+export function canUseRazorpay() {
+  const mode = getPaymentMode();
+  if (mode === "mock") return false;
+  if (!getRazorpayKeyId() || !getRazorpayKeySecret()) return false;
   return true;
 }
 
 async function razorpayRequest(method, path, payload) {
-  const url = `${RAZORPAY_API_BASE}${path.startsWith("/") ? "" : "/"}${path}`;
+  const apiBase = getRazorpayApiBase();
+  const url = `${apiBase}${path.startsWith("/") ? "" : "/"}${path}`;
   return axios.request({
     method,
     url,
     data: payload,
     auth: {
-      username: RAZORPAY_KEY_ID,
-      password: RAZORPAY_KEY_SECRET,
+      username: getRazorpayKeyId(),
+      password: getRazorpayKeySecret(),
     },
     timeout: 10000,
   });
@@ -67,18 +80,19 @@ function parseGatewayError(error) {
 }
 
 export function getPaymentGatewayConfig() {
+  const mode = getPaymentMode();
   if (!canUseRazorpay()) {
     return {
       provider: "mock",
       keyId: "",
-      mode: PAYMENT_MODE,
+      mode,
     };
   }
 
   return {
     provider: "razorpay",
-    keyId: RAZORPAY_KEY_ID,
-    mode: PAYMENT_MODE,
+    keyId: getRazorpayKeyId(),
+    mode,
   };
 }
 
@@ -132,7 +146,7 @@ export async function verifyPayment({ orderId, paymentId, signature }) {
 
   const payload = `${orderId}|${paymentId}`;
   const expectedSignature = crypto
-    .createHmac("sha256", RAZORPAY_KEY_SECRET)
+    .createHmac("sha256", getRazorpayKeySecret())
     .update(payload)
     .digest("hex");
 

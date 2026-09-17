@@ -10,7 +10,6 @@ import { recordPolicyPurchase } from "../../payments/services/purchase.service.j
 import fs from "fs/promises";
 
 const router = Router();
-const PAYMENT_MODE = String(process.env.PAYMENT_PROVIDER_MODE || "auto").toLowerCase();
 
 router.use(auth);
 
@@ -36,7 +35,8 @@ router.get("/profile", async (req, res, next) => {
 /* ─── Purchase a policy ──────────────────────────────── */
 router.post("/purchase", authorize(["USER"]), async (req, res, next) => {
   try {
-    if (PAYMENT_MODE !== "mock") {
+    const paymentMode = String(process.env.PAYMENT_PROVIDER_MODE || "auto").toLowerCase();
+    if (paymentMode !== "mock") {
       return next(
         new AppError(
           "Direct purchase is disabled. Use /api/payments/create-order and /api/payments/verify to complete payment.",

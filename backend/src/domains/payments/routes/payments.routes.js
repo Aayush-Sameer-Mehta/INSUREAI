@@ -8,7 +8,7 @@ import Payment from "../models/Payment.js";
 import validate from "../../../middleware/validate.js";
 import AppError from "../../../utils/AppError.js";
 import { paymentCreateOrderSchema, paymentVerifySchema } from "../../../validators/advanced.validators.js";
-import { createOrder, fetchOrder, fetchPayment, getPaymentGatewayConfig, verifyPayment } from "../services/razorpay.adapter.js";
+import { createOrder, fetchOrder, fetchPayment, getPaymentGatewayConfig, verifyPayment, getPaymentMode } from "../services/razorpay.adapter.js";
 import { createNotification } from "../../notifications/services/notification.service.js";
 import { generatePolicyDocument } from "../../reports/services/policy-document.service.js";
 import { scheduleRenewalRemindersForUser } from "../../notifications/services/reminder.service.js";
@@ -17,7 +17,6 @@ import { ERROR_CODES } from "../../shared/services/error-codes.js";
 import { recordPolicyPurchase } from "../services/purchase.service.js";
 
 const router = Router();
-const PAYMENT_MODE = String(process.env.PAYMENT_PROVIDER_MODE || "auto").toLowerCase();
 
 async function resolveCustomerActor(req, userId) {
     if (req.user.role === "USER" || !userId) {
@@ -95,7 +94,7 @@ router.post("/create-order", auth, authorize(["USER", "AGENT", "ADMIN"]), valida
 /* ─── Confirm payment & purchase policy ──────────────── */
 router.post("/confirm", auth, authorize(["USER", "AGENT", "ADMIN"]), async (req, res, next) => {
     try {
-        if (PAYMENT_MODE !== "mock") {
+        if (getPaymentMode() !== "mock") {
             return fail(
                 res,
                 "Direct confirmation is disabled. Use /api/payments/verify with Razorpay payment verification payload.",
@@ -335,7 +334,7 @@ router.post("/verify", auth, authorize(["USER", "AGENT", "ADMIN"]), validate(pay
 
         // In Razorpay mode, additionally verify server-side order/payment details
         // to prevent replay/tampering and ensure amount matches policy price.
-        if (PAYMENT_MODE !== "mock") {
+        if (verification.provider === "razorpay") {
             const [order, payment] = await Promise.all([
                 fetchOrder(orderId),
                 fetchPayment(paymentId),

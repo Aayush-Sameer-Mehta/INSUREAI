@@ -50,6 +50,13 @@ api.interceptors.response.use(
  async (error) => {
  const originalRequest = error.config;
 
+ const backendError = error.response?.data?.error;
+ if (backendError?.message && !error.response?.data?.message) {
+  if (typeof error.response.data === "object") {
+   error.response.data.message = backendError.message;
+  }
+ }
+
  // Only attempt refresh for 401 errors that haven't been retried yet
  if (error.response?.status === 401 && !originalRequest._retry) {
  // Don't retry refresh-token or login requests

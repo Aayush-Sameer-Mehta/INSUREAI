@@ -1,11 +1,5 @@
-import dotenv from "dotenv";
-import path from "path";
-import { fileURLToPath } from "url";
+import "./config/env.js";
 import dns from "dns";
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-dotenv.config();
-dotenv.config({ path: path.resolve(__dirname, "../.env") });
 
 dns.setServers(["8.8.8.8", "1.1.1.1"]);
 
